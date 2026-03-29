@@ -103,29 +103,39 @@ function CoachExplorer({ token, userId }) {
       });
   }, [mode, filteredSeasons, clashCountries, countryCode]);
 
-  // Fetch artist photos for visible coaches (parallel, batched)
+  // Fetch artist photos for visible coaches (parallel, batched, with retry)
   const fetchPhotos = useCallback(async () => {
     if (!token) return;
-    const uncached = allCoaches.map(c => c.name).filter(n => !artistCache.has(n));
+    // Only retry failed ones (null) up to 2 times; skip successfully cached
+    const uncached = allCoaches.map(c => c.name).filter(n => !artistCache.has(n) || artistCache.get(n) === null);
+
+    const fetchOne = async (name, attempt = 0) => {
+      try {
+        const artists = await searchArtist(token, name, spotifyOverrides);
+        // Find first artist that actually has images
+        const withImg = artists.find(a => a.images?.length > 0);
+        const img = withImg?.images?.[1]?.url || withImg?.images?.[0]?.url || null;
+        artistCache.set(name, img);
+      } catch (err) {
+        // Retry once after a delay (handles 429 rate limits)
+        if (attempt < 1) {
+          await new Promise(r => setTimeout(r, 1500));
+          return fetchOne(name, attempt + 1);
+        }
+        artistCache.set(name, null);
+      }
+    };
 
     for (let i = 0; i < uncached.length; i += 5) {
       const batch = uncached.slice(i, i + 5);
-      await Promise.all(batch.map(async (name) => {
-        try {
-          const artists = await searchArtist(token, name, spotifyOverrides);
-          const img = artists[0]?.images?.[1]?.url || artists[0]?.images?.[0]?.url || null;
-          artistCache.set(name, img);
-        } catch {
-          artistCache.set(name, null);
-        }
-      }));
+      await Promise.all(batch.map(name => fetchOne(name)));
       const photos = {};
       allCoaches.forEach(c => {
         if (artistCache.has(c.name)) photos[c.name] = artistCache.get(c.name);
       });
       setArtistPhotos({ ...photos });
     }
-  }, [token, allCoaches]);
+  }, [token, allCoaches, spotifyOverrides]);
 
   useEffect(() => { fetchPhotos(); }, [fetchPhotos]);
 
