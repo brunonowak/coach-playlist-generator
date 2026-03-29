@@ -2,7 +2,7 @@
   "US": {
     "name": "USA",
     "showName": "The Voice",
-    "flag": "Ã°ÂÂÂºÃ°ÂÂÂ¸",
+    "flag": "🇺🇸",
     "seasons": [
       {
         "season": 1,
@@ -259,7 +259,7 @@
         "year": 2024,
         "coaches": [
           "Gwen Stefani",
-          "Michael BublÃÂ©",
+          "Michael Bublé",
           "Reba McEntire",
           "Snoop Dogg"
         ]
@@ -269,7 +269,7 @@
   "UK": {
     "name": "United Kingdom",
     "showName": "The Voice UK",
-    "flag": "Ã°ÂÂÂ¬Ã°ÂÂÂ§",
+    "flag": "🇬🇧",
     "seasons": [
       {
         "season": 1,
@@ -406,7 +406,7 @@
   "AU": {
     "name": "Australia",
     "showName": "The Voice Australia",
-    "flag": "Ã°ÂÂÂ¦Ã°ÂÂÂº",
+    "flag": "🇦🇺",
     "seasons": [
       {
         "season": 1,
@@ -553,7 +553,7 @@
   "NL": {
     "name": "Netherlands",
     "showName": "The Voice of Holland",
-    "flag": "Ã°ÂÂÂ³Ã°ÂÂÂ±",
+    "flag": "🇳🇱",
     "seasons": [
       {
         "season": 1,
@@ -690,7 +690,7 @@
   "DE": {
     "name": "Germany",
     "showName": "The Voice of Germany",
-    "flag": "Ã°ÂÂÂ©Ã°ÂÂÂª",
+    "flag": "🇩🇪",
     "seasons": [
       {
         "season": 1,
@@ -728,7 +728,7 @@
         "coaches": [
           "Rea Garvey",
           "Samu Haber",
-          "Stefanie KloÃÂ",
+          "Stefanie Kloß",
           "Die Fantastischen Vier"
         ]
       },
@@ -738,7 +738,7 @@
         "coaches": [
           "Rea Garvey",
           "Andreas Bourani",
-          "Stefanie KloÃÂ",
+          "Stefanie Kloß",
           "Die Fantastischen Vier"
         ]
       },
@@ -789,7 +789,7 @@
           "Nico Santos",
           "Samu Haber",
           "Rea Garvey",
-          "Stefanie KloÃÂ"
+          "Stefanie Kloß"
         ]
       },
       {
@@ -808,7 +808,7 @@
         "coaches": [
           "Rea Garvey",
           "Mark Forster",
-          "Stefanie KloÃÂ",
+          "Stefanie Kloß",
           "Peter Maffay"
         ]
       }
@@ -817,7 +817,7 @@
   "FR": {
     "name": "France",
     "showName": "The Voice: la plus belle voix",
-    "flag": "Ã°ÂÂÂ«Ã°ÂÂÂ·",
+    "flag": "🇫🇷",
     "seasons": [
       {
         "season": 1,
@@ -954,7 +954,7 @@
   "BR": {
     "name": "Brazil",
     "showName": "The Voice Brasil",
-    "flag": "Ã°ÂÂÂ§Ã°ÂÂÂ·",
+    "flag": "🇧🇷",
     "seasons": [
       {
         "season": 1,
@@ -993,7 +993,7 @@
           "Lulu Santos",
           "Carlinhos Brown",
           "Claudia Leitte",
-          "Michel TelÃÂ³"
+          "Michel Teló"
         ]
       },
       {
@@ -1003,7 +1003,7 @@
           "Lulu Santos",
           "Carlinhos Brown",
           "Claudia Leitte",
-          "Michel TelÃÂ³"
+          "Michel Teló"
         ]
       },
       {
@@ -1012,7 +1012,7 @@
         "coaches": [
           "Lulu Santos",
           "Carlinhos Brown",
-          "Michel TelÃÂ³",
+          "Michel Teló",
           "Ivete Sangalo"
         ]
       },
@@ -1022,7 +1022,7 @@
         "coaches": [
           "Lulu Santos",
           "Carlinhos Brown",
-          "Michel TelÃÂ³",
+          "Michel Teló",
           "Ivete Sangalo"
         ]
       },
@@ -1031,7 +1031,7 @@
         "year": 2019,
         "coaches": [
           "Lulu Santos",
-          "Michel TelÃÂ³",
+          "Michel Teló",
           "Ivete Sangalo",
           "IZA"
         ]
@@ -1041,7 +1041,7 @@
         "year": 2020,
         "coaches": [
           "Lulu Santos",
-          "Michel TelÃÂ³",
+          "Michel Teló",
           "Carlinhos Brown",
           "IZA"
         ]
@@ -1051,7 +1051,7 @@
         "year": 2021,
         "coaches": [
           "Lulu Santos",
-          "Michel TelÃÂ³",
+          "Michel Teló",
           "Carlinhos Brown",
           "IZA"
         ]
@@ -1061,7 +1061,7 @@
         "year": 2022,
         "coaches": [
           "Lulu Santos",
-          "Michel TelÃÂ³",
+          "Michel Teló",
           "Carlinhos Brown",
           "IZA"
         ]
@@ -1071,7 +1071,7 @@
         "year": 2023,
         "coaches": [
           "Lulu Santos",
-          "Michel TelÃÂ³",
+          "Michel Teló",
           "Carlinhos Brown",
           "Gaby Amarantos"
         ]
@@ -1081,7 +1081,7 @@
   "ES": {
     "name": "Spain",
     "showName": "La Voz",
-    "flag": "Ã°ÂÂÂªÃ°ÂÂÂ¸",
+    "flag": "🇪🇸",
     "seasons": [
       {
         "season": 1,
@@ -1089,7 +1089,7 @@
         "coaches": [
           "David Bisbal",
           "Rosario Flores",
-          "MalÃÂº",
+          "Malú",
           "Melendi"
         ]
       },
@@ -1099,7 +1099,7 @@
         "coaches": [
           "David Bisbal",
           "Rosario Flores",
-          "MalÃÂº",
+          "Malú",
           "Antonio Orozco"
         ]
       },
@@ -1109,7 +1109,7 @@
         "coaches": [
           "Alejandro Sanz",
           "Laura Pausini",
-          "MalÃÂº",
+          "Malú",
           "Antonio Orozco"
         ]
       },
@@ -1118,7 +1118,7 @@
         "year": 2016,
         "coaches": [
           "Alejandro Sanz",
-          "MalÃÂº",
+          "Malú",
           "Manuel Carrasco",
           "Melendi"
         ]
@@ -1127,8 +1127,8 @@
         "season": 5,
         "year": 2017,
         "coaches": [
-          "Pablo LÃÂ³pez",
-          "MalÃÂº",
+          "Pablo López",
+          "Malú",
           "Antonio Orozco",
           "Juanes"
         ]
@@ -1138,7 +1138,7 @@
         "year": 2019,
         "coaches": [
           "Luis Fonsi",
-          "Pablo LÃÂ³pez",
+          "Pablo López",
           "Antonio Orozco",
           "Paulina Rubio"
         ]
@@ -1148,7 +1148,7 @@
         "year": 2020,
         "coaches": [
           "Alejandro Sanz",
-          "Pablo LÃÂ³pez",
+          "Pablo López",
           "Antonio Orozco",
           "Laura Pausini"
         ]
@@ -1158,9 +1158,9 @@
         "year": 2021,
         "coaches": [
           "Alejandro Sanz",
-          "Pablo LÃÂ³pez",
+          "Pablo López",
           "Antonio Orozco",
-          "MalÃÂº"
+          "Malú"
         ]
       },
       {
@@ -1168,7 +1168,7 @@
         "year": 2022,
         "coaches": [
           "Luis Fonsi",
-          "Pablo LÃÂ³pez",
+          "Pablo López",
           "Antonio Orozco",
           "Laura Pausini"
         ]
@@ -1178,9 +1178,9 @@
         "year": 2023,
         "coaches": [
           "Luis Fonsi",
-          "Pablo LÃÂ³pez",
+          "Pablo López",
           "Antonio Orozco",
-          "MalÃÂº"
+          "Malú"
         ]
       },
       {
@@ -1188,8 +1188,8 @@
         "year": 2024,
         "coaches": [
           "Luis Fonsi",
-          "MalÃÂº",
-          "Pablo LÃÂ³pez",
+          "Malú",
+          "Pablo López",
           "Antonio Orozco"
         ]
       }
@@ -1198,16 +1198,16 @@
   "IT": {
     "name": "Italy",
     "showName": "The Voice of Italy",
-    "flag": "Ã°ÂÂÂ®Ã°ÂÂÂ¹",
+    "flag": "🇮🇹",
     "seasons": [
       {
         "season": 1,
         "year": 2013,
         "coaches": [
           "Riccardo Cocciante",
-          "Raffaella CarrÃÂ ",
+          "Raffaella Carrà",
           "Noemi",
-          "Piero PelÃÂ¹"
+          "Piero Pelù"
         ]
       },
       {
@@ -1215,9 +1215,9 @@
         "year": 2014,
         "coaches": [
           "J-Ax",
-          "Raffaella CarrÃÂ ",
+          "Raffaella Carrà",
           "Noemi",
-          "Piero PelÃÂ¹"
+          "Piero Pelù"
         ]
       },
       {
@@ -1226,7 +1226,7 @@
         "coaches": [
           "J-Ax",
           "Noemi",
-          "Piero PelÃÂ¹",
+          "Piero Pelù",
           "Roby Facchinetti"
         ]
       },
@@ -1237,7 +1237,7 @@
           "Emis Killa",
           "Max Pezzali",
           "Dolcenera",
-          "Raffaella CarrÃÂ "
+          "Raffaella Carrà"
         ]
       },
       {
@@ -1255,7 +1255,7 @@
         "year": 2019,
         "coaches": [
           "Gigi D'Alessio",
-          "GuÃÂ©",
+          "Gué",
           "Elettra Lamborghini",
           "Morgan"
         ]
@@ -1265,7 +1265,7 @@
   "CO": {
     "name": "Colombia",
     "showName": "La Voz Colombia",
-    "flag": "Ã°ÂÂÂ¨Ã°ÂÂÂ´",
+    "flag": "🇨🇴",
     "seasons": [
       {
         "season": 1,
@@ -1273,7 +1273,7 @@
         "coaches": [
           "Fanny Lu",
           "Ricardo Montaner",
-          "AndrÃÂ©s Cepeda",
+          "Andrés Cepeda",
           "Carlos Vives"
         ]
       },
@@ -1283,7 +1283,7 @@
         "coaches": [
           "Fanny Lu",
           "Ricardo Montaner",
-          "AndrÃÂ©s Cepeda",
+          "Andrés Cepeda",
           "Gilberto Santa Rosa"
         ]
       }
@@ -1292,14 +1292,14 @@
   "PH": {
     "name": "Philippines",
     "showName": "The Voice of the Philippines",
-    "flag": "Ã°ÂÂÂµÃ°ÂÂÂ­",
+    "flag": "🇵🇭",
     "seasons": [
       {
         "season": 1,
         "year": 2013,
         "coaches": [
           "Sarah Geronimo",
-          "Bamboo MaÃÂ±alac",
+          "Bamboo Mañalac",
           "Lea Salonga",
           "apl.de.ap"
         ]
@@ -1309,7 +1309,7 @@
         "year": 2014,
         "coaches": [
           "Sarah Geronimo",
-          "Bamboo MaÃÂ±alac",
+          "Bamboo Mañalac",
           "Lea Salonga",
           "apl.de.ap"
         ]
@@ -1319,7 +1319,7 @@
   "ZA": {
     "name": "South Africa",
     "showName": "The Voice South Africa",
-    "flag": "Ã°ÂÂÂ¿Ã°ÂÂÂ¦",
+    "flag": "🇿🇦",
     "seasons": [
       {
         "season": 1,
@@ -1356,7 +1356,7 @@
   "NG": {
     "name": "Nigeria",
     "showName": "The Voice Nigeria",
-    "flag": "Ã°ÂÂÂ³Ã°ÂÂÂ¬",
+    "flag": "🇳🇬",
     "seasons": [
       {
         "season": 1,
@@ -1403,7 +1403,7 @@
   "PT": {
     "name": "Portugal",
     "showName": "The Voice Portugal",
-    "flag": "Ã°ÂÂÂµÃ°ÂÂÂ¹",
+    "flag": "🇵🇹",
     "seasons": [
       {
         "season": 1,
@@ -1432,7 +1432,7 @@
           "Mickael Carreira",
           "Aurea",
           "Anselmo Ralph",
-          "Diogo PiÃÂ§arra"
+          "Diogo Piçarra"
         ]
       },
       {
@@ -1442,7 +1442,7 @@
           "Mickael Carreira",
           "Aurea",
           "Anselmo Ralph",
-          "AntÃÂ³nio Zambujo"
+          "António Zambujo"
         ]
       },
       {
@@ -1452,7 +1452,7 @@
           "Aurea",
           "Anselmo Ralph",
           "Marisa Liz",
-          "Diogo PiÃÂ§arra"
+          "Diogo Piçarra"
         ]
       },
       {
@@ -1472,7 +1472,7 @@
           "Aurea",
           "Anselmo Ralph",
           "Marisa Liz",
-          "Diogo PiÃÂ§arra"
+          "Diogo Piçarra"
         ]
       },
       {
@@ -1481,8 +1481,8 @@
         "coaches": [
           "Aurea",
           "Marisa Liz",
-          "Diogo PiÃÂ§arra",
-          "AntÃÂ³nio Zambujo"
+          "Diogo Piçarra",
+          "António Zambujo"
         ]
       },
       {
@@ -1490,8 +1490,8 @@
         "year": 2020,
         "coaches": [
           "Aurea",
-          "Diogo PiÃÂ§arra",
-          "AntÃÂ³nio Zambujo",
+          "Diogo Piçarra",
+          "António Zambujo",
           "Carolina Deslandes"
         ]
       },
@@ -1499,7 +1499,7 @@
         "season": 10,
         "year": 2021,
         "coaches": [
-          "Diogo PiÃÂ§arra",
+          "Diogo Piçarra",
           "Carolina Deslandes",
           "Dino D'Santiago",
           "Aurea"
@@ -1520,7 +1520,7 @@
         "year": 2023,
         "coaches": [
           "Fernando Daniel",
-          "SÃÂ³nia Tavares",
+          "Sónia Tavares",
           "Nininho Vaz Maia",
           "Calema"
         ]
@@ -1531,7 +1531,7 @@
         "coaches": [
           "Sara Correia",
           "Fernando Daniel",
-          "SÃÂ³nia Tavares",
+          "Sónia Tavares",
           "Calema"
         ]
       }
@@ -1540,7 +1540,7 @@
   "RU": {
     "name": "Russia",
     "showName": "Golos",
-    "flag": "Ã°ÂÂÂ·Ã°ÂÂÂº",
+    "flag": "🇷🇺",
     "seasons": [
       {
         "season": 1,
@@ -1667,7 +1667,7 @@
   "UA": {
     "name": "Ukraine",
     "showName": "Holos Krainy",
-    "flag": "Ã°ÂÂÂºÃ°ÂÂÂ¦",
+    "flag": "🇺🇦",
     "seasons": [
       {
         "season": 1,
@@ -1733,8 +1733,8 @@
   },
   "MX": {
     "name": "Mexico",
-    "showName": "La Voz MÃÂ©xico",
-    "flag": "Ã°ÂÂÂ²Ã°ÂÂÂ½",
+    "showName": "La Voz México",
+    "flag": "🇲🇽",
     "seasons": [
       {
         "season": 1,
@@ -1750,7 +1750,7 @@
         "season": 2,
         "year": 2012,
         "coaches": [
-          "Miguel BosÃÂ©",
+          "Miguel Bosé",
           "Paulina Rubio",
           "Jenni Rivera",
           "Beto Cuevas"
@@ -1761,8 +1761,8 @@
         "year": 2013,
         "coaches": [
           "Wisin & Yandel",
-          "Alejandra GuzmÃÂ¡n",
-          "Marco Antonio SolÃÂ­s",
+          "Alejandra Guzmán",
+          "Marco Antonio Solís",
           "David Bisbal"
         ]
       },
@@ -1772,7 +1772,7 @@
         "coaches": [
           "Ricky Martin",
           "Laura Pausini",
-          "JuliÃÂ³n ÃÂlvarez",
+          "Julión Álvarez",
           "Yuri"
         ]
       },
@@ -1800,7 +1800,7 @@
         "season": 7,
         "year": 2018,
         "coaches": [
-          "Natalia JimÃÂ©nez",
+          "Natalia Jiménez",
           "Carlos Rivera",
           "Anitta",
           "Maluma"
@@ -1822,7 +1822,7 @@
         "coaches": [
           "Ricardo Montaner",
           "Belinda",
-          "MarÃÂ­a JosÃÂ©",
+          "María José",
           "Christian Nodal"
         ]
       },
@@ -1830,10 +1830,10 @@
         "season": 10,
         "year": 2021,
         "coaches": [
-          "MarÃÂ­a JosÃÂ©",
-          "Miguel BosÃÂ©",
-          "Edith MÃÂ¡rquez",
-          "JesÃÂºs Navarro"
+          "María José",
+          "Miguel Bosé",
+          "Edith Márquez",
+          "Jesús Navarro"
         ]
       },
       {
@@ -1851,7 +1851,7 @@
   "GR": {
     "name": "Greece",
     "showName": "The Voice of Greece",
-    "flag": "Ã°ÂÂÂ¬Ã°ÂÂÂ·",
+    "flag": "🇬🇷",
     "seasons": [
       {
         "season": 1,
@@ -1957,8 +1957,8 @@
   },
   "TR": {
     "name": "Turkey",
-    "showName": "O Ses TÃÂ¼rkiye",
-    "flag": "Ã°ÂÂÂ¹Ã°ÂÂÂ·",
+    "showName": "O Ses Türkiye",
+    "flag": "🇹🇷",
     "seasons": [
       {
         "season": 1,
@@ -1967,7 +1967,7 @@
           "Hadise",
           "Murat Boz",
           "Mustafa Sandal",
-          "HÃÂ¼lya AvÃÂar"
+          "Hülya Avşar"
         ]
       },
       {
@@ -1977,7 +1977,7 @@
           "Hadise",
           "Murat Boz",
           "Mustafa Sandal",
-          "HÃÂ¼lya AvÃÂar"
+          "Hülya Avşar"
         ]
       },
       {
@@ -1986,8 +1986,8 @@
         "coaches": [
           "Hadise",
           "Murat Boz",
-          "Ebru GÃÂ¼ndeÃÂ",
-          "GÃÂ¶khan ÃÂzoÃÂuz"
+          "Ebru Gündeş",
+          "Gökhan Özoğuz"
         ]
       },
       {
@@ -1995,9 +1995,9 @@
         "year": 2014,
         "coaches": [
           "Hadise",
-          "Ebru GÃÂ¼ndeÃÂ",
-          "GÃÂ¶khan ÃÂzoÃÂuz",
-          "Mazhar & ÃÂzkan"
+          "Ebru Gündeş",
+          "Gökhan Özoğuz",
+          "Mazhar & Özkan"
         ]
       },
       {
@@ -2005,8 +2005,8 @@
         "year": 2015,
         "coaches": [
           "Hadise",
-          "Ebru GÃÂ¼ndeÃÂ",
-          "GÃÂ¶khan ÃÂzoÃÂuz",
+          "Ebru Gündeş",
+          "Gökhan Özoğuz",
           "Murat Boz"
         ]
       },
@@ -2017,7 +2017,7 @@
           "Hadise",
           "Murat Boz",
           "Sibel Can",
-          "GÃÂ¶khan ÃÂzoÃÂuz"
+          "Gökhan Özoğuz"
         ]
       },
       {
@@ -2026,8 +2026,8 @@
         "coaches": [
           "Hadise",
           "Murat Boz",
-          "YÃÂ±ldÃÂ±z Tilbe",
-          "GÃÂ¶khan ÃÂzoÃÂuz"
+          "Yıldız Tilbe",
+          "Gökhan Özoğuz"
         ]
       },
       {
@@ -2037,7 +2037,7 @@
           "Hadise",
           "Murat Boz",
           "Seda Sayan",
-          "BeyazÃÂ±t ÃÂztÃÂ¼rk"
+          "Beyazıt Öztürk"
         ]
       },
       {
@@ -2047,7 +2047,7 @@
           "Hadise",
           "Murat Boz",
           "Seda Sayan",
-          "BeyazÃÂ±t ÃÂztÃÂ¼rk"
+          "Beyazıt Öztürk"
         ]
       },
       {
@@ -2055,9 +2055,9 @@
         "year": 2021,
         "coaches": [
           "Murat Boz",
-          "Ebru GÃÂ¼ndeÃÂ",
-          "OÃÂuzhan KoÃÂ§",
-          "BeyazÃÂ±t ÃÂztÃÂ¼rk"
+          "Ebru Gündeş",
+          "Oğuzhan Koç",
+          "Beyazıt Öztürk"
         ]
       },
       {
@@ -2065,9 +2065,9 @@
         "year": 2025,
         "coaches": [
           "Hadise",
-          "GÃÂ¶khan ÃÂzoÃÂuz",
-          "BeyazÃÂ±t ÃÂztÃÂ¼rk",
-          "Melike ÃÂahin"
+          "Gökhan Özoğuz",
+          "Beyazıt Öztürk",
+          "Melike Şahin"
         ]
       }
     ]
@@ -2075,7 +2075,7 @@
   "IE": {
     "name": "Ireland",
     "showName": "The Voice of Ireland",
-    "flag": "Ã°ÂÂÂ®Ã°ÂÂÂª",
+    "flag": "🇮🇪",
     "seasons": [
       {
         "season": 1,
@@ -2132,7 +2132,7 @@
   "BE": {
     "name": "Belgium",
     "showName": "The Voice van Vlaanderen",
-    "flag": "Ã°ÂÂÂ§Ã°ÂÂÂª",
+    "flag": "🇧🇪",
     "seasons": [
       {
         "season": 1,
@@ -2239,7 +2239,7 @@
   "ARAB": {
     "name": "Arab World",
     "showName": "The Voice: Ahla Sawt",
-    "flag": "ÃÂ¹",
+    "flag": "ع",
     "seasons": [
       {
         "season": 1,
@@ -2296,7 +2296,7 @@
   "ID": {
     "name": "Indonesia",
     "showName": "The Voice Indonesia",
-    "flag": "Ã°ÂÂÂ®Ã°ÂÂÂ©",
+    "flag": "🇮🇩",
     "seasons": [
       {
         "season": 1,
@@ -2343,7 +2343,7 @@
   "PL": {
     "name": "Poland",
     "showName": "The Voice of Poland",
-    "flag": "Ã°ÂÂÂµÃ°ÂÂÂ±",
+    "flag": "🇵🇱",
     "seasons": [
       {
         "season": 1,
@@ -2351,7 +2351,7 @@
         "coaches": [
           "Kayah",
           "Andrzej Piaseczny",
-          "Ania DÃÂbrowska",
+          "Ania Dąbrowska",
           "Nergal"
         ]
       },
@@ -2379,7 +2379,7 @@
         "season": 4,
         "year": 2014,
         "coaches": [
-          "Edyta GÃÂ³rniak",
+          "Edyta Górniak",
           "Tomson & Baron",
           "Marek Piekarczyk",
           "Justyna Steczkowska"
@@ -2392,7 +2392,7 @@
           "Maria Sadowska",
           "Tomson & Baron",
           "Marek Piekarczyk",
-          "Edyta GÃÂ³rniak"
+          "Edyta Górniak"
         ]
       },
       {
@@ -2422,7 +2422,7 @@
           "Maria Sadowska",
           "Tomson & Baron",
           "Andrzej Piaseczny",
-          "MichaÃÂ Szpak"
+          "Michał Szpak"
         ]
       },
       {
@@ -2432,7 +2432,7 @@
           "Patrycja Markowska",
           "Tomson & Baron",
           "Piotr Cugowski",
-          "Grzegorz HyÃÂ¼y"
+          "Grzegorz Hyży"
         ]
       },
       {
@@ -2442,7 +2442,7 @@
           "Margaret",
           "Tomson & Baron",
           "Kamil Bednarek",
-          "MichaÃÂ Szpak"
+          "Michał Szpak"
         ]
       },
       {
@@ -2451,8 +2451,8 @@
         "coaches": [
           "Urszula Dudziak",
           "Tomson & Baron",
-          "MichaÃÂ Szpak",
-          "Edyta GÃÂ³rniak"
+          "Michał Szpak",
+          "Edyta Górniak"
         ]
       },
       {
@@ -2491,7 +2491,7 @@
         "coaches": [
           "Tomson & Baron",
           "Lanberry",
-          "MichaÃÂ Szpak",
+          "Michał Szpak",
           "Kuba Badach"
         ]
       },
@@ -2501,7 +2501,7 @@
         "coaches": [
           "Tomson & Baron",
           "Margaret",
-          "MichaÃÂ Szpak",
+          "Michał Szpak",
           "Kuba Badach"
         ]
       }
@@ -2509,8 +2509,8 @@
   },
   "RO": {
     "name": "Romania",
-    "showName": "Vocea RomÃÂ¢niei",
-    "flag": "Ã°ÂÂÂ·Ã°ÂÂÂ´",
+    "showName": "Vocea României",
+    "flag": "🇷🇴",
     "seasons": [
       {
         "season": 1,
@@ -2547,7 +2547,7 @@
         "year": 2014,
         "coaches": [
           "Smiley",
-          "Tudor ChirilÃÂ",
+          "Tudor Chirilă",
           "Loredana Groza",
           "Marius Moga"
         ]
@@ -2557,7 +2557,7 @@
         "year": 2015,
         "coaches": [
           "Smiley",
-          "Tudor ChirilÃÂ",
+          "Tudor Chirilă",
           "Loredana Groza",
           "Marius Moga"
         ]
@@ -2567,7 +2567,7 @@
         "year": 2016,
         "coaches": [
           "Smiley",
-          "Tudor ChirilÃÂ",
+          "Tudor Chirilă",
           "Loredana Groza",
           "Marius Moga"
         ]
@@ -2577,7 +2577,7 @@
         "year": 2017,
         "coaches": [
           "Smiley",
-          "Tudor ChirilÃÂ",
+          "Tudor Chirilă",
           "Loredana Groza",
           "Adrian Despot"
         ]
@@ -2587,7 +2587,7 @@
         "year": 2018,
         "coaches": [
           "Smiley",
-          "Tudor ChirilÃÂ",
+          "Tudor Chirilă",
           "Irina Rimes",
           "Andra"
         ]
@@ -2597,7 +2597,7 @@
         "year": 2019,
         "coaches": [
           "Smiley",
-          "Tudor ChirilÃÂ",
+          "Tudor Chirilă",
           "Irina Rimes",
           "Horia Brenciu"
         ]
@@ -2607,9 +2607,9 @@
         "year": 2022,
         "coaches": [
           "Smiley",
-          "Tudor ChirilÃÂ",
+          "Tudor Chirilă",
           "Irina Rimes",
-          "Denis RoabeÃÂ"
+          "Denis Roabeș"
         ]
       }
     ]
@@ -2617,13 +2617,13 @@
   "SE": {
     "name": "Sweden",
     "showName": "The Voice Sverige",
-    "flag": "Ã°ÂÂÂ¸Ã°ÂÂÂª",
+    "flag": "🇸🇪",
     "seasons": [
       {
         "season": 1,
         "year": 2012,
         "coaches": [
-          "Carola HÃÂ¤ggkvist",
+          "Carola Häggkvist",
           "Magnus Uggla",
           "Ola Salo",
           "Petter"
@@ -2634,7 +2634,7 @@
   "AR": {
     "name": "Argentina",
     "showName": "La Voz Argentina",
-    "flag": "Ã°ÂÂÂ¦Ã°ÂÂÂ·",
+    "flag": "🇦🇷",
     "seasons": [
       {
         "season": 1,
@@ -2642,7 +2642,7 @@
         "coaches": [
           "Soledad Pastorutti",
           "Axel",
-          "JosÃÂ© Luis RodrÃÂ­guez",
+          "José Luis Rodríguez",
           "Miranda!"
         ]
       },
@@ -2663,7 +2663,7 @@
           "Soledad Pastorutti",
           "Ricardo Montaner",
           "Mau y Ricky",
-          "Lali EspÃÂ³sito"
+          "Lali Espósito"
         ]
       },
       {
@@ -2673,7 +2673,7 @@
           "Soledad Pastorutti",
           "Ricardo Montaner",
           "Mau y Ricky",
-          "Lali EspÃÂ³sito"
+          "Lali Espósito"
         ]
       },
       {
@@ -2681,7 +2681,7 @@
         "year": 2025,
         "coaches": [
           "Soledad Pastorutti",
-          "Lali EspÃÂ³sito",
+          "Lali Espósito",
           "Luck Ra",
           "Miranda!"
         ]
@@ -2691,7 +2691,7 @@
   "IN": {
     "name": "India",
     "showName": "The Voice India",
-    "flag": "Ã°ÂÂÂ®Ã°ÂÂÂ³",
+    "flag": "🇮🇳",
     "seasons": [
       {
         "season": 1,
@@ -2727,8 +2727,8 @@
   },
   "DK": {
     "name": "Denmark",
-    "showName": "Voice Ã¢ÂÂ Danmarks stÃÂ¸rste stemme",
-    "flag": "Ã°ÂÂÂ©Ã°ÂÂÂ°",
+    "showName": "Voice – Danmarks største stemme",
+    "flag": "🇩🇰",
     "seasons": [
       {
         "season": 1,
@@ -2736,8 +2736,8 @@
         "coaches": [
           "L.O.C.",
           "Sharin Foo",
-          "Lene NystrÃÂ¸m",
-          "Steen JÃÂ¸rgensen"
+          "Lene Nystrøm",
+          "Steen Jørgensen"
         ]
       },
       {
@@ -2746,7 +2746,7 @@
         "coaches": [
           "L.O.C.",
           "Sharin Foo",
-          "Lene NystrÃÂ¸m",
+          "Lene Nystrøm",
           "Xander"
         ]
       }
@@ -2755,14 +2755,14 @@
   "FI": {
     "name": "Finland",
     "showName": "The Voice of Finland",
-    "flag": "Ã°ÂÂÂ«Ã°ÂÂÂ®",
+    "flag": "🇫🇮",
     "seasons": [
       {
         "season": 1,
         "year": 2011,
         "coaches": [
           "Paula Koivuniemi",
-          "Lauri TÃÂ¤hkÃÂ¤",
+          "Lauri Tähkä",
           "Elastinen",
           "Michael Monroe"
         ]
@@ -2772,7 +2772,7 @@
         "year": 2013,
         "coaches": [
           "Paula Koivuniemi",
-          "Lauri TÃÂ¤hkÃÂ¤",
+          "Lauri Tähkä",
           "Elastinen",
           "Michael Monroe"
         ]
@@ -2891,8 +2891,8 @@
   },
   "NO": {
     "name": "Norway",
-    "showName": "The Voice Ã¢ÂÂ Norges beste stemme",
-    "flag": "Ã°ÂÂÂ³Ã°ÂÂÂ´",
+    "showName": "The Voice – Norges beste stemme",
+    "flag": "🇳🇴",
     "seasons": [
       {
         "season": 1,
@@ -2900,7 +2900,7 @@
         "coaches": [
           "Yosef Wolde-Mariam",
           "Sondre Lerche",
-          "Hanne SÃÂ¸rvaag",
+          "Hanne Sørvaag",
           "Magne Furuholmen"
         ]
       },
@@ -2911,7 +2911,7 @@
           "Yosef Wolde-Mariam",
           "Sondre Lerche",
           "Espen Lind",
-          "Lene NystrÃÂ¸m"
+          "Lene Nystrøm"
         ]
       },
       {
@@ -2921,7 +2921,7 @@
           "Yosef Wolde-Mariam",
           "Sondre Lerche",
           "Espen Lind",
-          "Hanne SÃÂ¸rvaag"
+          "Hanne Sørvaag"
         ]
       },
       {
@@ -3000,7 +3000,7 @@
         "coaches": [
           "Espen Lind",
           "Jarle Bernhoft",
-          "IngebjÃÂ¸rg Bratland",
+          "Ingebjørg Bratland",
           "Marion Raven"
         ]
       }
@@ -3008,37 +3008,37 @@
   },
   "VN": {
     "name": "Vietnam",
-    "showName": "GiÃ¡Â»Âng HÃÂ¡t ViÃ¡Â»Ât",
-    "flag": "Ã°ÂÂÂ»Ã°ÂÂÂ³",
+    "showName": "Giọng Hát Việt",
+    "flag": "🇻🇳",
     "seasons": [
       {
         "season": 1,
         "year": 2012,
         "coaches": [
-          "ÃÂÃÂ m VÃÂ©nh HÃÂ°ng",
+          "Đàm Vĩnh Hưng",
           "Thu Minh",
-          "HÃ¡Â»Â NgÃ¡Â»Âc HÃÂ ",
-          "TrÃ¡ÂºÂ§n LÃ¡ÂºÂ­p"
+          "Hồ Ngọc Hà",
+          "Trần Lập"
         ]
       },
       {
         "season": 2,
         "year": 2013,
         "coaches": [
-          "ÃÂÃÂ m VÃÂ©nh HÃÂ°ng",
-          "MÃ¡Â»Â¹ Linh",
-          "HÃ¡Â»Âng Nhung",
-          "QuÃ¡Â»Âc Trung"
+          "Đàm Vĩnh Hưng",
+          "Mỹ Linh",
+          "Hồng Nhung",
+          "Quốc Trung"
         ]
       },
       {
         "season": 3,
         "year": 2015,
         "coaches": [
-          "ÃÂÃÂ m VÃÂ©nh HÃÂ°ng",
-          "MÃ¡Â»Â¹ TÃÂ¢m",
-          "TuÃ¡ÂºÂ¥n HÃÂ°ng",
-          "Thu PhÃÂ°ÃÂ¡ng"
+          "Đàm Vĩnh Hưng",
+          "Mỹ Tâm",
+          "Tuấn Hưng",
+          "Thu Phương"
         ]
       },
       {
@@ -3046,29 +3046,29 @@
         "year": 2017,
         "coaches": [
           "Thu Minh",
-          "ÃÂÃÂ´ng Nhi",
-          "Noo PhÃÂ°Ã¡Â»Âc ThÃ¡Â»Ânh",
-          "TÃÂ³c TiÃÂªn"
+          "Đông Nhi",
+          "Noo Phước Thịnh",
+          "Tóc Tiên"
         ]
       },
       {
         "season": 5,
         "year": 2018,
         "coaches": [
-          "Thu PhÃÂ°ÃÂ¡ng",
-          "TÃÂ³c TiÃÂªn",
-          "Noo PhÃÂ°Ã¡Â»Âc ThÃ¡Â»Ânh",
-          "Lam TrÃÂ°Ã¡Â»Âng"
+          "Thu Phương",
+          "Tóc Tiên",
+          "Noo Phước Thịnh",
+          "Lam Trường"
         ]
       },
       {
         "season": 6,
         "year": 2019,
         "coaches": [
-          "TuÃ¡ÂºÂ¥n NgÃ¡Â»Âc",
-          "HÃ¡Â»Â HoÃÂ i Anh",
-          "Thanh HÃÂ ",
-          "TuÃ¡ÂºÂ¥n HÃÂ°ng"
+          "Tuấn Ngọc",
+          "Hồ Hoài Anh",
+          "Thanh Hà",
+          "Tuấn Hưng"
         ]
       }
     ]
@@ -3076,7 +3076,7 @@
   "TH": {
     "name": "Thailand",
     "showName": "The Voice Thailand",
-    "flag": "Ã°ÂÂÂ¹Ã°ÂÂÂ­",
+    "flag": "🇹🇭",
     "seasons": [
       {
         "season": 1,
@@ -3183,7 +3183,7 @@
   "KR": {
     "name": "South Korea",
     "showName": "The Voice of Korea",
-    "flag": "Ã°ÂÂÂ°Ã°ÂÂÂ·",
+    "flag": "🇰🇷",
     "seasons": [
       {
         "season": 1,
@@ -3220,7 +3220,7 @@
   "CA": {
     "name": "Canada (Quebec)",
     "showName": "La Voix",
-    "flag": "Ã°ÂÂÂ¨Ã°ÂÂÂ¦",
+    "flag": "🇨🇦",
     "seasons": [
       {
         "season": 1,
@@ -3229,7 +3229,7 @@
           "Jean-Pierre Ferland",
           "Marie-Mai",
           "Ariane Moffatt",
-          "Marc DuprÃÂ©"
+          "Marc Dupré"
         ]
       },
       {
@@ -3239,44 +3239,44 @@
           "Jean-Pierre Ferland",
           "Marie-Mai",
           "Ariane Moffatt",
-          "Marc DuprÃÂ©"
+          "Marc Dupré"
         ]
       },
       {
         "season": 3,
         "year": 2015,
         "coaches": [
-          "ÃÂric Lapointe",
+          "Éric Lapointe",
           "Isabelle Boulay",
           "Pierre Lapointe",
-          "Marc DuprÃÂ©"
+          "Marc Dupré"
         ]
       },
       {
         "season": 4,
         "year": 2016,
         "coaches": [
-          "ÃÂric Lapointe",
+          "Éric Lapointe",
           "Isabelle Boulay",
           "Pierre Lapointe",
-          "Marc DuprÃÂ©"
+          "Marc Dupré"
         ]
       },
       {
         "season": 5,
         "year": 2017,
         "coaches": [
-          "ÃÂric Lapointe",
+          "Éric Lapointe",
           "Isabelle Boulay",
           "Pierre Lapointe",
-          "Marc DuprÃÂ©"
+          "Marc Dupré"
         ]
       },
       {
         "season": 6,
         "year": 2018,
         "coaches": [
-          "ÃÂric Lapointe",
+          "Éric Lapointe",
           "Lara Fabian",
           "Alex Nevsky",
           "Garou"
@@ -3286,10 +3286,10 @@
         "season": 7,
         "year": 2019,
         "coaches": [
-          "ÃÂric Lapointe",
+          "Éric Lapointe",
           "Lara Fabian",
           "Alex Nevsky",
-          "Marc DuprÃÂ©"
+          "Marc Dupré"
         ]
       },
       {
@@ -3299,7 +3299,7 @@
           "Pierre Lapointe",
           "Garou",
           "Coeur de Pirate",
-          "Marc DuprÃÂ©"
+          "Marc Dupré"
         ]
       },
       {
@@ -3308,7 +3308,7 @@
         "coaches": [
           "Mario Pelchat",
           "Marjo",
-          "Marc DuprÃÂ©",
+          "Marc Dupré",
           "Corneille"
         ]
       },
@@ -3339,13 +3339,37 @@
     "Wisin & Yandel": "1wZtkThiXbVNtj6hee6dz9"
   },
   "coachMeta": {
-    "Dan + Shay": { "type": "group", "displayName": "Dan + Shay" },
-    "Benji & Joel Madden": { "type": "group", "displayName": "Good Charlotte" },
-    "Nick & Simon": { "type": "group", "displayName": "Nick & Simon" },
-    "Suzan & Freek": { "type": "group", "displayName": "Suzan & Freek" },
-    "Bigflo & Oli": { "type": "group", "displayName": "Bigflo & Oli" },
-    "Wisin & Yandel": { "type": "group", "displayName": "Wisin & Yandel" },
-    "Mazhar & Özkan": { "type": "group", "displayName": "MFÖ" },
-    "Tomson & Baron": { "type": "group", "displayName": "Afromental" }
+    "Dan + Shay": {
+      "type": "group",
+      "displayName": "Dan + Shay"
+    },
+    "Benji & Joel Madden": {
+      "type": "group",
+      "displayName": "Good Charlotte"
+    },
+    "Nick & Simon": {
+      "type": "group",
+      "displayName": "Nick & Simon"
+    },
+    "Suzan & Freek": {
+      "type": "group",
+      "displayName": "Suzan & Freek"
+    },
+    "Bigflo & Oli": {
+      "type": "group",
+      "displayName": "Bigflo & Oli"
+    },
+    "Wisin & Yandel": {
+      "type": "group",
+      "displayName": "Wisin & Yandel"
+    },
+    "Mazhar & Özkan": {
+      "type": "group",
+      "displayName": "MFÖ"
+    },
+    "Tomson & Baron": {
+      "type": "group",
+      "displayName": "Afromental"
+    }
   }
 }

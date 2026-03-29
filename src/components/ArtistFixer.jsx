@@ -53,13 +53,19 @@ async function commitOverrideToGitHub(coachName, spotifyId) {
   });
   content.spotifyOverrides = sorted;
 
+  // Encode as UTF-8 base64 (btoa can't handle multi-byte chars like emoji flags)
+  const jsonStr = JSON.stringify(content, null, 2) + '\n';
+  const bytes = new TextEncoder().encode(jsonStr);
+  const binStr = Array.from(bytes, b => String.fromCharCode(b)).join('');
+  const base64Content = btoa(binStr);
+
   // Commit
   const putRes = await fetch(apiUrl, {
     method: 'PUT',
     headers,
     body: JSON.stringify({
       message: `Fix Spotify match: ${coachName} → ${spotifyId}`,
-      content: btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2) + '\n'))),
+      content: base64Content,
       sha: fileData.sha,
     }),
   });
