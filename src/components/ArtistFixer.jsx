@@ -39,8 +39,10 @@ async function commitOverrideToGitHub(coachName, spotifyId) {
   if (!fileRes.ok) throw new Error(`GitHub GET failed: ${fileRes.status}`);
   const fileData = await fileRes.json();
 
-  // Decode and parse
-  const content = JSON.parse(atob(fileData.content));
+  // Decode base64 → UTF-8 (atob can't handle multi-byte chars like emoji flags)
+  const raw = atob(fileData.content);
+  const bytes = Uint8Array.from(raw, c => c.charCodeAt(0));
+  const content = JSON.parse(new TextDecoder().decode(bytes));
 
   // Update spotifyOverrides
   if (!content.spotifyOverrides) content.spotifyOverrides = {};

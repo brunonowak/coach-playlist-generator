@@ -2,7 +2,7 @@
   "US": {
     "name": "USA",
     "showName": "The Voice",
-    "flag": "ðºð¸",
+    "flag": "🇺🇸",
     "seasons": [
       {
         "season": 1,
@@ -269,7 +269,7 @@
   "UK": {
     "name": "United Kingdom",
     "showName": "The Voice UK",
-    "flag": "ð¬ð§",
+    "flag": "🇬🇧",
     "seasons": [
       {
         "season": 1,
@@ -406,7 +406,7 @@
   "AU": {
     "name": "Australia",
     "showName": "The Voice Australia",
-    "flag": "ð¦ðº",
+    "flag": "🇦🇺",
     "seasons": [
       {
         "season": 1,
@@ -553,7 +553,7 @@
   "NL": {
     "name": "Netherlands",
     "showName": "The Voice of Holland",
-    "flag": "ð³ð±",
+    "flag": "🇳🇱",
     "seasons": [
       {
         "season": 1,
@@ -690,7 +690,7 @@
   "DE": {
     "name": "Germany",
     "showName": "The Voice of Germany",
-    "flag": "ð©ðª",
+    "flag": "🇩🇪",
     "seasons": [
       {
         "season": 1,
@@ -817,7 +817,7 @@
   "FR": {
     "name": "France",
     "showName": "The Voice: la plus belle voix",
-    "flag": "ð«ð·",
+    "flag": "🇫🇷",
     "seasons": [
       {
         "season": 1,
@@ -954,7 +954,7 @@
   "BR": {
     "name": "Brazil",
     "showName": "The Voice Brasil",
-    "flag": "ð§ð·",
+    "flag": "🇧🇷",
     "seasons": [
       {
         "season": 1,
@@ -1081,7 +1081,7 @@
   "ES": {
     "name": "Spain",
     "showName": "La Voz",
-    "flag": "ðªð¸",
+    "flag": "🇪🇸",
     "seasons": [
       {
         "season": 1,
@@ -1198,7 +1198,7 @@
   "IT": {
     "name": "Italy",
     "showName": "The Voice of Italy",
-    "flag": "ð®ð¹",
+    "flag": "🇮🇹",
     "seasons": [
       {
         "season": 1,
@@ -1265,7 +1265,7 @@
   "CO": {
     "name": "Colombia",
     "showName": "La Voz Colombia",
-    "flag": "ð¨ð´",
+    "flag": "🇨🇴",
     "seasons": [
       {
         "season": 1,
@@ -1292,7 +1292,7 @@
   "PH": {
     "name": "Philippines",
     "showName": "The Voice of the Philippines",
-    "flag": "ðµð­",
+    "flag": "🇵🇭",
     "seasons": [
       {
         "season": 1,
@@ -1319,7 +1319,7 @@
   "ZA": {
     "name": "South Africa",
     "showName": "The Voice South Africa",
-    "flag": "ð¿ð¦",
+    "flag": "🇿🇦",
     "seasons": [
       {
         "season": 1,
@@ -1356,7 +1356,7 @@
   "NG": {
     "name": "Nigeria",
     "showName": "The Voice Nigeria",
-    "flag": "ð³ð¬",
+    "flag": "🇳🇬",
     "seasons": [
       {
         "season": 1,
@@ -1403,7 +1403,7 @@
   "PT": {
     "name": "Portugal",
     "showName": "The Voice Portugal",
-    "flag": "ðµð¹",
+    "flag": "🇵🇹",
     "seasons": [
       {
         "season": 1,
@@ -1540,7 +1540,7 @@
   "RU": {
     "name": "Russia",
     "showName": "Golos",
-    "flag": "ð·ðº",
+    "flag": "🇷🇺",
     "seasons": [
       {
         "season": 1,
@@ -1667,7 +1667,7 @@
   "UA": {
     "name": "Ukraine",
     "showName": "Holos Krainy",
-    "flag": "ðºð¦",
+    "flag": "🇺🇦",
     "seasons": [
       {
         "season": 1,
@@ -1733,8 +1733,8 @@
   },
   "MX": {
     "name": "Mexico",
-    "showName": "La Voz MÃ©xico",
-    "flag": "ð²ð½",
+    "showName": "La Voz México",
+    "flag": "🇲🇽",
     "seasons": [
       {
         "season": 1,
@@ -1851,7 +1851,7 @@
   "GR": {
     "name": "Greece",
     "showName": "The Voice of Greece",
-    "flag": "ð¬ð·",
+    "flag": "🇬🇷",
     "seasons": [
       {
         "season": 1,
@@ -1957,8 +1957,8 @@
   },
   "TR": {
     "name": "Turkey",
-    "showName": "O Ses TÃ¼rkiye",
-    "flag": "ð¹ð·",
+    "showName": "O Ses Türkiye",
+    "flag": "🇹🇷",
     "seasons": [
       {
         "season": 1,
@@ -2075,7 +2075,7 @@
   "IE": {
     "name": "Ireland",
     "showName": "The Voice of Ireland",
-    "flag": "ð®ðª",
+    "flag": "🇮🇪",
     "seasons": [
       {
         "season": 1,
@@ -2132,7 +2132,7 @@
   "BE": {
     "name": "Belgium",
     "showName": "The Voice van Vlaanderen",
-    "flag": "ð§ðª",
+    "flag": "🇧🇪",
     "seasons": [
       {
         "season": 1,
@@ -2239,7 +2239,7 @@
   "ARAB": {
     "name": "Arab World",
     "showName": "The Voice: Ahla Sawt",
-    "flag": "Ø¹",
+    "flag": "ع",
     "seasons": [
       {
         "season": 1,
@@ -2296,7 +2296,7 @@
   "ID": {
     "name": "Indonesia",
     "showName": "The Voice Indonesia",
-    "flag": "ð®ð©",
+    "flag": "🇮🇩",
     "seasons": [
       {
         "season": 1,
@@ -2343,7 +2343,7 @@
   "PL": {
     "name": "Poland",
     "showName": "The Voice of Poland",
-    "flag": "ðµð±",
+    "flag": "🇵🇱",
     "seasons": [
       {
         "season": 1,
@@ -2509,8 +2509,8 @@
   },
   "RO": {
     "name": "Romania",
-    "showName": "Vocea RomÃ¢niei",
-    "flag": "ð·ð´",
+    "showName": "Vocea României",
+    "flag": "🇷🇴",
     "seasons": [
       {
         "season": 1,
@@ -2617,7 +2617,7 @@
   "SE": {
     "name": "Sweden",
     "showName": "The Voice Sverige",
-    "flag": "ð¸ðª",
+    "flag": "🇸🇪",
     "seasons": [
       {
         "season": 1,
@@ -2634,7 +2634,7 @@
   "AR": {
     "name": "Argentina",
     "showName": "La Voz Argentina",
-    "flag": "ð¦ð·",
+    "flag": "🇦🇷",
     "seasons": [
       {
         "season": 1,
@@ -2691,7 +2691,7 @@
   "IN": {
     "name": "India",
     "showName": "The Voice India",
-    "flag": "ð®ð³",
+    "flag": "🇮🇳",
     "seasons": [
       {
         "season": 1,
@@ -2727,8 +2727,8 @@
   },
   "DK": {
     "name": "Denmark",
-    "showName": "Voice â Danmarks stÃ¸rste stemme",
-    "flag": "ð©ð°",
+    "showName": "Voice – Danmarks største stemme",
+    "flag": "🇩🇰",
     "seasons": [
       {
         "season": 1,
@@ -2755,7 +2755,7 @@
   "FI": {
     "name": "Finland",
     "showName": "The Voice of Finland",
-    "flag": "ð«ð®",
+    "flag": "🇫🇮",
     "seasons": [
       {
         "season": 1,
@@ -2891,8 +2891,8 @@
   },
   "NO": {
     "name": "Norway",
-    "showName": "The Voice â Norges beste stemme",
-    "flag": "ð³ð´",
+    "showName": "The Voice – Norges beste stemme",
+    "flag": "🇳🇴",
     "seasons": [
       {
         "season": 1,
@@ -3008,8 +3008,8 @@
   },
   "VN": {
     "name": "Vietnam",
-    "showName": "Giá»ng HÃ¡t Viá»t",
-    "flag": "ð»ð³",
+    "showName": "Giọng Hát Việt",
+    "flag": "🇻🇳",
     "seasons": [
       {
         "season": 1,
@@ -3076,7 +3076,7 @@
   "TH": {
     "name": "Thailand",
     "showName": "The Voice Thailand",
-    "flag": "ð¹ð­",
+    "flag": "🇹🇭",
     "seasons": [
       {
         "season": 1,
@@ -3183,7 +3183,7 @@
   "KR": {
     "name": "South Korea",
     "showName": "The Voice of Korea",
-    "flag": "ð°ð·",
+    "flag": "🇰🇷",
     "seasons": [
       {
         "season": 1,
@@ -3220,7 +3220,7 @@
   "CA": {
     "name": "Canada (Quebec)",
     "showName": "La Voix",
-    "flag": "ð¨ð¦",
+    "flag": "🇨🇦",
     "seasons": [
       {
         "season": 1,
