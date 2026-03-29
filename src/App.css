@@ -321,6 +321,21 @@ body {
 .who-btn:hover { opacity: 1; }
 .expand-btn { font-size: 0.7rem; }
 
+/* Winner expand bar */
+.winner-expand-bar {
+  width: 100%;
+  text-align: center;
+  padding: 0.4rem;
+  font-size: 0.75rem;
+  color: var(--spotify-green);
+  background: rgba(29, 185, 84, 0.08);
+  border-top: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.15s;
+  font-weight: 500;
+}
+.winner-expand-bar:hover { background: rgba(29, 185, 84, 0.18); }
+
 /* Winner tree under coach card */
 .coach-card.expanded { flex-wrap: wrap; align-items: stretch; grid-column: 1 / -1; overflow: visible; }
 .winner-tree {

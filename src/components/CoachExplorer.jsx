@@ -361,17 +361,10 @@ function CoachExplorer({ token, userId }) {
                           }
                         </>
                       )}
-                      {hasWinners && ` · 🏆 ${winners.length}`}
+                      {hasWinners && ` · 🏆${winners.length}`}
                     </span>
                   </div>
                 </div>
-                {hasWinners && (
-                  <button
-                    className="who-btn expand-btn"
-                    onClick={(e) => { e.stopPropagation(); toggleExpand(coach.name); }}
-                    title={isExpanded ? 'Hide winners' : 'Show winners'}
-                  >{isExpanded ? '▼' : '▶'}</button>
-                )}
                 <button
                   className="who-btn"
                   onClick={(e) => { e.stopPropagation(); setDetailCoach(coach.name); }}
@@ -384,6 +377,14 @@ function CoachExplorer({ token, userId }) {
                     title="Fix Spotify match"
                   >🔧</button>
                 )}
+                {hasWinners && (
+                  <div
+                    className="winner-expand-bar"
+                    onClick={(e) => { e.stopPropagation(); toggleExpand(coach.name); }}
+                  >
+                    🏆 {isExpanded ? 'Hide' : 'Show'} {winners.length} winner{winners.length > 1 ? 's' : ''} {isExpanded ? '▲' : '▼'}
+                  </div>
+                )}
                 {isExpanded && (
                   <div className="winner-tree">
                     {winners.map(w => {
@@ -392,7 +393,7 @@ function CoachExplorer({ token, userId }) {
                         <div
                           key={key}
                           className={`winner-card ${selectedWinners.has(key) ? 'selected' : ''}`}
-                          onClick={() => toggleWinner(key)}
+                          onClick={(e) => { e.stopPropagation(); toggleWinner(key); }}
                         >
                           <span className="winner-badge">🏆</span>
                           <div className="winner-text">
