@@ -125,6 +125,35 @@ body {
   padding-bottom: 6rem;
 }
 
+/* Mode toggle */
+.mode-toggle-section {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mode-btn {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mode-btn:hover { border-color: var(--text-muted); color: var(--text); }
+
+.mode-btn.active {
+  border-color: var(--spotify-green);
+  color: var(--text);
+  background: rgba(29, 185, 84, 0.08);
+}
+
 /* Country picker */
 .country-section { margin-bottom: 1.5rem; }
 .country-section h2 { font-size: 1.1rem; font-weight: 500; margin-bottom: 0.75rem; }
