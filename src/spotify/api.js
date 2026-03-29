@@ -23,7 +23,23 @@ export async function getCurrentUser(token) {
   return fetchSpotify(token, '/me');
 }
 
-export async function searchArtist(token, name) {
+export async function getArtist(token, artistId) {
+  return fetchSpotify(token, `/artists/${artistId}`);
+}
+
+export async function searchArtist(token, name, overrides = null) {
+  // Check if there's a Spotify ID override for this artist name
+  if (overrides && overrides[name]) {
+    const artistId = overrides[name];
+    try {
+      const artist = await getArtist(token, artistId);
+      return [artist]; // Return as array to match search results format
+    } catch (error) {
+      console.warn(`Failed to fetch override artist ${artistId} for "${name}":`, error);
+      // Fall through to regular search if override fails
+    }
+  }
+
   const params = new URLSearchParams({ q: name, type: 'artist', limit: '5' });
   const data = await fetchSpotify(token, `/search?${params}`);
   return data.artists.items;

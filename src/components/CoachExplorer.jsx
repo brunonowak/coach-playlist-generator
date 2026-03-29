@@ -5,7 +5,8 @@ import CoachTimeline from './CoachTimeline';
 import CoachDetail from './CoachDetail';
 import { searchArtist } from '../spotify/api';
 
-const countryCodes = Object.keys(allData);
+const spotifyOverrides = allData.spotifyOverrides || {};
+const countryCodes = Object.keys(allData).filter(k => k !== 'spotifyOverrides');
 
 // Global cache so we don't re-fetch across country switches
 const artistCache = new Map();
@@ -105,7 +106,7 @@ function CoachExplorer({ token, userId }) {
       const batch = uncached.slice(i, i + 5);
       await Promise.all(batch.map(async (name) => {
         try {
-          const artists = await searchArtist(token, name);
+          const artists = await searchArtist(token, name, spotifyOverrides);
           const img = artists[0]?.images?.[1]?.url || artists[0]?.images?.[0]?.url || null;
           artistCache.set(name, img);
         } catch {

@@ -4,32 +4,266 @@
     "showName": "The Voice",
     "flag": "🇺🇸",
     "seasons": [
-      { "season": 1,  "year": 2011, "coaches": ["Adam Levine", "Blake Shelton", "CeeLo Green", "Christina Aguilera"] },
-      { "season": 2,  "year": 2012, "coaches": ["Adam Levine", "Blake Shelton", "CeeLo Green", "Christina Aguilera"] },
-      { "season": 3,  "year": 2012, "coaches": ["Adam Levine", "Blake Shelton", "CeeLo Green", "Christina Aguilera"] },
-      { "season": 4,  "year": 2013, "coaches": ["Adam Levine", "Blake Shelton", "Shakira", "Usher"] },
-      { "season": 5,  "year": 2013, "coaches": ["Adam Levine", "Blake Shelton", "CeeLo Green", "Christina Aguilera"] },
-      { "season": 6,  "year": 2014, "coaches": ["Adam Levine", "Blake Shelton", "Shakira", "Usher"] },
-      { "season": 7,  "year": 2014, "coaches": ["Adam Levine", "Blake Shelton", "Gwen Stefani", "Pharrell Williams"] },
-      { "season": 8,  "year": 2015, "coaches": ["Adam Levine", "Blake Shelton", "Christina Aguilera", "Pharrell Williams"] },
-      { "season": 9,  "year": 2015, "coaches": ["Adam Levine", "Blake Shelton", "Gwen Stefani", "Pharrell Williams"] },
-      { "season": 10, "year": 2016, "coaches": ["Adam Levine", "Blake Shelton", "Christina Aguilera", "Pharrell Williams"] },
-      { "season": 11, "year": 2016, "coaches": ["Adam Levine", "Blake Shelton", "Alicia Keys", "Miley Cyrus"] },
-      { "season": 12, "year": 2017, "coaches": ["Adam Levine", "Blake Shelton", "Alicia Keys", "Gwen Stefani"] },
-      { "season": 13, "year": 2017, "coaches": ["Adam Levine", "Blake Shelton", "Jennifer Hudson", "Miley Cyrus"] },
-      { "season": 14, "year": 2018, "coaches": ["Adam Levine", "Blake Shelton", "Alicia Keys", "Kelly Clarkson"] },
-      { "season": 15, "year": 2018, "coaches": ["Adam Levine", "Blake Shelton", "Jennifer Hudson", "Kelly Clarkson"] },
-      { "season": 16, "year": 2019, "coaches": ["Adam Levine", "Blake Shelton", "John Legend", "Kelly Clarkson"] },
-      { "season": 17, "year": 2019, "coaches": ["Blake Shelton", "Gwen Stefani", "John Legend", "Kelly Clarkson"] },
-      { "season": 18, "year": 2020, "coaches": ["Blake Shelton", "John Legend", "Kelly Clarkson", "Nick Jonas"] },
-      { "season": 19, "year": 2020, "coaches": ["Blake Shelton", "Gwen Stefani", "John Legend", "Kelly Clarkson"] },
-      { "season": 20, "year": 2021, "coaches": ["Blake Shelton", "John Legend", "Kelly Clarkson", "Nick Jonas"] },
-      { "season": 21, "year": 2021, "coaches": ["Ariana Grande", "Blake Shelton", "John Legend", "Kelly Clarkson"] },
-      { "season": 22, "year": 2022, "coaches": ["Blake Shelton", "Camila Cabello", "Gwen Stefani", "John Legend"] },
-      { "season": 23, "year": 2023, "coaches": ["Blake Shelton", "Chance the Rapper", "Kelly Clarkson", "Niall Horan"] },
-      { "season": 24, "year": 2023, "coaches": ["Gwen Stefani", "John Legend", "Niall Horan", "Reba McEntire"] },
-      { "season": 25, "year": 2024, "coaches": ["Chance the Rapper", "Dan + Shay", "John Legend", "Reba McEntire"] },
-      { "season": 26, "year": 2024, "coaches": ["Gwen Stefani", "Michael Bublé", "Reba McEntire", "Snoop Dogg"] }
+      {
+        "season": 1,
+        "year": 2011,
+        "coaches": [
+          "Adam Levine",
+          "Blake Shelton",
+          "CeeLo Green",
+          "Christina Aguilera"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2012,
+        "coaches": [
+          "Adam Levine",
+          "Blake Shelton",
+          "CeeLo Green",
+          "Christina Aguilera"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2012,
+        "coaches": [
+          "Adam Levine",
+          "Blake Shelton",
+          "CeeLo Green",
+          "Christina Aguilera"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2013,
+        "coaches": [
+          "Adam Levine",
+          "Blake Shelton",
+          "Shakira",
+          "Usher"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2013,
+        "coaches": [
+          "Adam Levine",
+          "Blake Shelton",
+          "CeeLo Green",
+          "Christina Aguilera"
+        ]
+      },
+      {
+        "season": 6,
+        "year": 2014,
+        "coaches": [
+          "Adam Levine",
+          "Blake Shelton",
+          "Shakira",
+          "Usher"
+        ]
+      },
+      {
+        "season": 7,
+        "year": 2014,
+        "coaches": [
+          "Adam Levine",
+          "Blake Shelton",
+          "Gwen Stefani",
+          "Pharrell Williams"
+        ]
+      },
+      {
+        "season": 8,
+        "year": 2015,
+        "coaches": [
+          "Adam Levine",
+          "Blake Shelton",
+          "Christina Aguilera",
+          "Pharrell Williams"
+        ]
+      },
+      {
+        "season": 9,
+        "year": 2015,
+        "coaches": [
+          "Adam Levine",
+          "Blake Shelton",
+          "Gwen Stefani",
+          "Pharrell Williams"
+        ]
+      },
+      {
+        "season": 10,
+        "year": 2016,
+        "coaches": [
+          "Adam Levine",
+          "Blake Shelton",
+          "Christina Aguilera",
+          "Pharrell Williams"
+        ]
+      },
+      {
+        "season": 11,
+        "year": 2016,
+        "coaches": [
+          "Adam Levine",
+          "Blake Shelton",
+          "Alicia Keys",
+          "Miley Cyrus"
+        ]
+      },
+      {
+        "season": 12,
+        "year": 2017,
+        "coaches": [
+          "Adam Levine",
+          "Blake Shelton",
+          "Alicia Keys",
+          "Gwen Stefani"
+        ]
+      },
+      {
+        "season": 13,
+        "year": 2017,
+        "coaches": [
+          "Adam Levine",
+          "Blake Shelton",
+          "Jennifer Hudson",
+          "Miley Cyrus"
+        ]
+      },
+      {
+        "season": 14,
+        "year": 2018,
+        "coaches": [
+          "Adam Levine",
+          "Blake Shelton",
+          "Alicia Keys",
+          "Kelly Clarkson"
+        ]
+      },
+      {
+        "season": 15,
+        "year": 2018,
+        "coaches": [
+          "Adam Levine",
+          "Blake Shelton",
+          "Jennifer Hudson",
+          "Kelly Clarkson"
+        ]
+      },
+      {
+        "season": 16,
+        "year": 2019,
+        "coaches": [
+          "Adam Levine",
+          "Blake Shelton",
+          "John Legend",
+          "Kelly Clarkson"
+        ]
+      },
+      {
+        "season": 17,
+        "year": 2019,
+        "coaches": [
+          "Blake Shelton",
+          "Gwen Stefani",
+          "John Legend",
+          "Kelly Clarkson"
+        ]
+      },
+      {
+        "season": 18,
+        "year": 2020,
+        "coaches": [
+          "Blake Shelton",
+          "John Legend",
+          "Kelly Clarkson",
+          "Nick Jonas"
+        ]
+      },
+      {
+        "season": 19,
+        "year": 2020,
+        "coaches": [
+          "Blake Shelton",
+          "Gwen Stefani",
+          "John Legend",
+          "Kelly Clarkson"
+        ]
+      },
+      {
+        "season": 20,
+        "year": 2021,
+        "coaches": [
+          "Blake Shelton",
+          "John Legend",
+          "Kelly Clarkson",
+          "Nick Jonas"
+        ]
+      },
+      {
+        "season": 21,
+        "year": 2021,
+        "coaches": [
+          "Ariana Grande",
+          "Blake Shelton",
+          "John Legend",
+          "Kelly Clarkson"
+        ]
+      },
+      {
+        "season": 22,
+        "year": 2022,
+        "coaches": [
+          "Blake Shelton",
+          "Camila Cabello",
+          "Gwen Stefani",
+          "John Legend"
+        ]
+      },
+      {
+        "season": 23,
+        "year": 2023,
+        "coaches": [
+          "Blake Shelton",
+          "Chance the Rapper",
+          "Kelly Clarkson",
+          "Niall Horan"
+        ]
+      },
+      {
+        "season": 24,
+        "year": 2023,
+        "coaches": [
+          "Gwen Stefani",
+          "John Legend",
+          "Niall Horan",
+          "Reba McEntire"
+        ]
+      },
+      {
+        "season": 25,
+        "year": 2024,
+        "coaches": [
+          "Chance the Rapper",
+          "Dan + Shay",
+          "John Legend",
+          "Reba McEntire"
+        ]
+      },
+      {
+        "season": 26,
+        "year": 2024,
+        "coaches": [
+          "Gwen Stefani",
+          "Michael Bublé",
+          "Reba McEntire",
+          "Snoop Dogg"
+        ]
+      }
     ]
   },
   "UK": {
@@ -37,19 +271,136 @@
     "showName": "The Voice UK",
     "flag": "🇬🇧",
     "seasons": [
-      { "season": 1,  "year": 2012, "coaches": ["will.i.am", "Jessie J", "Tom Jones", "Danny O'Donoghue"] },
-      { "season": 2,  "year": 2013, "coaches": ["will.i.am", "Jessie J", "Tom Jones", "Danny O'Donoghue"] },
-      { "season": 3,  "year": 2014, "coaches": ["will.i.am", "Kylie Minogue", "Tom Jones", "Ricky Wilson"] },
-      { "season": 4,  "year": 2015, "coaches": ["will.i.am", "Rita Ora", "Tom Jones", "Ricky Wilson"] },
-      { "season": 5,  "year": 2016, "coaches": ["will.i.am", "Paloma Faith", "Tom Jones", "Boy George"] },
-      { "season": 6,  "year": 2017, "coaches": ["will.i.am", "Jennifer Hudson", "Tom Jones", "Gavin Rossdale"] },
-      { "season": 7,  "year": 2018, "coaches": ["will.i.am", "Jennifer Hudson", "Tom Jones", "Olly Murs"] },
-      { "season": 8,  "year": 2019, "coaches": ["will.i.am", "Jennifer Hudson", "Tom Jones", "Olly Murs"] },
-      { "season": 9,  "year": 2020, "coaches": ["will.i.am", "Meghan Trainor", "Tom Jones", "Olly Murs"] },
-      { "season": 10, "year": 2021, "coaches": ["will.i.am", "Anne-Marie", "Tom Jones", "Olly Murs"] },
-      { "season": 11, "year": 2022, "coaches": ["will.i.am", "Anne-Marie", "Tom Jones", "Olly Murs"] },
-      { "season": 12, "year": 2023, "coaches": ["will.i.am", "Anne-Marie", "Tom Jones", "Olly Murs"] },
-      { "season": 13, "year": 2024, "coaches": ["will.i.am", "Tom Jones", "LeAnn Rimes", "Tom Fletcher"] }
+      {
+        "season": 1,
+        "year": 2012,
+        "coaches": [
+          "will.i.am",
+          "Jessie J",
+          "Tom Jones",
+          "Danny O'Donoghue"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2013,
+        "coaches": [
+          "will.i.am",
+          "Jessie J",
+          "Tom Jones",
+          "Danny O'Donoghue"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2014,
+        "coaches": [
+          "will.i.am",
+          "Kylie Minogue",
+          "Tom Jones",
+          "Ricky Wilson"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2015,
+        "coaches": [
+          "will.i.am",
+          "Rita Ora",
+          "Tom Jones",
+          "Ricky Wilson"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2016,
+        "coaches": [
+          "will.i.am",
+          "Paloma Faith",
+          "Tom Jones",
+          "Boy George"
+        ]
+      },
+      {
+        "season": 6,
+        "year": 2017,
+        "coaches": [
+          "will.i.am",
+          "Jennifer Hudson",
+          "Tom Jones",
+          "Gavin Rossdale"
+        ]
+      },
+      {
+        "season": 7,
+        "year": 2018,
+        "coaches": [
+          "will.i.am",
+          "Jennifer Hudson",
+          "Tom Jones",
+          "Olly Murs"
+        ]
+      },
+      {
+        "season": 8,
+        "year": 2019,
+        "coaches": [
+          "will.i.am",
+          "Jennifer Hudson",
+          "Tom Jones",
+          "Olly Murs"
+        ]
+      },
+      {
+        "season": 9,
+        "year": 2020,
+        "coaches": [
+          "will.i.am",
+          "Meghan Trainor",
+          "Tom Jones",
+          "Olly Murs"
+        ]
+      },
+      {
+        "season": 10,
+        "year": 2021,
+        "coaches": [
+          "will.i.am",
+          "Anne-Marie",
+          "Tom Jones",
+          "Olly Murs"
+        ]
+      },
+      {
+        "season": 11,
+        "year": 2022,
+        "coaches": [
+          "will.i.am",
+          "Anne-Marie",
+          "Tom Jones",
+          "Olly Murs"
+        ]
+      },
+      {
+        "season": 12,
+        "year": 2023,
+        "coaches": [
+          "will.i.am",
+          "Anne-Marie",
+          "Tom Jones",
+          "Olly Murs"
+        ]
+      },
+      {
+        "season": 13,
+        "year": 2024,
+        "coaches": [
+          "will.i.am",
+          "Tom Jones",
+          "LeAnn Rimes",
+          "Tom Fletcher"
+        ]
+      }
     ]
   },
   "AU": {
@@ -57,20 +408,146 @@
     "showName": "The Voice Australia",
     "flag": "🇦🇺",
     "seasons": [
-      { "season": 1,  "year": 2012, "coaches": ["Delta Goodrem", "Joel Madden", "Seal", "Keith Urban"] },
-      { "season": 2,  "year": 2013, "coaches": ["Delta Goodrem", "Joel Madden", "Seal", "Ricky Martin"] },
-      { "season": 3,  "year": 2014, "coaches": ["Joel Madden", "Ricky Martin", "Kylie Minogue", "will.i.am"] },
-      { "season": 4,  "year": 2015, "coaches": ["Delta Goodrem", "Ricky Martin", "Benji & Joel Madden", "Jessie J"] },
-      { "season": 5,  "year": 2016, "coaches": ["Delta Goodrem", "Benji & Joel Madden", "Jessie J", "Ronan Keating"] },
-      { "season": 6,  "year": 2017, "coaches": ["Delta Goodrem", "Seal", "Boy George", "Kelly Rowland"] },
-      { "season": 7,  "year": 2018, "coaches": ["Delta Goodrem", "Boy George", "Kelly Rowland", "Joe Jonas"] },
-      { "season": 8,  "year": 2019, "coaches": ["Delta Goodrem", "Boy George", "Kelly Rowland", "Guy Sebastian"] },
-      { "season": 9,  "year": 2020, "coaches": ["Delta Goodrem", "Boy George", "Kelly Rowland", "Guy Sebastian"] },
-      { "season": 10, "year": 2021, "coaches": ["Guy Sebastian", "Rita Ora", "Jessica Mauboy", "Keith Urban"] },
-      { "season": 11, "year": 2022, "coaches": ["Guy Sebastian", "Rita Ora", "Jessica Mauboy", "Keith Urban"] },
-      { "season": 12, "year": 2023, "coaches": ["Guy Sebastian", "Rita Ora", "Jessica Mauboy", "Jason Derulo"] },
-      { "season": 13, "year": 2024, "coaches": ["Guy Sebastian", "Rita Ora", "Jessica Mauboy", "LeAnn Rimes"] },
-      { "season": 14, "year": 2025, "coaches": ["Kate Miller-Heidke", "Ronan Keating", "Richard Marx", "Melanie C"] }
+      {
+        "season": 1,
+        "year": 2012,
+        "coaches": [
+          "Delta Goodrem",
+          "Joel Madden",
+          "Seal",
+          "Keith Urban"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2013,
+        "coaches": [
+          "Delta Goodrem",
+          "Joel Madden",
+          "Seal",
+          "Ricky Martin"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2014,
+        "coaches": [
+          "Joel Madden",
+          "Ricky Martin",
+          "Kylie Minogue",
+          "will.i.am"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2015,
+        "coaches": [
+          "Delta Goodrem",
+          "Ricky Martin",
+          "Benji & Joel Madden",
+          "Jessie J"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2016,
+        "coaches": [
+          "Delta Goodrem",
+          "Benji & Joel Madden",
+          "Jessie J",
+          "Ronan Keating"
+        ]
+      },
+      {
+        "season": 6,
+        "year": 2017,
+        "coaches": [
+          "Delta Goodrem",
+          "Seal",
+          "Boy George",
+          "Kelly Rowland"
+        ]
+      },
+      {
+        "season": 7,
+        "year": 2018,
+        "coaches": [
+          "Delta Goodrem",
+          "Boy George",
+          "Kelly Rowland",
+          "Joe Jonas"
+        ]
+      },
+      {
+        "season": 8,
+        "year": 2019,
+        "coaches": [
+          "Delta Goodrem",
+          "Boy George",
+          "Kelly Rowland",
+          "Guy Sebastian"
+        ]
+      },
+      {
+        "season": 9,
+        "year": 2020,
+        "coaches": [
+          "Delta Goodrem",
+          "Boy George",
+          "Kelly Rowland",
+          "Guy Sebastian"
+        ]
+      },
+      {
+        "season": 10,
+        "year": 2021,
+        "coaches": [
+          "Guy Sebastian",
+          "Rita Ora",
+          "Jessica Mauboy",
+          "Keith Urban"
+        ]
+      },
+      {
+        "season": 11,
+        "year": 2022,
+        "coaches": [
+          "Guy Sebastian",
+          "Rita Ora",
+          "Jessica Mauboy",
+          "Keith Urban"
+        ]
+      },
+      {
+        "season": 12,
+        "year": 2023,
+        "coaches": [
+          "Guy Sebastian",
+          "Rita Ora",
+          "Jessica Mauboy",
+          "Jason Derulo"
+        ]
+      },
+      {
+        "season": 13,
+        "year": 2024,
+        "coaches": [
+          "Guy Sebastian",
+          "Rita Ora",
+          "Jessica Mauboy",
+          "LeAnn Rimes"
+        ]
+      },
+      {
+        "season": 14,
+        "year": 2025,
+        "coaches": [
+          "Kate Miller-Heidke",
+          "Ronan Keating",
+          "Richard Marx",
+          "Melanie C"
+        ]
+      }
     ]
   },
   "NL": {
@@ -78,19 +555,136 @@
     "showName": "The Voice of Holland",
     "flag": "🇳🇱",
     "seasons": [
-      { "season": 1,  "year": 2010, "coaches": ["Roel van Velzen", "Jeroen van der Boom", "Angela Groothuizen", "Nick & Simon"] },
-      { "season": 2,  "year": 2011, "coaches": ["Roel van Velzen", "Jeroen van der Boom", "Angela Groothuizen", "Nick & Simon"] },
-      { "season": 3,  "year": 2012, "coaches": ["Roel van Velzen", "Jeroen van der Boom", "Angela Groothuizen", "Nick & Simon"] },
-      { "season": 4,  "year": 2013, "coaches": ["Roel van Velzen", "Jeroen van der Boom", "Angela Groothuizen", "Nick & Simon"] },
-      { "season": 5,  "year": 2014, "coaches": ["Marco Borsato", "Trijntje Oosterhuis", "Ilse DeLange", "Ali B"] },
-      { "season": 6,  "year": 2015, "coaches": ["Marco Borsato", "Ilse DeLange", "Ali B", "Sanne Hans"] },
-      { "season": 7,  "year": 2016, "coaches": ["Ali B", "Waylon", "Sanne Hans", "Anouk"] },
-      { "season": 8,  "year": 2017, "coaches": ["Ali B", "Waylon", "Sanne Hans", "Anouk"] },
-      { "season": 9,  "year": 2018, "coaches": ["Ali B", "Waylon", "Anouk", "Lil' Kleine"] },
-      { "season": 10, "year": 2019, "coaches": ["Ali B", "Waylon", "Anouk", "Lil' Kleine"] },
-      { "season": 11, "year": 2020, "coaches": ["Ali B", "Waylon", "Anouk", "Jan Smit"] },
-      { "season": 12, "year": 2022, "coaches": ["Ali B", "Waylon", "Glennis Grace", "Anouk"] },
-      { "season": 13, "year": 2026, "coaches": ["Ilse DeLange", "Willie Wartaal", "Suzan & Freek", "Dinand Woesthoff"] }
+      {
+        "season": 1,
+        "year": 2010,
+        "coaches": [
+          "Roel van Velzen",
+          "Jeroen van der Boom",
+          "Angela Groothuizen",
+          "Nick & Simon"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2011,
+        "coaches": [
+          "Roel van Velzen",
+          "Jeroen van der Boom",
+          "Angela Groothuizen",
+          "Nick & Simon"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2012,
+        "coaches": [
+          "Roel van Velzen",
+          "Jeroen van der Boom",
+          "Angela Groothuizen",
+          "Nick & Simon"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2013,
+        "coaches": [
+          "Roel van Velzen",
+          "Jeroen van der Boom",
+          "Angela Groothuizen",
+          "Nick & Simon"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2014,
+        "coaches": [
+          "Marco Borsato",
+          "Trijntje Oosterhuis",
+          "Ilse DeLange",
+          "Ali B"
+        ]
+      },
+      {
+        "season": 6,
+        "year": 2015,
+        "coaches": [
+          "Marco Borsato",
+          "Ilse DeLange",
+          "Ali B",
+          "Sanne Hans"
+        ]
+      },
+      {
+        "season": 7,
+        "year": 2016,
+        "coaches": [
+          "Ali B",
+          "Waylon",
+          "Sanne Hans",
+          "Anouk"
+        ]
+      },
+      {
+        "season": 8,
+        "year": 2017,
+        "coaches": [
+          "Ali B",
+          "Waylon",
+          "Sanne Hans",
+          "Anouk"
+        ]
+      },
+      {
+        "season": 9,
+        "year": 2018,
+        "coaches": [
+          "Ali B",
+          "Waylon",
+          "Anouk",
+          "Lil' Kleine"
+        ]
+      },
+      {
+        "season": 10,
+        "year": 2019,
+        "coaches": [
+          "Ali B",
+          "Waylon",
+          "Anouk",
+          "Lil' Kleine"
+        ]
+      },
+      {
+        "season": 11,
+        "year": 2020,
+        "coaches": [
+          "Ali B",
+          "Waylon",
+          "Anouk",
+          "Jan Smit"
+        ]
+      },
+      {
+        "season": 12,
+        "year": 2022,
+        "coaches": [
+          "Ali B",
+          "Waylon",
+          "Glennis Grace",
+          "Anouk"
+        ]
+      },
+      {
+        "season": 13,
+        "year": 2026,
+        "coaches": [
+          "Ilse DeLange",
+          "Willie Wartaal",
+          "Suzan & Freek",
+          "Dinand Woesthoff"
+        ]
+      }
     ]
   },
   "DE": {
@@ -98,18 +692,126 @@
     "showName": "The Voice of Germany",
     "flag": "🇩🇪",
     "seasons": [
-      { "season": 1,  "year": 2011, "coaches": ["Nena", "The BossHoss", "Rea Garvey", "Xavier Naidoo"] },
-      { "season": 2,  "year": 2012, "coaches": ["Nena", "The BossHoss", "Rea Garvey", "Xavier Naidoo"] },
-      { "season": 3,  "year": 2013, "coaches": ["Nena", "The BossHoss", "Max Herre", "Samu Haber"] },
-      { "season": 4,  "year": 2014, "coaches": ["Rea Garvey", "Samu Haber", "Stefanie Kloß", "Die Fantastischen Vier"] },
-      { "season": 5,  "year": 2015, "coaches": ["Rea Garvey", "Andreas Bourani", "Stefanie Kloß", "Die Fantastischen Vier"] },
-      { "season": 6,  "year": 2016, "coaches": ["Andreas Bourani", "Samu Haber", "Yvonne Catterfeld", "Die Fantastischen Vier"] },
-      { "season": 7,  "year": 2017, "coaches": ["Samu Haber", "Mark Forster", "Yvonne Catterfeld", "Die Fantastischen Vier"] },
-      { "season": 8,  "year": 2018, "coaches": ["Michael Patrick Kelly", "Mark Forster", "Yvonne Catterfeld", "Die Fantastischen Vier"] },
-      { "season": 9,  "year": 2019, "coaches": ["Sido", "Rea Garvey", "Alice Merton", "Mark Forster"] },
-      { "season": 10, "year": 2020, "coaches": ["Nico Santos", "Samu Haber", "Rea Garvey", "Stefanie Kloß"] },
-      { "season": 11, "year": 2021, "coaches": ["Nico Santos", "Sarah Connor", "Johannes Oerding", "Mark Forster"] },
-      { "season": 12, "year": 2022, "coaches": ["Rea Garvey", "Mark Forster", "Stefanie Kloß", "Peter Maffay"] }
+      {
+        "season": 1,
+        "year": 2011,
+        "coaches": [
+          "Nena",
+          "The BossHoss",
+          "Rea Garvey",
+          "Xavier Naidoo"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2012,
+        "coaches": [
+          "Nena",
+          "The BossHoss",
+          "Rea Garvey",
+          "Xavier Naidoo"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2013,
+        "coaches": [
+          "Nena",
+          "The BossHoss",
+          "Max Herre",
+          "Samu Haber"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2014,
+        "coaches": [
+          "Rea Garvey",
+          "Samu Haber",
+          "Stefanie Kloß",
+          "Die Fantastischen Vier"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2015,
+        "coaches": [
+          "Rea Garvey",
+          "Andreas Bourani",
+          "Stefanie Kloß",
+          "Die Fantastischen Vier"
+        ]
+      },
+      {
+        "season": 6,
+        "year": 2016,
+        "coaches": [
+          "Andreas Bourani",
+          "Samu Haber",
+          "Yvonne Catterfeld",
+          "Die Fantastischen Vier"
+        ]
+      },
+      {
+        "season": 7,
+        "year": 2017,
+        "coaches": [
+          "Samu Haber",
+          "Mark Forster",
+          "Yvonne Catterfeld",
+          "Die Fantastischen Vier"
+        ]
+      },
+      {
+        "season": 8,
+        "year": 2018,
+        "coaches": [
+          "Michael Patrick Kelly",
+          "Mark Forster",
+          "Yvonne Catterfeld",
+          "Die Fantastischen Vier"
+        ]
+      },
+      {
+        "season": 9,
+        "year": 2019,
+        "coaches": [
+          "Sido",
+          "Rea Garvey",
+          "Alice Merton",
+          "Mark Forster"
+        ]
+      },
+      {
+        "season": 10,
+        "year": 2020,
+        "coaches": [
+          "Nico Santos",
+          "Samu Haber",
+          "Rea Garvey",
+          "Stefanie Kloß"
+        ]
+      },
+      {
+        "season": 11,
+        "year": 2021,
+        "coaches": [
+          "Nico Santos",
+          "Sarah Connor",
+          "Johannes Oerding",
+          "Mark Forster"
+        ]
+      },
+      {
+        "season": 12,
+        "year": 2022,
+        "coaches": [
+          "Rea Garvey",
+          "Mark Forster",
+          "Stefanie Kloß",
+          "Peter Maffay"
+        ]
+      }
     ]
   },
   "FR": {
@@ -117,19 +819,136 @@
     "showName": "The Voice: la plus belle voix",
     "flag": "🇫🇷",
     "seasons": [
-      { "season": 1,  "year": 2012, "coaches": ["Florent Pagny", "Jenifer", "Louis Bertignac", "Garou"] },
-      { "season": 2,  "year": 2013, "coaches": ["Florent Pagny", "Jenifer", "Louis Bertignac", "Garou"] },
-      { "season": 3,  "year": 2014, "coaches": ["Florent Pagny", "Jenifer", "Garou", "Mika"] },
-      { "season": 4,  "year": 2015, "coaches": ["Florent Pagny", "Jenifer", "Mika", "Zazie"] },
-      { "season": 5,  "year": 2016, "coaches": ["Florent Pagny", "Mika", "Zazie", "Garou"] },
-      { "season": 6,  "year": 2017, "coaches": ["Florent Pagny", "Mika", "Zazie", "Matt Pokora"] },
-      { "season": 7,  "year": 2018, "coaches": ["Florent Pagny", "Mika", "Zazie", "Pascal Obispo"] },
-      { "season": 8,  "year": 2019, "coaches": ["Mika", "Soprano", "Julien Clerc", "Jenifer"] },
-      { "season": 9,  "year": 2020, "coaches": ["Amel Bent", "Lara Fabian", "Marc Lavoine", "Pascal Obispo"] },
-      { "season": 10, "year": 2021, "coaches": ["Amel Bent", "Marc Lavoine", "Vianney", "Florent Pagny"] },
-      { "season": 11, "year": 2022, "coaches": ["Amel Bent", "Marc Lavoine", "Vianney", "Florent Pagny"] },
-      { "season": 12, "year": 2023, "coaches": ["Amel Bent", "Vianney", "Zazie", "Bigflo & Oli"] },
-      { "season": 13, "year": 2024, "coaches": ["Zazie", "Vianney", "Bigflo & Oli", "Mika"] }
+      {
+        "season": 1,
+        "year": 2012,
+        "coaches": [
+          "Florent Pagny",
+          "Jenifer",
+          "Louis Bertignac",
+          "Garou"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2013,
+        "coaches": [
+          "Florent Pagny",
+          "Jenifer",
+          "Louis Bertignac",
+          "Garou"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2014,
+        "coaches": [
+          "Florent Pagny",
+          "Jenifer",
+          "Garou",
+          "Mika"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2015,
+        "coaches": [
+          "Florent Pagny",
+          "Jenifer",
+          "Mika",
+          "Zazie"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2016,
+        "coaches": [
+          "Florent Pagny",
+          "Mika",
+          "Zazie",
+          "Garou"
+        ]
+      },
+      {
+        "season": 6,
+        "year": 2017,
+        "coaches": [
+          "Florent Pagny",
+          "Mika",
+          "Zazie",
+          "Matt Pokora"
+        ]
+      },
+      {
+        "season": 7,
+        "year": 2018,
+        "coaches": [
+          "Florent Pagny",
+          "Mika",
+          "Zazie",
+          "Pascal Obispo"
+        ]
+      },
+      {
+        "season": 8,
+        "year": 2019,
+        "coaches": [
+          "Mika",
+          "Soprano",
+          "Julien Clerc",
+          "Jenifer"
+        ]
+      },
+      {
+        "season": 9,
+        "year": 2020,
+        "coaches": [
+          "Amel Bent",
+          "Lara Fabian",
+          "Marc Lavoine",
+          "Pascal Obispo"
+        ]
+      },
+      {
+        "season": 10,
+        "year": 2021,
+        "coaches": [
+          "Amel Bent",
+          "Marc Lavoine",
+          "Vianney",
+          "Florent Pagny"
+        ]
+      },
+      {
+        "season": 11,
+        "year": 2022,
+        "coaches": [
+          "Amel Bent",
+          "Marc Lavoine",
+          "Vianney",
+          "Florent Pagny"
+        ]
+      },
+      {
+        "season": 12,
+        "year": 2023,
+        "coaches": [
+          "Amel Bent",
+          "Vianney",
+          "Zazie",
+          "Bigflo & Oli"
+        ]
+      },
+      {
+        "season": 13,
+        "year": 2024,
+        "coaches": [
+          "Zazie",
+          "Vianney",
+          "Bigflo & Oli",
+          "Mika"
+        ]
+      }
     ]
   },
   "BR": {
@@ -137,18 +956,126 @@
     "showName": "The Voice Brasil",
     "flag": "🇧🇷",
     "seasons": [
-      { "season": 1,  "year": 2012, "coaches": ["Lulu Santos", "Carlinhos Brown", "Claudia Leitte", "Daniel"] },
-      { "season": 2,  "year": 2013, "coaches": ["Lulu Santos", "Carlinhos Brown", "Claudia Leitte", "Daniel"] },
-      { "season": 3,  "year": 2014, "coaches": ["Lulu Santos", "Carlinhos Brown", "Claudia Leitte", "Daniel"] },
-      { "season": 4,  "year": 2015, "coaches": ["Lulu Santos", "Carlinhos Brown", "Claudia Leitte", "Michel Teló"] },
-      { "season": 5,  "year": 2016, "coaches": ["Lulu Santos", "Carlinhos Brown", "Claudia Leitte", "Michel Teló"] },
-      { "season": 6,  "year": 2017, "coaches": ["Lulu Santos", "Carlinhos Brown", "Michel Teló", "Ivete Sangalo"] },
-      { "season": 7,  "year": 2018, "coaches": ["Lulu Santos", "Carlinhos Brown", "Michel Teló", "Ivete Sangalo"] },
-      { "season": 8,  "year": 2019, "coaches": ["Lulu Santos", "Michel Teló", "Ivete Sangalo", "IZA"] },
-      { "season": 9,  "year": 2020, "coaches": ["Lulu Santos", "Michel Teló", "Carlinhos Brown", "IZA"] },
-      { "season": 10, "year": 2021, "coaches": ["Lulu Santos", "Michel Teló", "Carlinhos Brown", "IZA"] },
-      { "season": 11, "year": 2022, "coaches": ["Lulu Santos", "Michel Teló", "Carlinhos Brown", "IZA"] },
-      { "season": 12, "year": 2023, "coaches": ["Lulu Santos", "Michel Teló", "Carlinhos Brown", "Gaby Amarantos"] }
+      {
+        "season": 1,
+        "year": 2012,
+        "coaches": [
+          "Lulu Santos",
+          "Carlinhos Brown",
+          "Claudia Leitte",
+          "Daniel"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2013,
+        "coaches": [
+          "Lulu Santos",
+          "Carlinhos Brown",
+          "Claudia Leitte",
+          "Daniel"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2014,
+        "coaches": [
+          "Lulu Santos",
+          "Carlinhos Brown",
+          "Claudia Leitte",
+          "Daniel"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2015,
+        "coaches": [
+          "Lulu Santos",
+          "Carlinhos Brown",
+          "Claudia Leitte",
+          "Michel Teló"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2016,
+        "coaches": [
+          "Lulu Santos",
+          "Carlinhos Brown",
+          "Claudia Leitte",
+          "Michel Teló"
+        ]
+      },
+      {
+        "season": 6,
+        "year": 2017,
+        "coaches": [
+          "Lulu Santos",
+          "Carlinhos Brown",
+          "Michel Teló",
+          "Ivete Sangalo"
+        ]
+      },
+      {
+        "season": 7,
+        "year": 2018,
+        "coaches": [
+          "Lulu Santos",
+          "Carlinhos Brown",
+          "Michel Teló",
+          "Ivete Sangalo"
+        ]
+      },
+      {
+        "season": 8,
+        "year": 2019,
+        "coaches": [
+          "Lulu Santos",
+          "Michel Teló",
+          "Ivete Sangalo",
+          "IZA"
+        ]
+      },
+      {
+        "season": 9,
+        "year": 2020,
+        "coaches": [
+          "Lulu Santos",
+          "Michel Teló",
+          "Carlinhos Brown",
+          "IZA"
+        ]
+      },
+      {
+        "season": 10,
+        "year": 2021,
+        "coaches": [
+          "Lulu Santos",
+          "Michel Teló",
+          "Carlinhos Brown",
+          "IZA"
+        ]
+      },
+      {
+        "season": 11,
+        "year": 2022,
+        "coaches": [
+          "Lulu Santos",
+          "Michel Teló",
+          "Carlinhos Brown",
+          "IZA"
+        ]
+      },
+      {
+        "season": 12,
+        "year": 2023,
+        "coaches": [
+          "Lulu Santos",
+          "Michel Teló",
+          "Carlinhos Brown",
+          "Gaby Amarantos"
+        ]
+      }
     ]
   },
   "ES": {
@@ -156,17 +1083,116 @@
     "showName": "La Voz",
     "flag": "🇪🇸",
     "seasons": [
-      { "season": 1,  "year": 2012, "coaches": ["David Bisbal", "Rosario Flores", "Malú", "Melendi"] },
-      { "season": 2,  "year": 2013, "coaches": ["David Bisbal", "Rosario Flores", "Malú", "Antonio Orozco"] },
-      { "season": 3,  "year": 2015, "coaches": ["Alejandro Sanz", "Laura Pausini", "Malú", "Antonio Orozco"] },
-      { "season": 4,  "year": 2016, "coaches": ["Alejandro Sanz", "Malú", "Manuel Carrasco", "Melendi"] },
-      { "season": 5,  "year": 2017, "coaches": ["Pablo López", "Malú", "Antonio Orozco", "Juanes"] },
-      { "season": 6,  "year": 2019, "coaches": ["Luis Fonsi", "Pablo López", "Antonio Orozco", "Paulina Rubio"] },
-      { "season": 7,  "year": 2020, "coaches": ["Alejandro Sanz", "Pablo López", "Antonio Orozco", "Laura Pausini"] },
-      { "season": 8,  "year": 2021, "coaches": ["Alejandro Sanz", "Pablo López", "Antonio Orozco", "Malú"] },
-      { "season": 9,  "year": 2022, "coaches": ["Luis Fonsi", "Pablo López", "Antonio Orozco", "Laura Pausini"] },
-      { "season": 10, "year": 2023, "coaches": ["Luis Fonsi", "Pablo López", "Antonio Orozco", "Malú"] },
-      { "season": 11, "year": 2024, "coaches": ["Luis Fonsi", "Malú", "Pablo López", "Antonio Orozco"] }
+      {
+        "season": 1,
+        "year": 2012,
+        "coaches": [
+          "David Bisbal",
+          "Rosario Flores",
+          "Malú",
+          "Melendi"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2013,
+        "coaches": [
+          "David Bisbal",
+          "Rosario Flores",
+          "Malú",
+          "Antonio Orozco"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2015,
+        "coaches": [
+          "Alejandro Sanz",
+          "Laura Pausini",
+          "Malú",
+          "Antonio Orozco"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2016,
+        "coaches": [
+          "Alejandro Sanz",
+          "Malú",
+          "Manuel Carrasco",
+          "Melendi"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2017,
+        "coaches": [
+          "Pablo López",
+          "Malú",
+          "Antonio Orozco",
+          "Juanes"
+        ]
+      },
+      {
+        "season": 6,
+        "year": 2019,
+        "coaches": [
+          "Luis Fonsi",
+          "Pablo López",
+          "Antonio Orozco",
+          "Paulina Rubio"
+        ]
+      },
+      {
+        "season": 7,
+        "year": 2020,
+        "coaches": [
+          "Alejandro Sanz",
+          "Pablo López",
+          "Antonio Orozco",
+          "Laura Pausini"
+        ]
+      },
+      {
+        "season": 8,
+        "year": 2021,
+        "coaches": [
+          "Alejandro Sanz",
+          "Pablo López",
+          "Antonio Orozco",
+          "Malú"
+        ]
+      },
+      {
+        "season": 9,
+        "year": 2022,
+        "coaches": [
+          "Luis Fonsi",
+          "Pablo López",
+          "Antonio Orozco",
+          "Laura Pausini"
+        ]
+      },
+      {
+        "season": 10,
+        "year": 2023,
+        "coaches": [
+          "Luis Fonsi",
+          "Pablo López",
+          "Antonio Orozco",
+          "Malú"
+        ]
+      },
+      {
+        "season": 11,
+        "year": 2024,
+        "coaches": [
+          "Luis Fonsi",
+          "Malú",
+          "Pablo López",
+          "Antonio Orozco"
+        ]
+      }
     ]
   },
   "IT": {
@@ -174,12 +1200,66 @@
     "showName": "The Voice of Italy",
     "flag": "🇮🇹",
     "seasons": [
-      { "season": 1, "year": 2013, "coaches": ["Riccardo Cocciante", "Raffaella Carrà", "Noemi", "Piero Pelù"] },
-      { "season": 2, "year": 2014, "coaches": ["J-Ax", "Raffaella Carrà", "Noemi", "Piero Pelù"] },
-      { "season": 3, "year": 2015, "coaches": ["J-Ax", "Noemi", "Piero Pelù", "Roby Facchinetti"] },
-      { "season": 4, "year": 2016, "coaches": ["Emis Killa", "Max Pezzali", "Dolcenera", "Raffaella Carrà"] },
-      { "season": 5, "year": 2018, "coaches": ["Al Bano", "Francesco Renga", "Cristina Scabbia", "J-Ax"] },
-      { "season": 6, "year": 2019, "coaches": ["Gigi D'Alessio", "Gué", "Elettra Lamborghini", "Morgan"] }
+      {
+        "season": 1,
+        "year": 2013,
+        "coaches": [
+          "Riccardo Cocciante",
+          "Raffaella Carrà",
+          "Noemi",
+          "Piero Pelù"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2014,
+        "coaches": [
+          "J-Ax",
+          "Raffaella Carrà",
+          "Noemi",
+          "Piero Pelù"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2015,
+        "coaches": [
+          "J-Ax",
+          "Noemi",
+          "Piero Pelù",
+          "Roby Facchinetti"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2016,
+        "coaches": [
+          "Emis Killa",
+          "Max Pezzali",
+          "Dolcenera",
+          "Raffaella Carrà"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2018,
+        "coaches": [
+          "Al Bano",
+          "Francesco Renga",
+          "Cristina Scabbia",
+          "J-Ax"
+        ]
+      },
+      {
+        "season": 6,
+        "year": 2019,
+        "coaches": [
+          "Gigi D'Alessio",
+          "Gué",
+          "Elettra Lamborghini",
+          "Morgan"
+        ]
+      }
     ]
   },
   "CO": {
@@ -187,8 +1267,26 @@
     "showName": "La Voz Colombia",
     "flag": "🇨🇴",
     "seasons": [
-      { "season": 1, "year": 2012, "coaches": ["Fanny Lu", "Ricardo Montaner", "Andrés Cepeda", "Carlos Vives"] },
-      { "season": 2, "year": 2013, "coaches": ["Fanny Lu", "Ricardo Montaner", "Andrés Cepeda", "Gilberto Santa Rosa"] }
+      {
+        "season": 1,
+        "year": 2012,
+        "coaches": [
+          "Fanny Lu",
+          "Ricardo Montaner",
+          "Andrés Cepeda",
+          "Carlos Vives"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2013,
+        "coaches": [
+          "Fanny Lu",
+          "Ricardo Montaner",
+          "Andrés Cepeda",
+          "Gilberto Santa Rosa"
+        ]
+      }
     ]
   },
   "PH": {
@@ -196,8 +1294,26 @@
     "showName": "The Voice of the Philippines",
     "flag": "🇵🇭",
     "seasons": [
-      { "season": 1, "year": 2013, "coaches": ["Sarah Geronimo", "Bamboo Mañalac", "Lea Salonga", "apl.de.ap"] },
-      { "season": 2, "year": 2014, "coaches": ["Sarah Geronimo", "Bamboo Mañalac", "Lea Salonga", "apl.de.ap"] }
+      {
+        "season": 1,
+        "year": 2013,
+        "coaches": [
+          "Sarah Geronimo",
+          "Bamboo Mañalac",
+          "Lea Salonga",
+          "apl.de.ap"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2014,
+        "coaches": [
+          "Sarah Geronimo",
+          "Bamboo Mañalac",
+          "Lea Salonga",
+          "apl.de.ap"
+        ]
+      }
     ]
   },
   "ZA": {
@@ -205,9 +1321,36 @@
     "showName": "The Voice South Africa",
     "flag": "🇿🇦",
     "seasons": [
-      { "season": 1, "year": 2016, "coaches": ["Kahn Morbee", "Lira", "Bobby van Jaarsveld", "Karen Zoid"] },
-      { "season": 2, "year": 2017, "coaches": ["Kahn Morbee", "Lira", "Bobby van Jaarsveld", "Karen Zoid"] },
-      { "season": 3, "year": 2019, "coaches": ["Lira", "Riana Nel", "Riky Rick", "Francois van Coke"] }
+      {
+        "season": 1,
+        "year": 2016,
+        "coaches": [
+          "Kahn Morbee",
+          "Lira",
+          "Bobby van Jaarsveld",
+          "Karen Zoid"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2017,
+        "coaches": [
+          "Kahn Morbee",
+          "Lira",
+          "Bobby van Jaarsveld",
+          "Karen Zoid"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2019,
+        "coaches": [
+          "Lira",
+          "Riana Nel",
+          "Riky Rick",
+          "Francois van Coke"
+        ]
+      }
     ]
   },
   "NG": {
@@ -215,10 +1358,46 @@
     "showName": "The Voice Nigeria",
     "flag": "🇳🇬",
     "seasons": [
-      { "season": 1, "year": 2016, "coaches": ["Waje", "Timi Dakolo", "Patoranking", "2Baba"] },
-      { "season": 2, "year": 2017, "coaches": ["Waje", "Timi Dakolo", "Patoranking", "Yemi Alade"] },
-      { "season": 3, "year": 2021, "coaches": ["Waje", "Yemi Alade", "Darey", "Falz"] },
-      { "season": 4, "year": 2023, "coaches": ["Waje", "Niyola", "Praiz", "Naeto C"] }
+      {
+        "season": 1,
+        "year": 2016,
+        "coaches": [
+          "Waje",
+          "Timi Dakolo",
+          "Patoranking",
+          "2Baba"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2017,
+        "coaches": [
+          "Waje",
+          "Timi Dakolo",
+          "Patoranking",
+          "Yemi Alade"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2021,
+        "coaches": [
+          "Waje",
+          "Yemi Alade",
+          "Darey",
+          "Falz"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2023,
+        "coaches": [
+          "Waje",
+          "Niyola",
+          "Praiz",
+          "Naeto C"
+        ]
+      }
     ]
   },
   "PT": {
@@ -226,19 +1405,136 @@
     "showName": "The Voice Portugal",
     "flag": "🇵🇹",
     "seasons": [
-      { "season": 1,  "year": 2011, "coaches": ["Rui Reininho", "Paulo Gonzo", "Mia Rose", "Os Anjos"] },
-      { "season": 2,  "year": 2012, "coaches": ["Mickael Carreira", "Aurea", "Anselmo Ralph", "Marisa Liz"] },
-      { "season": 3,  "year": 2014, "coaches": ["Mickael Carreira", "Aurea", "Anselmo Ralph", "Diogo Piçarra"] },
-      { "season": 4,  "year": 2015, "coaches": ["Mickael Carreira", "Aurea", "Anselmo Ralph", "António Zambujo"] },
-      { "season": 5,  "year": 2016, "coaches": ["Aurea", "Anselmo Ralph", "Marisa Liz", "Diogo Piçarra"] },
-      { "season": 6,  "year": 2017, "coaches": ["Aurea", "Anselmo Ralph", "Marisa Liz", "Mickael Carreira"] },
-      { "season": 7,  "year": 2018, "coaches": ["Aurea", "Anselmo Ralph", "Marisa Liz", "Diogo Piçarra"] },
-      { "season": 8,  "year": 2019, "coaches": ["Aurea", "Marisa Liz", "Diogo Piçarra", "António Zambujo"] },
-      { "season": 9,  "year": 2020, "coaches": ["Aurea", "Diogo Piçarra", "António Zambujo", "Carolina Deslandes"] },
-      { "season": 10, "year": 2021, "coaches": ["Diogo Piçarra", "Carolina Deslandes", "Dino D'Santiago", "Aurea"] },
-      { "season": 11, "year": 2022, "coaches": ["Fernando Daniel", "Carolina Deslandes", "Dino D'Santiago", "Nininho Vaz Maia"] },
-      { "season": 12, "year": 2023, "coaches": ["Fernando Daniel", "Sónia Tavares", "Nininho Vaz Maia", "Calema"] },
-      { "season": 13, "year": 2024, "coaches": ["Sara Correia", "Fernando Daniel", "Sónia Tavares", "Calema"] }
+      {
+        "season": 1,
+        "year": 2011,
+        "coaches": [
+          "Rui Reininho",
+          "Paulo Gonzo",
+          "Mia Rose",
+          "Os Anjos"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2012,
+        "coaches": [
+          "Mickael Carreira",
+          "Aurea",
+          "Anselmo Ralph",
+          "Marisa Liz"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2014,
+        "coaches": [
+          "Mickael Carreira",
+          "Aurea",
+          "Anselmo Ralph",
+          "Diogo Piçarra"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2015,
+        "coaches": [
+          "Mickael Carreira",
+          "Aurea",
+          "Anselmo Ralph",
+          "António Zambujo"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2016,
+        "coaches": [
+          "Aurea",
+          "Anselmo Ralph",
+          "Marisa Liz",
+          "Diogo Piçarra"
+        ]
+      },
+      {
+        "season": 6,
+        "year": 2017,
+        "coaches": [
+          "Aurea",
+          "Anselmo Ralph",
+          "Marisa Liz",
+          "Mickael Carreira"
+        ]
+      },
+      {
+        "season": 7,
+        "year": 2018,
+        "coaches": [
+          "Aurea",
+          "Anselmo Ralph",
+          "Marisa Liz",
+          "Diogo Piçarra"
+        ]
+      },
+      {
+        "season": 8,
+        "year": 2019,
+        "coaches": [
+          "Aurea",
+          "Marisa Liz",
+          "Diogo Piçarra",
+          "António Zambujo"
+        ]
+      },
+      {
+        "season": 9,
+        "year": 2020,
+        "coaches": [
+          "Aurea",
+          "Diogo Piçarra",
+          "António Zambujo",
+          "Carolina Deslandes"
+        ]
+      },
+      {
+        "season": 10,
+        "year": 2021,
+        "coaches": [
+          "Diogo Piçarra",
+          "Carolina Deslandes",
+          "Dino D'Santiago",
+          "Aurea"
+        ]
+      },
+      {
+        "season": 11,
+        "year": 2022,
+        "coaches": [
+          "Fernando Daniel",
+          "Carolina Deslandes",
+          "Dino D'Santiago",
+          "Nininho Vaz Maia"
+        ]
+      },
+      {
+        "season": 12,
+        "year": 2023,
+        "coaches": [
+          "Fernando Daniel",
+          "Sónia Tavares",
+          "Nininho Vaz Maia",
+          "Calema"
+        ]
+      },
+      {
+        "season": 13,
+        "year": 2024,
+        "coaches": [
+          "Sara Correia",
+          "Fernando Daniel",
+          "Sónia Tavares",
+          "Calema"
+        ]
+      }
     ]
   },
   "RU": {
@@ -246,18 +1542,126 @@
     "showName": "Golos",
     "flag": "🇷🇺",
     "seasons": [
-      { "season": 1,  "year": 2012, "coaches": ["Dima Bilan", "Pelageya", "Alexander Gradsky", "Leonid Agutin"] },
-      { "season": 2,  "year": 2013, "coaches": ["Dima Bilan", "Pelageya", "Alexander Gradsky", "Leonid Agutin"] },
-      { "season": 3,  "year": 2014, "coaches": ["Dima Bilan", "Pelageya", "Alexander Gradsky", "Leonid Agutin"] },
-      { "season": 4,  "year": 2015, "coaches": ["Alexander Gradsky", "Leonid Agutin", "Polina Gagarina", "Grigory Leps"] },
-      { "season": 5,  "year": 2016, "coaches": ["Dima Bilan", "Leonid Agutin", "Polina Gagarina", "Grigory Leps"] },
-      { "season": 6,  "year": 2017, "coaches": ["Dima Bilan", "Leonid Agutin", "Pelageya", "Alexander Gradsky"] },
-      { "season": 7,  "year": 2018, "coaches": ["Ani Lorak", "Sergey Shnurov", "Konstantin Meladze", "Basta"] },
-      { "season": 8,  "year": 2019, "coaches": ["Polina Gagarina", "Sergey Shnurov", "Konstantin Meladze", "Valeriy Syutkin"] },
-      { "season": 9,  "year": 2020, "coaches": ["Polina Gagarina", "Sergey Shnurov", "Valeriy Syutkin", "Basta"] },
-      { "season": 10, "year": 2021, "coaches": ["Dima Bilan", "Leonid Agutin", "Pelageya", "Alexander Gradsky"] },
-      { "season": 11, "year": 2022, "coaches": ["Polina Gagarina", "Basta", "Vladimir Presnyakov", "Anton Belyaev"] },
-      { "season": 12, "year": 2023, "coaches": ["Polina Gagarina", "Vladimir Presnyakov", "Anton Belyaev", "Zivert"] }
+      {
+        "season": 1,
+        "year": 2012,
+        "coaches": [
+          "Dima Bilan",
+          "Pelageya",
+          "Alexander Gradsky",
+          "Leonid Agutin"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2013,
+        "coaches": [
+          "Dima Bilan",
+          "Pelageya",
+          "Alexander Gradsky",
+          "Leonid Agutin"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2014,
+        "coaches": [
+          "Dima Bilan",
+          "Pelageya",
+          "Alexander Gradsky",
+          "Leonid Agutin"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2015,
+        "coaches": [
+          "Alexander Gradsky",
+          "Leonid Agutin",
+          "Polina Gagarina",
+          "Grigory Leps"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2016,
+        "coaches": [
+          "Dima Bilan",
+          "Leonid Agutin",
+          "Polina Gagarina",
+          "Grigory Leps"
+        ]
+      },
+      {
+        "season": 6,
+        "year": 2017,
+        "coaches": [
+          "Dima Bilan",
+          "Leonid Agutin",
+          "Pelageya",
+          "Alexander Gradsky"
+        ]
+      },
+      {
+        "season": 7,
+        "year": 2018,
+        "coaches": [
+          "Ani Lorak",
+          "Sergey Shnurov",
+          "Konstantin Meladze",
+          "Basta"
+        ]
+      },
+      {
+        "season": 8,
+        "year": 2019,
+        "coaches": [
+          "Polina Gagarina",
+          "Sergey Shnurov",
+          "Konstantin Meladze",
+          "Valeriy Syutkin"
+        ]
+      },
+      {
+        "season": 9,
+        "year": 2020,
+        "coaches": [
+          "Polina Gagarina",
+          "Sergey Shnurov",
+          "Valeriy Syutkin",
+          "Basta"
+        ]
+      },
+      {
+        "season": 10,
+        "year": 2021,
+        "coaches": [
+          "Dima Bilan",
+          "Leonid Agutin",
+          "Pelageya",
+          "Alexander Gradsky"
+        ]
+      },
+      {
+        "season": 11,
+        "year": 2022,
+        "coaches": [
+          "Polina Gagarina",
+          "Basta",
+          "Vladimir Presnyakov",
+          "Anton Belyaev"
+        ]
+      },
+      {
+        "season": 12,
+        "year": 2023,
+        "coaches": [
+          "Polina Gagarina",
+          "Vladimir Presnyakov",
+          "Anton Belyaev",
+          "Zivert"
+        ]
+      }
     ]
   },
   "UA": {
@@ -265,12 +1669,66 @@
     "showName": "Holos Krainy",
     "flag": "🇺🇦",
     "seasons": [
-      { "season": 1,  "year": 2011, "coaches": ["Diana Arbenina", "Oleksandr Ponomaryov", "Ruslana", "Stas Pyekha"] },
-      { "season": 4,  "year": 2014, "coaches": ["Ani Lorak", "Tamara Gverdtsiteli", "Sergey Lazarev", "Svyatoslav Vakarchuk"] },
-      { "season": 7,  "year": 2017, "coaches": ["Tina Karol", "Potap", "Jamala", "Serhiy Babkin"] },
-      { "season": 11, "year": 2021, "coaches": ["Nadya Dorofeeva", "Oleg Vynnyk", "Tina Karol", "Dmytro Monatik"] },
-      { "season": 12, "year": 2022, "coaches": ["Nadya Dorofeeva", "Potap", "Svyatoslav Vakarchuk", "Olya Polyakova"] },
-      { "season": 13, "year": 2023, "coaches": ["Nadya Dorofeeva", "Julia Sanina", "Artem Pyvovarov", "Ivan Klymenko"] }
+      {
+        "season": 1,
+        "year": 2011,
+        "coaches": [
+          "Diana Arbenina",
+          "Oleksandr Ponomaryov",
+          "Ruslana",
+          "Stas Pyekha"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2014,
+        "coaches": [
+          "Ani Lorak",
+          "Tamara Gverdtsiteli",
+          "Sergey Lazarev",
+          "Svyatoslav Vakarchuk"
+        ]
+      },
+      {
+        "season": 7,
+        "year": 2017,
+        "coaches": [
+          "Tina Karol",
+          "Potap",
+          "Jamala",
+          "Serhiy Babkin"
+        ]
+      },
+      {
+        "season": 11,
+        "year": 2021,
+        "coaches": [
+          "Nadya Dorofeeva",
+          "Oleg Vynnyk",
+          "Tina Karol",
+          "Dmytro Monatik"
+        ]
+      },
+      {
+        "season": 12,
+        "year": 2022,
+        "coaches": [
+          "Nadya Dorofeeva",
+          "Potap",
+          "Svyatoslav Vakarchuk",
+          "Olya Polyakova"
+        ]
+      },
+      {
+        "season": 13,
+        "year": 2023,
+        "coaches": [
+          "Nadya Dorofeeva",
+          "Julia Sanina",
+          "Artem Pyvovarov",
+          "Ivan Klymenko"
+        ]
+      }
     ]
   },
   "MX": {
@@ -278,17 +1736,116 @@
     "showName": "La Voz México",
     "flag": "🇲🇽",
     "seasons": [
-      { "season": 1,  "year": 2011, "coaches": ["Alejandro Sanz", "Lucero", "Espinoza Paz", "Aleks Syntek"] },
-      { "season": 2,  "year": 2012, "coaches": ["Miguel Bosé", "Paulina Rubio", "Jenni Rivera", "Beto Cuevas"] },
-      { "season": 3,  "year": 2013, "coaches": ["Wisin & Yandel", "Alejandra Guzmán", "Marco Antonio Solís", "David Bisbal"] },
-      { "season": 4,  "year": 2014, "coaches": ["Ricky Martin", "Laura Pausini", "Julión Álvarez", "Yuri"] },
-      { "season": 5,  "year": 2016, "coaches": ["Gloria Trevi", "Alejandro Sanz", "J Balvin", "Los Tigres del Norte"] },
-      { "season": 6,  "year": 2017, "coaches": ["Carlos Vives", "Yuri", "Laura Pausini", "Maluma"] },
-      { "season": 7,  "year": 2018, "coaches": ["Natalia Jiménez", "Carlos Rivera", "Anitta", "Maluma"] },
-      { "season": 8,  "year": 2019, "coaches": ["Ricardo Montaner", "Yahir", "Belinda", "Lupillo Rivera"] },
-      { "season": 9,  "year": 2020, "coaches": ["Ricardo Montaner", "Belinda", "María José", "Christian Nodal"] },
-      { "season": 10, "year": 2021, "coaches": ["María José", "Miguel Bosé", "Edith Márquez", "Jesús Navarro"] },
-      { "season": 11, "year": 2022, "coaches": ["David Bisbal", "Yuridia", "Ha*Ash", "Joss Favela"] }
+      {
+        "season": 1,
+        "year": 2011,
+        "coaches": [
+          "Alejandro Sanz",
+          "Lucero",
+          "Espinoza Paz",
+          "Aleks Syntek"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2012,
+        "coaches": [
+          "Miguel Bosé",
+          "Paulina Rubio",
+          "Jenni Rivera",
+          "Beto Cuevas"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2013,
+        "coaches": [
+          "Wisin & Yandel",
+          "Alejandra Guzmán",
+          "Marco Antonio Solís",
+          "David Bisbal"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2014,
+        "coaches": [
+          "Ricky Martin",
+          "Laura Pausini",
+          "Julión Álvarez",
+          "Yuri"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2016,
+        "coaches": [
+          "Gloria Trevi",
+          "Alejandro Sanz",
+          "J Balvin",
+          "Los Tigres del Norte"
+        ]
+      },
+      {
+        "season": 6,
+        "year": 2017,
+        "coaches": [
+          "Carlos Vives",
+          "Yuri",
+          "Laura Pausini",
+          "Maluma"
+        ]
+      },
+      {
+        "season": 7,
+        "year": 2018,
+        "coaches": [
+          "Natalia Jiménez",
+          "Carlos Rivera",
+          "Anitta",
+          "Maluma"
+        ]
+      },
+      {
+        "season": 8,
+        "year": 2019,
+        "coaches": [
+          "Ricardo Montaner",
+          "Yahir",
+          "Belinda",
+          "Lupillo Rivera"
+        ]
+      },
+      {
+        "season": 9,
+        "year": 2020,
+        "coaches": [
+          "Ricardo Montaner",
+          "Belinda",
+          "María José",
+          "Christian Nodal"
+        ]
+      },
+      {
+        "season": 10,
+        "year": 2021,
+        "coaches": [
+          "María José",
+          "Miguel Bosé",
+          "Edith Márquez",
+          "Jesús Navarro"
+        ]
+      },
+      {
+        "season": 11,
+        "year": 2022,
+        "coaches": [
+          "David Bisbal",
+          "Yuridia",
+          "Ha*Ash",
+          "Joss Favela"
+        ]
+      }
     ]
   },
   "GR": {
@@ -296,16 +1853,106 @@
     "showName": "The Voice of Greece",
     "flag": "🇬🇷",
     "seasons": [
-      { "season": 1,  "year": 2014, "coaches": ["Antonis Remos", "Despina Vandi", "Melina Aslanidou", "Stavento"] },
-      { "season": 2,  "year": 2015, "coaches": ["Antonis Remos", "Despina Vandi", "Melina Aslanidou", "Stavento"] },
-      { "season": 3,  "year": 2016, "coaches": ["Sakis Rouvas", "Elena Paparizou", "Panos Mouzourakis", "Kostis Maraveyas"] },
-      { "season": 4,  "year": 2017, "coaches": ["Sakis Rouvas", "Elena Paparizou", "Panos Mouzourakis", "Kostis Maraveyas"] },
-      { "season": 5,  "year": 2018, "coaches": ["Sakis Rouvas", "Elena Paparizou", "Panos Mouzourakis", "Kostis Maraveyas"] },
-      { "season": 6,  "year": 2019, "coaches": ["Sakis Rouvas", "Elena Paparizou", "Panos Mouzourakis", "Eleonora Zouganeli"] },
-      { "season": 7,  "year": 2020, "coaches": ["Sakis Rouvas", "Elena Paparizou", "Panos Mouzourakis", "Eleonora Zouganeli"] },
-      { "season": 8,  "year": 2021, "coaches": ["Sakis Rouvas", "Elena Paparizou", "Panos Mouzourakis", "Konstantinos Argyros"] },
-      { "season": 9,  "year": 2022, "coaches": ["Sakis Rouvas", "Elena Paparizou", "Panos Mouzourakis", "Konstantinos Argyros"] },
-      { "season": 10, "year": 2024, "coaches": ["Elena Paparizou", "Panos Mouzourakis", "Christos Mastoras", "Giorgos Mazonakis"] }
+      {
+        "season": 1,
+        "year": 2014,
+        "coaches": [
+          "Antonis Remos",
+          "Despina Vandi",
+          "Melina Aslanidou",
+          "Stavento"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2015,
+        "coaches": [
+          "Antonis Remos",
+          "Despina Vandi",
+          "Melina Aslanidou",
+          "Stavento"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2016,
+        "coaches": [
+          "Sakis Rouvas",
+          "Elena Paparizou",
+          "Panos Mouzourakis",
+          "Kostis Maraveyas"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2017,
+        "coaches": [
+          "Sakis Rouvas",
+          "Elena Paparizou",
+          "Panos Mouzourakis",
+          "Kostis Maraveyas"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2018,
+        "coaches": [
+          "Sakis Rouvas",
+          "Elena Paparizou",
+          "Panos Mouzourakis",
+          "Kostis Maraveyas"
+        ]
+      },
+      {
+        "season": 6,
+        "year": 2019,
+        "coaches": [
+          "Sakis Rouvas",
+          "Elena Paparizou",
+          "Panos Mouzourakis",
+          "Eleonora Zouganeli"
+        ]
+      },
+      {
+        "season": 7,
+        "year": 2020,
+        "coaches": [
+          "Sakis Rouvas",
+          "Elena Paparizou",
+          "Panos Mouzourakis",
+          "Eleonora Zouganeli"
+        ]
+      },
+      {
+        "season": 8,
+        "year": 2021,
+        "coaches": [
+          "Sakis Rouvas",
+          "Elena Paparizou",
+          "Panos Mouzourakis",
+          "Konstantinos Argyros"
+        ]
+      },
+      {
+        "season": 9,
+        "year": 2022,
+        "coaches": [
+          "Sakis Rouvas",
+          "Elena Paparizou",
+          "Panos Mouzourakis",
+          "Konstantinos Argyros"
+        ]
+      },
+      {
+        "season": 10,
+        "year": 2024,
+        "coaches": [
+          "Elena Paparizou",
+          "Panos Mouzourakis",
+          "Christos Mastoras",
+          "Giorgos Mazonakis"
+        ]
+      }
     ]
   },
   "TR": {
@@ -313,17 +1960,116 @@
     "showName": "O Ses Türkiye",
     "flag": "🇹🇷",
     "seasons": [
-      { "season": 1,  "year": 2011, "coaches": ["Hadise", "Murat Boz", "Mustafa Sandal", "Hülya Avşar"] },
-      { "season": 2,  "year": 2012, "coaches": ["Hadise", "Murat Boz", "Mustafa Sandal", "Hülya Avşar"] },
-      { "season": 3,  "year": 2013, "coaches": ["Hadise", "Murat Boz", "Ebru Gündeş", "Gökhan Özoğuz"] },
-      { "season": 4,  "year": 2014, "coaches": ["Hadise", "Ebru Gündeş", "Gökhan Özoğuz", "Mazhar & Özkan"] },
-      { "season": 5,  "year": 2015, "coaches": ["Hadise", "Ebru Gündeş", "Gökhan Özoğuz", "Murat Boz"] },
-      { "season": 6,  "year": 2016, "coaches": ["Hadise", "Murat Boz", "Sibel Can", "Gökhan Özoğuz"] },
-      { "season": 7,  "year": 2017, "coaches": ["Hadise", "Murat Boz", "Yıldız Tilbe", "Gökhan Özoğuz"] },
-      { "season": 8,  "year": 2018, "coaches": ["Hadise", "Murat Boz", "Seda Sayan", "Beyazıt Öztürk"] },
-      { "season": 9,  "year": 2019, "coaches": ["Hadise", "Murat Boz", "Seda Sayan", "Beyazıt Öztürk"] },
-      { "season": 10, "year": 2021, "coaches": ["Murat Boz", "Ebru Gündeş", "Oğuzhan Koç", "Beyazıt Öztürk"] },
-      { "season": 11, "year": 2025, "coaches": ["Hadise", "Gökhan Özoğuz", "Beyazıt Öztürk", "Melike Şahin"] }
+      {
+        "season": 1,
+        "year": 2011,
+        "coaches": [
+          "Hadise",
+          "Murat Boz",
+          "Mustafa Sandal",
+          "Hülya Avşar"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2012,
+        "coaches": [
+          "Hadise",
+          "Murat Boz",
+          "Mustafa Sandal",
+          "Hülya Avşar"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2013,
+        "coaches": [
+          "Hadise",
+          "Murat Boz",
+          "Ebru Gündeş",
+          "Gökhan Özoğuz"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2014,
+        "coaches": [
+          "Hadise",
+          "Ebru Gündeş",
+          "Gökhan Özoğuz",
+          "Mazhar & Özkan"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2015,
+        "coaches": [
+          "Hadise",
+          "Ebru Gündeş",
+          "Gökhan Özoğuz",
+          "Murat Boz"
+        ]
+      },
+      {
+        "season": 6,
+        "year": 2016,
+        "coaches": [
+          "Hadise",
+          "Murat Boz",
+          "Sibel Can",
+          "Gökhan Özoğuz"
+        ]
+      },
+      {
+        "season": 7,
+        "year": 2017,
+        "coaches": [
+          "Hadise",
+          "Murat Boz",
+          "Yıldız Tilbe",
+          "Gökhan Özoğuz"
+        ]
+      },
+      {
+        "season": 8,
+        "year": 2018,
+        "coaches": [
+          "Hadise",
+          "Murat Boz",
+          "Seda Sayan",
+          "Beyazıt Öztürk"
+        ]
+      },
+      {
+        "season": 9,
+        "year": 2019,
+        "coaches": [
+          "Hadise",
+          "Murat Boz",
+          "Seda Sayan",
+          "Beyazıt Öztürk"
+        ]
+      },
+      {
+        "season": 10,
+        "year": 2021,
+        "coaches": [
+          "Murat Boz",
+          "Ebru Gündeş",
+          "Oğuzhan Koç",
+          "Beyazıt Öztürk"
+        ]
+      },
+      {
+        "season": 11,
+        "year": 2025,
+        "coaches": [
+          "Hadise",
+          "Gökhan Özoğuz",
+          "Beyazıt Öztürk",
+          "Melike Şahin"
+        ]
+      }
     ]
   },
   "IE": {
@@ -331,11 +2077,56 @@
     "showName": "The Voice of Ireland",
     "flag": "🇮🇪",
     "seasons": [
-      { "season": 1, "year": 2012, "coaches": ["Bressie", "Sharon Corr", "Kian Egan", "Brian Kennedy"] },
-      { "season": 2, "year": 2013, "coaches": ["Bressie", "Sharon Corr", "Kian Egan", "Jamelia"] },
-      { "season": 3, "year": 2014, "coaches": ["Bressie", "Kian Egan", "Jamelia", "Dolores O'Riordan"] },
-      { "season": 4, "year": 2015, "coaches": ["Bressie", "Kian Egan", "Una Healy", "Rachel Stevens"] },
-      { "season": 5, "year": 2016, "coaches": ["Bressie", "Kian Egan", "Una Healy", "Rachel Stevens"] }
+      {
+        "season": 1,
+        "year": 2012,
+        "coaches": [
+          "Bressie",
+          "Sharon Corr",
+          "Kian Egan",
+          "Brian Kennedy"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2013,
+        "coaches": [
+          "Bressie",
+          "Sharon Corr",
+          "Kian Egan",
+          "Jamelia"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2014,
+        "coaches": [
+          "Bressie",
+          "Kian Egan",
+          "Jamelia",
+          "Dolores O'Riordan"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2015,
+        "coaches": [
+          "Bressie",
+          "Kian Egan",
+          "Una Healy",
+          "Rachel Stevens"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2016,
+        "coaches": [
+          "Bressie",
+          "Kian Egan",
+          "Una Healy",
+          "Rachel Stevens"
+        ]
+      }
     ]
   },
   "BE": {
@@ -343,16 +2134,106 @@
     "showName": "The Voice van Vlaanderen",
     "flag": "🇧🇪",
     "seasons": [
-      { "season": 1,  "year": 2011, "coaches": ["Natalia Druyts", "Koen Wauters", "Jasper Steverlinck", "Alex Callier"] },
-      { "season": 2,  "year": 2013, "coaches": ["Natalia Druyts", "Koen Wauters", "Jasper Steverlinck", "Alex Callier"] },
-      { "season": 3,  "year": 2014, "coaches": ["Koen Wauters", "Regi Penxten", "Axelle Red", "Bent Van Looy"] },
-      { "season": 4,  "year": 2016, "coaches": ["Koen Wauters", "Bart Peeters", "Bent Van Looy", "Natalia Druyts"] },
-      { "season": 5,  "year": 2017, "coaches": ["Koen Wauters", "Bart Peeters", "Alex Callier", "Natalia Druyts"] },
-      { "season": 6,  "year": 2019, "coaches": ["Koen Wauters", "Bart Peeters", "Alex Callier", "Natalia Druyts"] },
-      { "season": 7,  "year": 2021, "coaches": ["Koen Wauters", "Tourist LeMC", "Niels Destadsbader", "Natalia Druyts"] },
-      { "season": 8,  "year": 2022, "coaches": ["Koen Wauters", "Mathieu Terryn", "Jan Paternoster", "Natalia Druyts"] },
-      { "season": 9,  "year": 2024, "coaches": ["Koen Wauters", "Mathieu Terryn", "Jan Paternoster", "Natalia Druyts"] },
-      { "season": 10, "year": 2026, "coaches": ["Koen Wauters", "Mathieu Terryn", "Laura Tesoro", "Joost Klein"] }
+      {
+        "season": 1,
+        "year": 2011,
+        "coaches": [
+          "Natalia Druyts",
+          "Koen Wauters",
+          "Jasper Steverlinck",
+          "Alex Callier"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2013,
+        "coaches": [
+          "Natalia Druyts",
+          "Koen Wauters",
+          "Jasper Steverlinck",
+          "Alex Callier"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2014,
+        "coaches": [
+          "Koen Wauters",
+          "Regi Penxten",
+          "Axelle Red",
+          "Bent Van Looy"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2016,
+        "coaches": [
+          "Koen Wauters",
+          "Bart Peeters",
+          "Bent Van Looy",
+          "Natalia Druyts"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2017,
+        "coaches": [
+          "Koen Wauters",
+          "Bart Peeters",
+          "Alex Callier",
+          "Natalia Druyts"
+        ]
+      },
+      {
+        "season": 6,
+        "year": 2019,
+        "coaches": [
+          "Koen Wauters",
+          "Bart Peeters",
+          "Alex Callier",
+          "Natalia Druyts"
+        ]
+      },
+      {
+        "season": 7,
+        "year": 2021,
+        "coaches": [
+          "Koen Wauters",
+          "Tourist LeMC",
+          "Niels Destadsbader",
+          "Natalia Druyts"
+        ]
+      },
+      {
+        "season": 8,
+        "year": 2022,
+        "coaches": [
+          "Koen Wauters",
+          "Mathieu Terryn",
+          "Jan Paternoster",
+          "Natalia Druyts"
+        ]
+      },
+      {
+        "season": 9,
+        "year": 2024,
+        "coaches": [
+          "Koen Wauters",
+          "Mathieu Terryn",
+          "Jan Paternoster",
+          "Natalia Druyts"
+        ]
+      },
+      {
+        "season": 10,
+        "year": 2026,
+        "coaches": [
+          "Koen Wauters",
+          "Mathieu Terryn",
+          "Laura Tesoro",
+          "Joost Klein"
+        ]
+      }
     ]
   },
   "ARAB": {
@@ -360,11 +2241,56 @@
     "showName": "The Voice: Ahla Sawt",
     "flag": "ع",
     "seasons": [
-      { "season": 1, "year": 2012, "coaches": ["Assi El Helani", "Sherine Abdel Wahab", "Saber Rebai", "Kadim Al Sahir"] },
-      { "season": 2, "year": 2013, "coaches": ["Assi El Helani", "Sherine Abdel Wahab", "Saber Rebai", "Kadim Al Sahir"] },
-      { "season": 3, "year": 2014, "coaches": ["Assi El Helani", "Sherine Abdel Wahab", "Saber Rebai", "Kadim Al Sahir"] },
-      { "season": 4, "year": 2018, "coaches": ["Assi El Helani", "Elissa", "Ahlam", "Mohamed Hamaki"] },
-      { "season": 5, "year": 2019, "coaches": ["Assi El Helani", "Ahlam", "Mohamed Hamaki", "Ragheb Alama"] }
+      {
+        "season": 1,
+        "year": 2012,
+        "coaches": [
+          "Assi El Helani",
+          "Sherine Abdel Wahab",
+          "Saber Rebai",
+          "Kadim Al Sahir"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2013,
+        "coaches": [
+          "Assi El Helani",
+          "Sherine Abdel Wahab",
+          "Saber Rebai",
+          "Kadim Al Sahir"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2014,
+        "coaches": [
+          "Assi El Helani",
+          "Sherine Abdel Wahab",
+          "Saber Rebai",
+          "Kadim Al Sahir"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2018,
+        "coaches": [
+          "Assi El Helani",
+          "Elissa",
+          "Ahlam",
+          "Mohamed Hamaki"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2019,
+        "coaches": [
+          "Assi El Helani",
+          "Ahlam",
+          "Mohamed Hamaki",
+          "Ragheb Alama"
+        ]
+      }
     ]
   },
   "ID": {
@@ -372,10 +2298,46 @@
     "showName": "The Voice Indonesia",
     "flag": "🇮🇩",
     "seasons": [
-      { "season": 1, "year": 2013, "coaches": ["Armand Maulana", "Glenn Fredly", "Giring Ganesha", "Sherina Munaf"] },
-      { "season": 2, "year": 2016, "coaches": ["Ari Lasso", "Agnez Mo", "Kaka Slank", "Judika"] },
-      { "season": 3, "year": 2018, "coaches": ["Armand Maulana", "Anggun", "Titi DJ", "Vidi Aldiano"] },
-      { "season": 4, "year": 2019, "coaches": ["Armand Maulana", "Titi DJ", "Vidi Aldiano", "Isyana Sarasvati"] }
+      {
+        "season": 1,
+        "year": 2013,
+        "coaches": [
+          "Armand Maulana",
+          "Glenn Fredly",
+          "Giring Ganesha",
+          "Sherina Munaf"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2016,
+        "coaches": [
+          "Ari Lasso",
+          "Agnez Mo",
+          "Kaka Slank",
+          "Judika"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2018,
+        "coaches": [
+          "Armand Maulana",
+          "Anggun",
+          "Titi DJ",
+          "Vidi Aldiano"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2019,
+        "coaches": [
+          "Armand Maulana",
+          "Titi DJ",
+          "Vidi Aldiano",
+          "Isyana Sarasvati"
+        ]
+      }
     ]
   },
   "PL": {
@@ -383,22 +2345,166 @@
     "showName": "The Voice of Poland",
     "flag": "🇵🇱",
     "seasons": [
-      { "season": 1,  "year": 2011, "coaches": ["Kayah", "Andrzej Piaseczny", "Ania Dąbrowska", "Nergal"] },
-      { "season": 2,  "year": 2012, "coaches": ["Patrycja Markowska", "Tomson & Baron", "Marek Piekarczyk", "Justyna Steczkowska"] },
-      { "season": 3,  "year": 2013, "coaches": ["Maria Sadowska", "Tomson & Baron", "Marek Piekarczyk", "Justyna Steczkowska"] },
-      { "season": 4,  "year": 2014, "coaches": ["Edyta Górniak", "Tomson & Baron", "Marek Piekarczyk", "Justyna Steczkowska"] },
-      { "season": 5,  "year": 2015, "coaches": ["Maria Sadowska", "Tomson & Baron", "Marek Piekarczyk", "Edyta Górniak"] },
-      { "season": 6,  "year": 2015, "coaches": ["Maria Sadowska", "Tomson & Baron", "Marek Piekarczyk", "Andrzej Piaseczny"] },
-      { "season": 7,  "year": 2016, "coaches": ["Maria Sadowska", "Tomson & Baron", "Andrzej Piaseczny", "Natalia Kukulska"] },
-      { "season": 8,  "year": 2017, "coaches": ["Maria Sadowska", "Tomson & Baron", "Andrzej Piaseczny", "Michał Szpak"] },
-      { "season": 9,  "year": 2018, "coaches": ["Patrycja Markowska", "Tomson & Baron", "Piotr Cugowski", "Grzegorz Hyży"] },
-      { "season": 10, "year": 2019, "coaches": ["Margaret", "Tomson & Baron", "Kamil Bednarek", "Michał Szpak"] },
-      { "season": 11, "year": 2020, "coaches": ["Urszula Dudziak", "Tomson & Baron", "Michał Szpak", "Edyta Górniak"] },
-      { "season": 12, "year": 2021, "coaches": ["Tomson & Baron", "Justyna Steczkowska", "Marek Piekarczyk", "Sylwia Grzeszczak"] },
-      { "season": 13, "year": 2022, "coaches": ["Tomson & Baron", "Justyna Steczkowska", "Marek Piekarczyk", "Lanberry"] },
-      { "season": 14, "year": 2023, "coaches": ["Tomson & Baron", "Justyna Steczkowska", "Marek Piekarczyk", "Lanberry"] },
-      { "season": 15, "year": 2024, "coaches": ["Tomson & Baron", "Lanberry", "Michał Szpak", "Kuba Badach"] },
-      { "season": 16, "year": 2025, "coaches": ["Tomson & Baron", "Margaret", "Michał Szpak", "Kuba Badach"] }
+      {
+        "season": 1,
+        "year": 2011,
+        "coaches": [
+          "Kayah",
+          "Andrzej Piaseczny",
+          "Ania Dąbrowska",
+          "Nergal"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2012,
+        "coaches": [
+          "Patrycja Markowska",
+          "Tomson & Baron",
+          "Marek Piekarczyk",
+          "Justyna Steczkowska"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2013,
+        "coaches": [
+          "Maria Sadowska",
+          "Tomson & Baron",
+          "Marek Piekarczyk",
+          "Justyna Steczkowska"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2014,
+        "coaches": [
+          "Edyta Górniak",
+          "Tomson & Baron",
+          "Marek Piekarczyk",
+          "Justyna Steczkowska"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2015,
+        "coaches": [
+          "Maria Sadowska",
+          "Tomson & Baron",
+          "Marek Piekarczyk",
+          "Edyta Górniak"
+        ]
+      },
+      {
+        "season": 6,
+        "year": 2015,
+        "coaches": [
+          "Maria Sadowska",
+          "Tomson & Baron",
+          "Marek Piekarczyk",
+          "Andrzej Piaseczny"
+        ]
+      },
+      {
+        "season": 7,
+        "year": 2016,
+        "coaches": [
+          "Maria Sadowska",
+          "Tomson & Baron",
+          "Andrzej Piaseczny",
+          "Natalia Kukulska"
+        ]
+      },
+      {
+        "season": 8,
+        "year": 2017,
+        "coaches": [
+          "Maria Sadowska",
+          "Tomson & Baron",
+          "Andrzej Piaseczny",
+          "Michał Szpak"
+        ]
+      },
+      {
+        "season": 9,
+        "year": 2018,
+        "coaches": [
+          "Patrycja Markowska",
+          "Tomson & Baron",
+          "Piotr Cugowski",
+          "Grzegorz Hyży"
+        ]
+      },
+      {
+        "season": 10,
+        "year": 2019,
+        "coaches": [
+          "Margaret",
+          "Tomson & Baron",
+          "Kamil Bednarek",
+          "Michał Szpak"
+        ]
+      },
+      {
+        "season": 11,
+        "year": 2020,
+        "coaches": [
+          "Urszula Dudziak",
+          "Tomson & Baron",
+          "Michał Szpak",
+          "Edyta Górniak"
+        ]
+      },
+      {
+        "season": 12,
+        "year": 2021,
+        "coaches": [
+          "Tomson & Baron",
+          "Justyna Steczkowska",
+          "Marek Piekarczyk",
+          "Sylwia Grzeszczak"
+        ]
+      },
+      {
+        "season": 13,
+        "year": 2022,
+        "coaches": [
+          "Tomson & Baron",
+          "Justyna Steczkowska",
+          "Marek Piekarczyk",
+          "Lanberry"
+        ]
+      },
+      {
+        "season": 14,
+        "year": 2023,
+        "coaches": [
+          "Tomson & Baron",
+          "Justyna Steczkowska",
+          "Marek Piekarczyk",
+          "Lanberry"
+        ]
+      },
+      {
+        "season": 15,
+        "year": 2024,
+        "coaches": [
+          "Tomson & Baron",
+          "Lanberry",
+          "Michał Szpak",
+          "Kuba Badach"
+        ]
+      },
+      {
+        "season": 16,
+        "year": 2025,
+        "coaches": [
+          "Tomson & Baron",
+          "Margaret",
+          "Michał Szpak",
+          "Kuba Badach"
+        ]
+      }
     ]
   },
   "RO": {
@@ -406,16 +2512,106 @@
     "showName": "Vocea României",
     "flag": "🇷🇴",
     "seasons": [
-      { "season": 1,  "year": 2011, "coaches": ["Smiley", "Horia Brenciu", "Loredana Groza", "Marius Moga"] },
-      { "season": 2,  "year": 2012, "coaches": ["Smiley", "Horia Brenciu", "Loredana Groza", "Marius Moga"] },
-      { "season": 3,  "year": 2013, "coaches": ["Smiley", "Horia Brenciu", "Loredana Groza", "Marius Moga"] },
-      { "season": 4,  "year": 2014, "coaches": ["Smiley", "Tudor Chirilă", "Loredana Groza", "Marius Moga"] },
-      { "season": 5,  "year": 2015, "coaches": ["Smiley", "Tudor Chirilă", "Loredana Groza", "Marius Moga"] },
-      { "season": 6,  "year": 2016, "coaches": ["Smiley", "Tudor Chirilă", "Loredana Groza", "Marius Moga"] },
-      { "season": 7,  "year": 2017, "coaches": ["Smiley", "Tudor Chirilă", "Loredana Groza", "Adrian Despot"] },
-      { "season": 8,  "year": 2018, "coaches": ["Smiley", "Tudor Chirilă", "Irina Rimes", "Andra"] },
-      { "season": 9,  "year": 2019, "coaches": ["Smiley", "Tudor Chirilă", "Irina Rimes", "Horia Brenciu"] },
-      { "season": 10, "year": 2022, "coaches": ["Smiley", "Tudor Chirilă", "Irina Rimes", "Denis Roabeș"] }
+      {
+        "season": 1,
+        "year": 2011,
+        "coaches": [
+          "Smiley",
+          "Horia Brenciu",
+          "Loredana Groza",
+          "Marius Moga"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2012,
+        "coaches": [
+          "Smiley",
+          "Horia Brenciu",
+          "Loredana Groza",
+          "Marius Moga"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2013,
+        "coaches": [
+          "Smiley",
+          "Horia Brenciu",
+          "Loredana Groza",
+          "Marius Moga"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2014,
+        "coaches": [
+          "Smiley",
+          "Tudor Chirilă",
+          "Loredana Groza",
+          "Marius Moga"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2015,
+        "coaches": [
+          "Smiley",
+          "Tudor Chirilă",
+          "Loredana Groza",
+          "Marius Moga"
+        ]
+      },
+      {
+        "season": 6,
+        "year": 2016,
+        "coaches": [
+          "Smiley",
+          "Tudor Chirilă",
+          "Loredana Groza",
+          "Marius Moga"
+        ]
+      },
+      {
+        "season": 7,
+        "year": 2017,
+        "coaches": [
+          "Smiley",
+          "Tudor Chirilă",
+          "Loredana Groza",
+          "Adrian Despot"
+        ]
+      },
+      {
+        "season": 8,
+        "year": 2018,
+        "coaches": [
+          "Smiley",
+          "Tudor Chirilă",
+          "Irina Rimes",
+          "Andra"
+        ]
+      },
+      {
+        "season": 9,
+        "year": 2019,
+        "coaches": [
+          "Smiley",
+          "Tudor Chirilă",
+          "Irina Rimes",
+          "Horia Brenciu"
+        ]
+      },
+      {
+        "season": 10,
+        "year": 2022,
+        "coaches": [
+          "Smiley",
+          "Tudor Chirilă",
+          "Irina Rimes",
+          "Denis Roabeș"
+        ]
+      }
     ]
   },
   "SE": {
@@ -423,7 +2619,16 @@
     "showName": "The Voice Sverige",
     "flag": "🇸🇪",
     "seasons": [
-      { "season": 1, "year": 2012, "coaches": ["Carola Häggkvist", "Magnus Uggla", "Ola Salo", "Petter"] }
+      {
+        "season": 1,
+        "year": 2012,
+        "coaches": [
+          "Carola Häggkvist",
+          "Magnus Uggla",
+          "Ola Salo",
+          "Petter"
+        ]
+      }
     ]
   },
   "AR": {
@@ -431,11 +2636,56 @@
     "showName": "La Voz Argentina",
     "flag": "🇦🇷",
     "seasons": [
-      { "season": 1, "year": 2012, "coaches": ["Soledad Pastorutti", "Axel", "José Luis Rodríguez", "Miranda!"] },
-      { "season": 2, "year": 2018, "coaches": ["Soledad Pastorutti", "Axel", "Ricardo Montaner", "Tini Stoessel"] },
-      { "season": 3, "year": 2021, "coaches": ["Soledad Pastorutti", "Ricardo Montaner", "Mau y Ricky", "Lali Espósito"] },
-      { "season": 4, "year": 2022, "coaches": ["Soledad Pastorutti", "Ricardo Montaner", "Mau y Ricky", "Lali Espósito"] },
-      { "season": 5, "year": 2025, "coaches": ["Soledad Pastorutti", "Lali Espósito", "Luck Ra", "Miranda!"] }
+      {
+        "season": 1,
+        "year": 2012,
+        "coaches": [
+          "Soledad Pastorutti",
+          "Axel",
+          "José Luis Rodríguez",
+          "Miranda!"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2018,
+        "coaches": [
+          "Soledad Pastorutti",
+          "Axel",
+          "Ricardo Montaner",
+          "Tini Stoessel"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2021,
+        "coaches": [
+          "Soledad Pastorutti",
+          "Ricardo Montaner",
+          "Mau y Ricky",
+          "Lali Espósito"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2022,
+        "coaches": [
+          "Soledad Pastorutti",
+          "Ricardo Montaner",
+          "Mau y Ricky",
+          "Lali Espósito"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2025,
+        "coaches": [
+          "Soledad Pastorutti",
+          "Lali Espósito",
+          "Luck Ra",
+          "Miranda!"
+        ]
+      }
     ]
   },
   "IN": {
@@ -443,9 +2693,36 @@
     "showName": "The Voice India",
     "flag": "🇮🇳",
     "seasons": [
-      { "season": 1, "year": 2015, "coaches": ["Himesh Reshammiya", "Shaan", "Sunidhi Chauhan", "Mika Singh"] },
-      { "season": 2, "year": 2016, "coaches": ["Shaan", "Neeti Mohan", "Salim Merchant", "Benny Dayal"] },
-      { "season": 3, "year": 2019, "coaches": ["Adnan Sami", "Armaan Malik", "Harshdeep Kaur", "Kanika Kapoor"] }
+      {
+        "season": 1,
+        "year": 2015,
+        "coaches": [
+          "Himesh Reshammiya",
+          "Shaan",
+          "Sunidhi Chauhan",
+          "Mika Singh"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2016,
+        "coaches": [
+          "Shaan",
+          "Neeti Mohan",
+          "Salim Merchant",
+          "Benny Dayal"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2019,
+        "coaches": [
+          "Adnan Sami",
+          "Armaan Malik",
+          "Harshdeep Kaur",
+          "Kanika Kapoor"
+        ]
+      }
     ]
   },
   "DK": {
@@ -453,8 +2730,26 @@
     "showName": "Voice – Danmarks største stemme",
     "flag": "🇩🇰",
     "seasons": [
-      { "season": 1, "year": 2011, "coaches": ["L.O.C.", "Sharin Foo", "Lene Nystrøm", "Steen Jørgensen"] },
-      { "season": 2, "year": 2012, "coaches": ["L.O.C.", "Sharin Foo", "Lene Nystrøm", "Steen Jørgensen"] }
+      {
+        "season": 1,
+        "year": 2011,
+        "coaches": [
+          "L.O.C.",
+          "Sharin Foo",
+          "Lene Nystrøm",
+          "Steen Jørgensen"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2012,
+        "coaches": [
+          "L.O.C.",
+          "Sharin Foo",
+          "Lene Nystrøm",
+          "Steen Jørgensen"
+        ]
+      }
     ]
   },
   "FI": {
@@ -462,19 +2757,136 @@
     "showName": "The Voice of Finland",
     "flag": "🇫🇮",
     "seasons": [
-      { "season": 1,  "year": 2011, "coaches": ["Paula Koivuniemi", "Lauri Tähkä", "Elastinen", "Michael Monroe"] },
-      { "season": 2,  "year": 2013, "coaches": ["Paula Koivuniemi", "Lauri Tähkä", "Elastinen", "Michael Monroe"] },
-      { "season": 3,  "year": 2014, "coaches": ["Elastinen", "Michael Monroe", "Anne Mattila", "Mira Luoti"] },
-      { "season": 4,  "year": 2015, "coaches": ["Michael Monroe", "Tarja Turunen", "Olli Lindholm", "Redrama"] },
-      { "season": 5,  "year": 2016, "coaches": ["Michael Monroe", "Tarja Turunen", "Olli Lindholm", "Redrama"] },
-      { "season": 6,  "year": 2017, "coaches": ["Michael Monroe", "Olli Lindholm", "Redrama", "Anna Puu"] },
-      { "season": 7,  "year": 2018, "coaches": ["Olli Lindholm", "Redrama", "Anna Puu", "Toni Wirtanen"] },
-      { "season": 8,  "year": 2019, "coaches": ["Redrama", "Anna Puu", "Toni Wirtanen", "Sipe Santapukki"] },
-      { "season": 9,  "year": 2020, "coaches": ["Toni Wirtanen", "Anna Puu", "Redrama", "Sipe Santapukki"] },
-      { "season": 10, "year": 2021, "coaches": ["Toni Wirtanen", "Anna Puu", "Sipe Santapukki", "Juha Tapio"] },
-      { "season": 11, "year": 2022, "coaches": ["Toni Wirtanen", "Sipe Santapukki", "Juha Tapio", "Maija Vilkkumaa"] },
-      { "season": 12, "year": 2023, "coaches": ["Elastinen", "Maija Vilkkumaa", "Sanni", "Arttu Wiskari"] },
-      { "season": 13, "year": 2024, "coaches": ["Elastinen", "Maija Vilkkumaa", "Sanni", "Arttu Wiskari"] }
+      {
+        "season": 1,
+        "year": 2011,
+        "coaches": [
+          "Paula Koivuniemi",
+          "Lauri Tähkä",
+          "Elastinen",
+          "Michael Monroe"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2013,
+        "coaches": [
+          "Paula Koivuniemi",
+          "Lauri Tähkä",
+          "Elastinen",
+          "Michael Monroe"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2014,
+        "coaches": [
+          "Elastinen",
+          "Michael Monroe",
+          "Anne Mattila",
+          "Mira Luoti"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2015,
+        "coaches": [
+          "Michael Monroe",
+          "Tarja Turunen",
+          "Olli Lindholm",
+          "Redrama"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2016,
+        "coaches": [
+          "Michael Monroe",
+          "Tarja Turunen",
+          "Olli Lindholm",
+          "Redrama"
+        ]
+      },
+      {
+        "season": 6,
+        "year": 2017,
+        "coaches": [
+          "Michael Monroe",
+          "Olli Lindholm",
+          "Redrama",
+          "Anna Puu"
+        ]
+      },
+      {
+        "season": 7,
+        "year": 2018,
+        "coaches": [
+          "Olli Lindholm",
+          "Redrama",
+          "Anna Puu",
+          "Toni Wirtanen"
+        ]
+      },
+      {
+        "season": 8,
+        "year": 2019,
+        "coaches": [
+          "Redrama",
+          "Anna Puu",
+          "Toni Wirtanen",
+          "Sipe Santapukki"
+        ]
+      },
+      {
+        "season": 9,
+        "year": 2020,
+        "coaches": [
+          "Toni Wirtanen",
+          "Anna Puu",
+          "Redrama",
+          "Sipe Santapukki"
+        ]
+      },
+      {
+        "season": 10,
+        "year": 2021,
+        "coaches": [
+          "Toni Wirtanen",
+          "Anna Puu",
+          "Sipe Santapukki",
+          "Juha Tapio"
+        ]
+      },
+      {
+        "season": 11,
+        "year": 2022,
+        "coaches": [
+          "Toni Wirtanen",
+          "Sipe Santapukki",
+          "Juha Tapio",
+          "Maija Vilkkumaa"
+        ]
+      },
+      {
+        "season": 12,
+        "year": 2023,
+        "coaches": [
+          "Elastinen",
+          "Maija Vilkkumaa",
+          "Sanni",
+          "Arttu Wiskari"
+        ]
+      },
+      {
+        "season": 13,
+        "year": 2024,
+        "coaches": [
+          "Elastinen",
+          "Maija Vilkkumaa",
+          "Sanni",
+          "Arttu Wiskari"
+        ]
+      }
     ]
   },
   "NO": {
@@ -482,17 +2894,116 @@
     "showName": "The Voice – Norges beste stemme",
     "flag": "🇳🇴",
     "seasons": [
-      { "season": 1,  "year": 2012, "coaches": ["Yosef Wolde-Mariam", "Sondre Lerche", "Hanne Sørvaag", "Magne Furuholmen"] },
-      { "season": 2,  "year": 2013, "coaches": ["Yosef Wolde-Mariam", "Sondre Lerche", "Espen Lind", "Lene Nystrøm"] },
-      { "season": 3,  "year": 2014, "coaches": ["Yosef Wolde-Mariam", "Sondre Lerche", "Espen Lind", "Hanne Sørvaag"] },
-      { "season": 4,  "year": 2015, "coaches": ["Yosef Wolde-Mariam", "Lene Marlin", "Martin Danielle", "Morten Harket"] },
-      { "season": 5,  "year": 2016, "coaches": ["Yosef Wolde-Mariam", "Lene Marlin", "Martin Danielle", "Morten Harket"] },
-      { "season": 6,  "year": 2017, "coaches": ["Yosef Wolde-Mariam", "Espen Lind", "Ina Wroldsen", "Matoma"] },
-      { "season": 7,  "year": 2018, "coaches": ["Yosef Wolde-Mariam", "Espen Lind", "Ina Wroldsen", "Matoma"] },
-      { "season": 8,  "year": 2019, "coaches": ["Yosef Wolde-Mariam", "Espen Lind", "Ina Wroldsen", "Jarle Bernhoft"] },
-      { "season": 9,  "year": 2020, "coaches": ["Yosef Wolde-Mariam", "Espen Lind", "Ina Wroldsen", "Jarle Bernhoft"] },
-      { "season": 10, "year": 2021, "coaches": ["Yosef Wolde-Mariam", "Espen Lind", "Eva Weel Skram", "Gabrielle"] },
-      { "season": 11, "year": 2022, "coaches": ["Espen Lind", "Jarle Bernhoft", "Ingebjørg Bratland", "Marion Raven"] }
+      {
+        "season": 1,
+        "year": 2012,
+        "coaches": [
+          "Yosef Wolde-Mariam",
+          "Sondre Lerche",
+          "Hanne Sørvaag",
+          "Magne Furuholmen"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2013,
+        "coaches": [
+          "Yosef Wolde-Mariam",
+          "Sondre Lerche",
+          "Espen Lind",
+          "Lene Nystrøm"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2014,
+        "coaches": [
+          "Yosef Wolde-Mariam",
+          "Sondre Lerche",
+          "Espen Lind",
+          "Hanne Sørvaag"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2015,
+        "coaches": [
+          "Yosef Wolde-Mariam",
+          "Lene Marlin",
+          "Martin Danielle",
+          "Morten Harket"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2016,
+        "coaches": [
+          "Yosef Wolde-Mariam",
+          "Lene Marlin",
+          "Martin Danielle",
+          "Morten Harket"
+        ]
+      },
+      {
+        "season": 6,
+        "year": 2017,
+        "coaches": [
+          "Yosef Wolde-Mariam",
+          "Espen Lind",
+          "Ina Wroldsen",
+          "Matoma"
+        ]
+      },
+      {
+        "season": 7,
+        "year": 2018,
+        "coaches": [
+          "Yosef Wolde-Mariam",
+          "Espen Lind",
+          "Ina Wroldsen",
+          "Matoma"
+        ]
+      },
+      {
+        "season": 8,
+        "year": 2019,
+        "coaches": [
+          "Yosef Wolde-Mariam",
+          "Espen Lind",
+          "Ina Wroldsen",
+          "Jarle Bernhoft"
+        ]
+      },
+      {
+        "season": 9,
+        "year": 2020,
+        "coaches": [
+          "Yosef Wolde-Mariam",
+          "Espen Lind",
+          "Ina Wroldsen",
+          "Jarle Bernhoft"
+        ]
+      },
+      {
+        "season": 10,
+        "year": 2021,
+        "coaches": [
+          "Yosef Wolde-Mariam",
+          "Espen Lind",
+          "Eva Weel Skram",
+          "Gabrielle"
+        ]
+      },
+      {
+        "season": 11,
+        "year": 2022,
+        "coaches": [
+          "Espen Lind",
+          "Jarle Bernhoft",
+          "Ingebjørg Bratland",
+          "Marion Raven"
+        ]
+      }
     ]
   },
   "VN": {
@@ -500,12 +3011,66 @@
     "showName": "Giọng Hát Việt",
     "flag": "🇻🇳",
     "seasons": [
-      { "season": 1, "year": 2012, "coaches": ["Đàm Vĩnh Hưng", "Thu Minh", "Hồ Ngọc Hà", "Trần Lập"] },
-      { "season": 2, "year": 2013, "coaches": ["Đàm Vĩnh Hưng", "Mỹ Linh", "Hồng Nhung", "Quốc Trung"] },
-      { "season": 3, "year": 2015, "coaches": ["Đàm Vĩnh Hưng", "Mỹ Tâm", "Tuấn Hưng", "Thu Phương"] },
-      { "season": 4, "year": 2017, "coaches": ["Thu Minh", "Đông Nhi", "Noo Phước Thịnh", "Tóc Tiên"] },
-      { "season": 5, "year": 2018, "coaches": ["Thu Phương", "Tóc Tiên", "Noo Phước Thịnh", "Lam Trường"] },
-      { "season": 6, "year": 2019, "coaches": ["Tuấn Ngọc", "Hồ Hoài Anh", "Thanh Hà", "Tuấn Hưng"] }
+      {
+        "season": 1,
+        "year": 2012,
+        "coaches": [
+          "Đàm Vĩnh Hưng",
+          "Thu Minh",
+          "Hồ Ngọc Hà",
+          "Trần Lập"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2013,
+        "coaches": [
+          "Đàm Vĩnh Hưng",
+          "Mỹ Linh",
+          "Hồng Nhung",
+          "Quốc Trung"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2015,
+        "coaches": [
+          "Đàm Vĩnh Hưng",
+          "Mỹ Tâm",
+          "Tuấn Hưng",
+          "Thu Phương"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2017,
+        "coaches": [
+          "Thu Minh",
+          "Đông Nhi",
+          "Noo Phước Thịnh",
+          "Tóc Tiên"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2018,
+        "coaches": [
+          "Thu Phương",
+          "Tóc Tiên",
+          "Noo Phước Thịnh",
+          "Lam Trường"
+        ]
+      },
+      {
+        "season": 6,
+        "year": 2019,
+        "coaches": [
+          "Tuấn Ngọc",
+          "Hồ Hoài Anh",
+          "Thanh Hà",
+          "Tuấn Hưng"
+        ]
+      }
     ]
   },
   "TH": {
@@ -513,16 +3078,106 @@
     "showName": "The Voice Thailand",
     "flag": "🇹🇭",
     "seasons": [
-      { "season": 1,  "year": 2012, "coaches": ["Kong Saharat", "Joey Boy", "Jennifer Kim", "Stamp Apiwat"] },
-      { "season": 2,  "year": 2013, "coaches": ["Kong Saharat", "Joey Boy", "Jennifer Kim", "Stamp Apiwat"] },
-      { "season": 3,  "year": 2014, "coaches": ["Kong Saharat", "Joey Boy", "Jennifer Kim", "Stamp Apiwat"] },
-      { "season": 4,  "year": 2015, "coaches": ["Kong Saharat", "Joey Boy", "Jennifer Kim", "Stamp Apiwat"] },
-      { "season": 5,  "year": 2016, "coaches": ["Kong Saharat", "Joey Boy", "Jennifer Kim", "Stamp Apiwat"] },
-      { "season": 6,  "year": 2017, "coaches": ["Kong Saharat", "Joey Boy", "Jennifer Kim", "Stamp Apiwat"] },
-      { "season": 7,  "year": 2018, "coaches": ["Kong Saharat", "Joey Boy", "Jennifer Kim", "Pop Pongkool"] },
-      { "season": 8,  "year": 2019, "coaches": ["Kong Saharat", "Joey Boy", "Jennifer Kim", "Pop Pongkool"] },
-      { "season": 9,  "year": 2022, "coaches": ["Kong Saharat", "Joey Boy", "Jennifer Kim", "Pop Pongkool"] },
-      { "season": 10, "year": 2024, "coaches": ["Kong Saharat", "Jennifer Kim", "Oat Pramote", "Jaii Taitosmith"] }
+      {
+        "season": 1,
+        "year": 2012,
+        "coaches": [
+          "Kong Saharat",
+          "Joey Boy",
+          "Jennifer Kim",
+          "Stamp Apiwat"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2013,
+        "coaches": [
+          "Kong Saharat",
+          "Joey Boy",
+          "Jennifer Kim",
+          "Stamp Apiwat"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2014,
+        "coaches": [
+          "Kong Saharat",
+          "Joey Boy",
+          "Jennifer Kim",
+          "Stamp Apiwat"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2015,
+        "coaches": [
+          "Kong Saharat",
+          "Joey Boy",
+          "Jennifer Kim",
+          "Stamp Apiwat"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2016,
+        "coaches": [
+          "Kong Saharat",
+          "Joey Boy",
+          "Jennifer Kim",
+          "Stamp Apiwat"
+        ]
+      },
+      {
+        "season": 6,
+        "year": 2017,
+        "coaches": [
+          "Kong Saharat",
+          "Joey Boy",
+          "Jennifer Kim",
+          "Stamp Apiwat"
+        ]
+      },
+      {
+        "season": 7,
+        "year": 2018,
+        "coaches": [
+          "Kong Saharat",
+          "Joey Boy",
+          "Jennifer Kim",
+          "Pop Pongkool"
+        ]
+      },
+      {
+        "season": 8,
+        "year": 2019,
+        "coaches": [
+          "Kong Saharat",
+          "Joey Boy",
+          "Jennifer Kim",
+          "Pop Pongkool"
+        ]
+      },
+      {
+        "season": 9,
+        "year": 2022,
+        "coaches": [
+          "Kong Saharat",
+          "Joey Boy",
+          "Jennifer Kim",
+          "Pop Pongkool"
+        ]
+      },
+      {
+        "season": 10,
+        "year": 2024,
+        "coaches": [
+          "Kong Saharat",
+          "Jennifer Kim",
+          "Oat Pramote",
+          "Jaii Taitosmith"
+        ]
+      }
     ]
   },
   "KR": {
@@ -530,9 +3185,36 @@
     "showName": "The Voice of Korea",
     "flag": "🇰🇷",
     "seasons": [
-      { "season": 1, "year": 2012, "coaches": ["Kangta", "Shin Seung-hun", "Baek Ji-young", "Gil"] },
-      { "season": 2, "year": 2013, "coaches": ["Kangta", "Shin Seung-hun", "Baek Ji-young", "Gil"] },
-      { "season": 3, "year": 2020, "coaches": ["BoA", "Sung Si-kyung", "Kim Jong-kook", "Dynamic Duo"] }
+      {
+        "season": 1,
+        "year": 2012,
+        "coaches": [
+          "Kangta",
+          "Shin Seung-hun",
+          "Baek Ji-young",
+          "Gil"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2013,
+        "coaches": [
+          "Kangta",
+          "Shin Seung-hun",
+          "Baek Ji-young",
+          "Gil"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2020,
+        "coaches": [
+          "BoA",
+          "Sung Si-kyung",
+          "Kim Jong-kook",
+          "Dynamic Duo"
+        ]
+      }
     ]
   },
   "CA": {
@@ -540,16 +3222,109 @@
     "showName": "La Voix",
     "flag": "🇨🇦",
     "seasons": [
-      { "season": 1,  "year": 2013, "coaches": ["Jean-Pierre Ferland", "Marie-Mai", "Ariane Moffatt", "Marc Dupré"] },
-      { "season": 2,  "year": 2014, "coaches": ["Jean-Pierre Ferland", "Marie-Mai", "Ariane Moffatt", "Marc Dupré"] },
-      { "season": 3,  "year": 2015, "coaches": ["Éric Lapointe", "Isabelle Boulay", "Pierre Lapointe", "Marc Dupré"] },
-      { "season": 4,  "year": 2016, "coaches": ["Éric Lapointe", "Isabelle Boulay", "Pierre Lapointe", "Marc Dupré"] },
-      { "season": 5,  "year": 2017, "coaches": ["Éric Lapointe", "Isabelle Boulay", "Pierre Lapointe", "Marc Dupré"] },
-      { "season": 6,  "year": 2018, "coaches": ["Éric Lapointe", "Lara Fabian", "Alex Nevsky", "Garou"] },
-      { "season": 7,  "year": 2019, "coaches": ["Éric Lapointe", "Lara Fabian", "Alex Nevsky", "Marc Dupré"] },
-      { "season": 8,  "year": 2020, "coaches": ["Pierre Lapointe", "Garou", "Coeur de Pirate", "Marc Dupré"] },
-      { "season": 9,  "year": 2023, "coaches": ["Mario Pelchat", "Marjo", "Marc Dupré", "Corneille"] },
-      { "season": 10, "year": 2024, "coaches": ["Corneille", "France D'Amour", "Mario Pelchat", "Roxane Bruneau"] }
+      {
+        "season": 1,
+        "year": 2013,
+        "coaches": [
+          "Jean-Pierre Ferland",
+          "Marie-Mai",
+          "Ariane Moffatt",
+          "Marc Dupré"
+        ]
+      },
+      {
+        "season": 2,
+        "year": 2014,
+        "coaches": [
+          "Jean-Pierre Ferland",
+          "Marie-Mai",
+          "Ariane Moffatt",
+          "Marc Dupré"
+        ]
+      },
+      {
+        "season": 3,
+        "year": 2015,
+        "coaches": [
+          "Éric Lapointe",
+          "Isabelle Boulay",
+          "Pierre Lapointe",
+          "Marc Dupré"
+        ]
+      },
+      {
+        "season": 4,
+        "year": 2016,
+        "coaches": [
+          "Éric Lapointe",
+          "Isabelle Boulay",
+          "Pierre Lapointe",
+          "Marc Dupré"
+        ]
+      },
+      {
+        "season": 5,
+        "year": 2017,
+        "coaches": [
+          "Éric Lapointe",
+          "Isabelle Boulay",
+          "Pierre Lapointe",
+          "Marc Dupré"
+        ]
+      },
+      {
+        "season": 6,
+        "year": 2018,
+        "coaches": [
+          "Éric Lapointe",
+          "Lara Fabian",
+          "Alex Nevsky",
+          "Garou"
+        ]
+      },
+      {
+        "season": 7,
+        "year": 2019,
+        "coaches": [
+          "Éric Lapointe",
+          "Lara Fabian",
+          "Alex Nevsky",
+          "Marc Dupré"
+        ]
+      },
+      {
+        "season": 8,
+        "year": 2020,
+        "coaches": [
+          "Pierre Lapointe",
+          "Garou",
+          "Coeur de Pirate",
+          "Marc Dupré"
+        ]
+      },
+      {
+        "season": 9,
+        "year": 2023,
+        "coaches": [
+          "Mario Pelchat",
+          "Marjo",
+          "Marc Dupré",
+          "Corneille"
+        ]
+      },
+      {
+        "season": 10,
+        "year": 2024,
+        "coaches": [
+          "Corneille",
+          "France D'Amour",
+          "Mario Pelchat",
+          "Roxane Bruneau"
+        ]
+      }
     ]
+  },
+  "spotifyOverrides": {
+    "Jenifer": "4LJhDaJrJe8bMTnp4u1BDE"
   }
 }

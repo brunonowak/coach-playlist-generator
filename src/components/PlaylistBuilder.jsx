@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import allData from '../data/coaches.json';
 import {
   searchArtist,
   getArtistTopTracks,
@@ -6,6 +7,8 @@ import {
   createPlaylist,
   addTracksToPlaylist,
 } from '../spotify/api';
+
+const spotifyOverrides = allData.spotifyOverrides || {};
 
 function selectTracks(tracks, artistId, { tracksPerCoach, soloOnly, mixType }) {
   let pool = [...tracks];
@@ -95,7 +98,7 @@ function PlaylistBuilder({ token, userId, coaches, countryName, onClose }) {
 
       for (const coachName of coaches) {
         setProgress(`Searching for ${coachName}...`);
-        const artists = await searchArtist(token, coachName);
+        const artists = await searchArtist(token, coachName, spotifyOverrides);
 
         if (artists.length === 0) {
           skipped.push(coachName);
