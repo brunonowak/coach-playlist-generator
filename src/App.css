@@ -219,17 +219,15 @@ body {
 }
 
 .coach-card {
-  padding: 1rem;
   background: var(--surface);
   border: 2px solid var(--border);
   border-radius: 10px;
   cursor: pointer;
-  text-align: left;
   transition: all 0.2s;
   display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  font-family: inherit;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .coach-card:hover { background: var(--surface-hover); border-color: var(--text-muted); }
@@ -239,8 +237,58 @@ body {
   background: rgba(29, 185, 84, 0.1);
 }
 
-.coach-name { font-weight: 600; font-size: 0.95rem; color: var(--text); }
-.coach-seasons { font-size: 0.8rem; color: var(--text-muted); }
+.coach-card-main {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.75rem;
+  flex: 1;
+  min-width: 0;
+  cursor: pointer;
+}
+
+.coach-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.coach-photo-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.coach-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.coach-name { font-weight: 600; font-size: 0.9rem; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.coach-seasons { font-size: 0.75rem; color: var(--text-muted); }
+
+.who-btn {
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  opacity: 0.4;
+  transition: opacity 0.2s;
+  flex-shrink: 0;
+}
+
+.who-btn:hover { opacity: 1; }
 
 /* Floating playlist button */
 .playlist-section {
@@ -569,4 +617,92 @@ body {
 .timeline-toggle.active {
   color: var(--spotify-green) !important;
   border-color: var(--spotify-green) !important;
+}
+
+/* Coach Detail Modal */
+.coach-detail-modal { max-width: 480px; }
+
+.detail-header {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.detail-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.detail-info { display: flex; flex-direction: column; gap: 0.4rem; }
+.detail-info h2 { font-size: 1.3rem; margin: 0; }
+
+.detail-followers { font-size: 0.85rem; color: var(--text-muted); }
+
+.detail-genres { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+
+.genre-tag {
+  padding: 0.15rem 0.5rem;
+  background: var(--bg);
+  border-radius: 12px;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: capitalize;
+}
+
+.detail-spotify-link {
+  font-size: 0.85rem;
+  color: var(--spotify-green);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.detail-spotify-link:hover { text-decoration: underline; }
+
+.detail-tracks { margin-top: 0.5rem; }
+.detail-tracks h3 { font-size: 1rem; margin-bottom: 0.75rem; font-weight: 500; }
+.detail-tracks ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+
+.detail-track {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.4rem;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+
+.detail-track:hover { background: var(--bg); }
+
+.track-num { font-size: 0.8rem; color: var(--text-muted); width: 1.2rem; text-align: center; flex-shrink: 0; }
+
+.track-album-art {
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 0;
+  flex: 1;
+}
+
+.track-title { font-size: 0.85rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.track-album { font-size: 0.72rem; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.track-popularity {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  background: var(--bg);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  flex-shrink: 0;
 }

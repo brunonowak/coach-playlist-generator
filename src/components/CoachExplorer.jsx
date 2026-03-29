@@ -1,9 +1,14 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useCallback } from 'react';
 import allData from '../data/coaches.json';
 import PlaylistBuilder from './PlaylistBuilder';
 import CoachTimeline from './CoachTimeline';
+import CoachDetail from './CoachDetail';
+import { searchArtist } from '../spotify/api';
 
 const countryCodes = Object.keys(allData);
+
+// Global cache so we don't re-fetch across country switches
+const artistCache = new Map();
 
 function CoachExplorer({ token, userId }) {
   const [countryCode, setCountryCode] = useState('US');
@@ -11,6 +16,8 @@ function CoachExplorer({ token, userId }) {
   const [seasonRange, setSeasonRange] = useState([1, 1]);
   const [showPlaylistBuilder, setShowPlaylistBuilder] = useState(false);
   const [showTimeline, setShowTimeline] = useState(false);
+  const [detailCoach, setDetailCoach] = useState(null);
+  const [artistPhotos, setArtistPhotos] = useState({});
 
   const country = allData[countryCode];
   const seasons = country.seasons;
@@ -40,6 +47,29 @@ function CoachExplorer({ token, userId }) {
       .map(c => ({ ...c, years: Array.from(c.years).sort() }))
       .sort((a, b) => b.seasons.length - a.seasons.length);
   }, [filteredSeasons]);
+
+  // Fetch artist photos for visible coaches
+  const fetchPhotos = useCallback(async () => {
+    if (!token) return;
+    const names = allCoaches.map(c => c.name).filter(n => !artistCache.has(n));
+    for (const name of names.slice(0, 20)) { // batch limit to avoid rate limits
+      try {
+        const artists = await searchArtist(token, name);
+        const img = artists[0]?.images?.[2]?.url || artists[0]?.images?.[0]?.url || null;
+        artistCache.set(name, img);
+      } catch {
+        artistCache.set(name, null);
+      }
+    }
+    // Build photo map from cache for current coaches
+    const photos = {};
+    allCoaches.forEach(c => {
+      if (artistCache.has(c.name)) photos[c.name] = artistCache.get(c.name);
+    });
+    setArtistPhotos(photos);
+  }, [token, allCoaches]);
+
+  useEffect(() => { fetchPhotos(); }, [fetchPhotos]);
 
   const toggleCoach = (name) => {
     setSelectedCoaches(prev => {
@@ -114,21 +144,34 @@ function CoachExplorer({ token, userId }) {
         </div>
         <div className="coach-grid">
           {allCoaches.map(coach => (
-            <button
+            <div
               key={coach.name}
               className={`coach-card ${selectedCoaches.has(coach.name) ? 'selected' : ''}`}
-              onClick={() => toggleCoach(coach.name)}
             >
-              <span className="coach-name">{coach.name}</span>
-              <span className="coach-seasons">
-                {coach.seasons.length} season{coach.seasons.length > 1 ? 's' : ''}
-                {' · '}
-                {coach.years[0] === coach.years[coach.years.length - 1]
-                  ? coach.years[0]
-                  : `${coach.years[0]}–${coach.years[coach.years.length - 1]}`
-                }
-              </span>
-            </button>
+              <div className="coach-card-main" onClick={() => toggleCoach(coach.name)}>
+                {artistPhotos[coach.name] ? (
+                  <img src={artistPhotos[coach.name]} alt="" className="coach-photo" />
+                ) : (
+                  <div className="coach-photo-placeholder">🎤</div>
+                )}
+                <div className="coach-text">
+                  <span className="coach-name">{coach.name}</span>
+                  <span className="coach-seasons">
+                    {coach.seasons.length} season{coach.seasons.length > 1 ? 's' : ''}
+                    {' · '}
+                    {coach.years[0] === coach.years[coach.years.length - 1]
+                      ? coach.years[0]
+                      : `${coach.years[0]}–${coach.years[coach.years.length - 1]}`
+                    }
+                  </span>
+                </div>
+              </div>
+              <button
+                className="who-btn"
+                onClick={(e) => { e.stopPropagation(); setDetailCoach(coach.name); }}
+                title="Who's this?"
+              >ℹ️</button>
+            </div>
           ))}
         </div>
       </section>
@@ -148,6 +191,14 @@ function CoachExplorer({ token, userId }) {
           coaches={Array.from(selectedCoaches)}
           countryName={country.name}
           onClose={() => setShowPlaylistBuilder(false)}
+        />
+      )}
+
+      {detailCoach && (
+        <CoachDetail
+          token={token}
+          coachName={detailCoach}
+          onClose={() => setDetailCoach(null)}
         />
       )}
     </main>
