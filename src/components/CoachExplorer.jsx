@@ -1,6 +1,7 @@
 import { useState, useMemo, useEffect } from 'react';
 import allData from '../data/coaches.json';
 import PlaylistBuilder from './PlaylistBuilder';
+import CoachTimeline from './CoachTimeline';
 
 const countryCodes = Object.keys(allData);
 
@@ -9,6 +10,7 @@ function CoachExplorer({ token, userId }) {
   const [selectedCoaches, setSelectedCoaches] = useState(new Set());
   const [seasonRange, setSeasonRange] = useState([1, 1]);
   const [showPlaylistBuilder, setShowPlaylistBuilder] = useState(false);
+  const [showTimeline, setShowTimeline] = useState(false);
 
   const country = allData[countryCode];
   const seasons = country.seasons;
@@ -96,12 +98,18 @@ function CoachExplorer({ token, userId }) {
         </div>
       </section>
 
+      {showTimeline && <CoachTimeline seasons={filteredSeasons} />}
+
       <section className="coaches">
         <div className="coaches-header">
           <h2>Coaches ({allCoaches.length})</h2>
           <div className="coach-actions">
             <button onClick={selectAll}>Select All</button>
             <button onClick={clearAll}>Clear</button>
+            <button
+              className={`timeline-toggle ${showTimeline ? 'active' : ''}`}
+              onClick={() => setShowTimeline(t => !t)}
+            >📊 Timeline</button>
           </div>
         </div>
         <div className="coach-grid">

@@ -377,5 +377,179 @@
       { "season": 3, "year": 2018, "coaches": ["Armand Maulana", "Anggun", "Titi DJ", "Vidi Aldiano"] },
       { "season": 4, "year": 2019, "coaches": ["Armand Maulana", "Titi DJ", "Vidi Aldiano", "Isyana Sarasvati"] }
     ]
+  },
+  "PL": {
+    "name": "Poland",
+    "showName": "The Voice of Poland",
+    "flag": "🇵🇱",
+    "seasons": [
+      { "season": 1,  "year": 2011, "coaches": ["Kayah", "Andrzej Piaseczny", "Ania Dąbrowska", "Nergal"] },
+      { "season": 2,  "year": 2012, "coaches": ["Patrycja Markowska", "Tomson & Baron", "Marek Piekarczyk", "Justyna Steczkowska"] },
+      { "season": 3,  "year": 2013, "coaches": ["Maria Sadowska", "Tomson & Baron", "Marek Piekarczyk", "Justyna Steczkowska"] },
+      { "season": 4,  "year": 2014, "coaches": ["Edyta Górniak", "Tomson & Baron", "Marek Piekarczyk", "Justyna Steczkowska"] },
+      { "season": 5,  "year": 2015, "coaches": ["Maria Sadowska", "Tomson & Baron", "Marek Piekarczyk", "Edyta Górniak"] },
+      { "season": 6,  "year": 2015, "coaches": ["Maria Sadowska", "Tomson & Baron", "Marek Piekarczyk", "Andrzej Piaseczny"] },
+      { "season": 7,  "year": 2016, "coaches": ["Maria Sadowska", "Tomson & Baron", "Andrzej Piaseczny", "Natalia Kukulska"] },
+      { "season": 8,  "year": 2017, "coaches": ["Maria Sadowska", "Tomson & Baron", "Andrzej Piaseczny", "Michał Szpak"] },
+      { "season": 9,  "year": 2018, "coaches": ["Patrycja Markowska", "Tomson & Baron", "Piotr Cugowski", "Grzegorz Hyży"] },
+      { "season": 10, "year": 2019, "coaches": ["Margaret", "Tomson & Baron", "Kamil Bednarek", "Michał Szpak"] },
+      { "season": 11, "year": 2020, "coaches": ["Urszula Dudziak", "Tomson & Baron", "Michał Szpak", "Edyta Górniak"] },
+      { "season": 12, "year": 2021, "coaches": ["Tomson & Baron", "Justyna Steczkowska", "Marek Piekarczyk", "Sylwia Grzeszczak"] },
+      { "season": 13, "year": 2022, "coaches": ["Tomson & Baron", "Justyna Steczkowska", "Marek Piekarczyk", "Lanberry"] },
+      { "season": 14, "year": 2023, "coaches": ["Tomson & Baron", "Justyna Steczkowska", "Marek Piekarczyk", "Lanberry"] },
+      { "season": 15, "year": 2024, "coaches": ["Tomson & Baron", "Lanberry", "Michał Szpak", "Kuba Badach"] },
+      { "season": 16, "year": 2025, "coaches": ["Tomson & Baron", "Margaret", "Michał Szpak", "Kuba Badach"] }
+    ]
+  },
+  "RO": {
+    "name": "Romania",
+    "showName": "Vocea României",
+    "flag": "🇷🇴",
+    "seasons": [
+      { "season": 1,  "year": 2011, "coaches": ["Smiley", "Horia Brenciu", "Loredana Groza", "Marius Moga"] },
+      { "season": 2,  "year": 2012, "coaches": ["Smiley", "Horia Brenciu", "Loredana Groza", "Marius Moga"] },
+      { "season": 3,  "year": 2013, "coaches": ["Smiley", "Horia Brenciu", "Loredana Groza", "Marius Moga"] },
+      { "season": 4,  "year": 2014, "coaches": ["Smiley", "Tudor Chirilă", "Loredana Groza", "Marius Moga"] },
+      { "season": 5,  "year": 2015, "coaches": ["Smiley", "Tudor Chirilă", "Loredana Groza", "Marius Moga"] },
+      { "season": 6,  "year": 2016, "coaches": ["Smiley", "Tudor Chirilă", "Loredana Groza", "Marius Moga"] },
+      { "season": 7,  "year": 2017, "coaches": ["Smiley", "Tudor Chirilă", "Loredana Groza", "Adrian Despot"] },
+      { "season": 8,  "year": 2018, "coaches": ["Smiley", "Tudor Chirilă", "Irina Rimes", "Andra"] },
+      { "season": 9,  "year": 2019, "coaches": ["Smiley", "Tudor Chirilă", "Irina Rimes", "Horia Brenciu"] },
+      { "season": 10, "year": 2022, "coaches": ["Smiley", "Tudor Chirilă", "Irina Rimes", "Denis Roabeș"] }
+    ]
+  },
+  "SE": {
+    "name": "Sweden",
+    "showName": "The Voice Sverige",
+    "flag": "🇸🇪",
+    "seasons": [
+      { "season": 1, "year": 2012, "coaches": ["Carola Häggkvist", "Magnus Uggla", "Ola Salo", "Petter"] }
+    ]
+  },
+  "AR": {
+    "name": "Argentina",
+    "showName": "La Voz Argentina",
+    "flag": "🇦🇷",
+    "seasons": [
+      { "season": 1, "year": 2012, "coaches": ["Soledad Pastorutti", "Axel", "José Luis Rodríguez", "Miranda!"] },
+      { "season": 2, "year": 2018, "coaches": ["Soledad Pastorutti", "Axel", "Ricardo Montaner", "Tini Stoessel"] },
+      { "season": 3, "year": 2021, "coaches": ["Soledad Pastorutti", "Ricardo Montaner", "Mau y Ricky", "Lali Espósito"] },
+      { "season": 4, "year": 2022, "coaches": ["Soledad Pastorutti", "Ricardo Montaner", "Mau y Ricky", "Lali Espósito"] },
+      { "season": 5, "year": 2025, "coaches": ["Soledad Pastorutti", "Lali Espósito", "Luck Ra", "Miranda!"] }
+    ]
+  },
+  "IN": {
+    "name": "India",
+    "showName": "The Voice India",
+    "flag": "🇮🇳",
+    "seasons": [
+      { "season": 1, "year": 2015, "coaches": ["Himesh Reshammiya", "Shaan", "Sunidhi Chauhan", "Mika Singh"] },
+      { "season": 2, "year": 2016, "coaches": ["Shaan", "Neeti Mohan", "Salim Merchant", "Benny Dayal"] },
+      { "season": 3, "year": 2019, "coaches": ["Adnan Sami", "Armaan Malik", "Harshdeep Kaur", "Kanika Kapoor"] }
+    ]
+  },
+  "DK": {
+    "name": "Denmark",
+    "showName": "Voice – Danmarks største stemme",
+    "flag": "🇩🇰",
+    "seasons": [
+      { "season": 1, "year": 2011, "coaches": ["L.O.C.", "Sharin Foo", "Lene Nystrøm", "Steen Jørgensen"] },
+      { "season": 2, "year": 2012, "coaches": ["L.O.C.", "Sharin Foo", "Lene Nystrøm", "Steen Jørgensen"] }
+    ]
+  },
+  "FI": {
+    "name": "Finland",
+    "showName": "The Voice of Finland",
+    "flag": "🇫🇮",
+    "seasons": [
+      { "season": 1,  "year": 2011, "coaches": ["Paula Koivuniemi", "Lauri Tähkä", "Elastinen", "Michael Monroe"] },
+      { "season": 2,  "year": 2013, "coaches": ["Paula Koivuniemi", "Lauri Tähkä", "Elastinen", "Michael Monroe"] },
+      { "season": 3,  "year": 2014, "coaches": ["Elastinen", "Michael Monroe", "Anne Mattila", "Mira Luoti"] },
+      { "season": 4,  "year": 2015, "coaches": ["Michael Monroe", "Tarja Turunen", "Olli Lindholm", "Redrama"] },
+      { "season": 5,  "year": 2016, "coaches": ["Michael Monroe", "Tarja Turunen", "Olli Lindholm", "Redrama"] },
+      { "season": 6,  "year": 2017, "coaches": ["Michael Monroe", "Olli Lindholm", "Redrama", "Anna Puu"] },
+      { "season": 7,  "year": 2018, "coaches": ["Olli Lindholm", "Redrama", "Anna Puu", "Toni Wirtanen"] },
+      { "season": 8,  "year": 2019, "coaches": ["Redrama", "Anna Puu", "Toni Wirtanen", "Sipe Santapukki"] },
+      { "season": 9,  "year": 2020, "coaches": ["Toni Wirtanen", "Anna Puu", "Redrama", "Sipe Santapukki"] },
+      { "season": 10, "year": 2021, "coaches": ["Toni Wirtanen", "Anna Puu", "Sipe Santapukki", "Juha Tapio"] },
+      { "season": 11, "year": 2022, "coaches": ["Toni Wirtanen", "Sipe Santapukki", "Juha Tapio", "Maija Vilkkumaa"] },
+      { "season": 12, "year": 2023, "coaches": ["Elastinen", "Maija Vilkkumaa", "Sanni", "Arttu Wiskari"] },
+      { "season": 13, "year": 2024, "coaches": ["Elastinen", "Maija Vilkkumaa", "Sanni", "Arttu Wiskari"] }
+    ]
+  },
+  "NO": {
+    "name": "Norway",
+    "showName": "The Voice – Norges beste stemme",
+    "flag": "🇳🇴",
+    "seasons": [
+      { "season": 1,  "year": 2012, "coaches": ["Yosef Wolde-Mariam", "Sondre Lerche", "Hanne Sørvaag", "Magne Furuholmen"] },
+      { "season": 2,  "year": 2013, "coaches": ["Yosef Wolde-Mariam", "Sondre Lerche", "Espen Lind", "Lene Nystrøm"] },
+      { "season": 3,  "year": 2014, "coaches": ["Yosef Wolde-Mariam", "Sondre Lerche", "Espen Lind", "Hanne Sørvaag"] },
+      { "season": 4,  "year": 2015, "coaches": ["Yosef Wolde-Mariam", "Lene Marlin", "Martin Danielle", "Morten Harket"] },
+      { "season": 5,  "year": 2016, "coaches": ["Yosef Wolde-Mariam", "Lene Marlin", "Martin Danielle", "Morten Harket"] },
+      { "season": 6,  "year": 2017, "coaches": ["Yosef Wolde-Mariam", "Espen Lind", "Ina Wroldsen", "Matoma"] },
+      { "season": 7,  "year": 2018, "coaches": ["Yosef Wolde-Mariam", "Espen Lind", "Ina Wroldsen", "Matoma"] },
+      { "season": 8,  "year": 2019, "coaches": ["Yosef Wolde-Mariam", "Espen Lind", "Ina Wroldsen", "Jarle Bernhoft"] },
+      { "season": 9,  "year": 2020, "coaches": ["Yosef Wolde-Mariam", "Espen Lind", "Ina Wroldsen", "Jarle Bernhoft"] },
+      { "season": 10, "year": 2021, "coaches": ["Yosef Wolde-Mariam", "Espen Lind", "Eva Weel Skram", "Gabrielle"] },
+      { "season": 11, "year": 2022, "coaches": ["Espen Lind", "Jarle Bernhoft", "Ingebjørg Bratland", "Marion Raven"] }
+    ]
+  },
+  "VN": {
+    "name": "Vietnam",
+    "showName": "Giọng Hát Việt",
+    "flag": "🇻🇳",
+    "seasons": [
+      { "season": 1, "year": 2012, "coaches": ["Đàm Vĩnh Hưng", "Thu Minh", "Hồ Ngọc Hà", "Trần Lập"] },
+      { "season": 2, "year": 2013, "coaches": ["Đàm Vĩnh Hưng", "Mỹ Linh", "Hồng Nhung", "Quốc Trung"] },
+      { "season": 3, "year": 2015, "coaches": ["Đàm Vĩnh Hưng", "Mỹ Tâm", "Tuấn Hưng", "Thu Phương"] },
+      { "season": 4, "year": 2017, "coaches": ["Thu Minh", "Đông Nhi", "Noo Phước Thịnh", "Tóc Tiên"] },
+      { "season": 5, "year": 2018, "coaches": ["Thu Phương", "Tóc Tiên", "Noo Phước Thịnh", "Lam Trường"] },
+      { "season": 6, "year": 2019, "coaches": ["Tuấn Ngọc", "Hồ Hoài Anh", "Thanh Hà", "Tuấn Hưng"] }
+    ]
+  },
+  "TH": {
+    "name": "Thailand",
+    "showName": "The Voice Thailand",
+    "flag": "🇹🇭",
+    "seasons": [
+      { "season": 1,  "year": 2012, "coaches": ["Kong Saharat", "Joey Boy", "Jennifer Kim", "Stamp Apiwat"] },
+      { "season": 2,  "year": 2013, "coaches": ["Kong Saharat", "Joey Boy", "Jennifer Kim", "Stamp Apiwat"] },
+      { "season": 3,  "year": 2014, "coaches": ["Kong Saharat", "Joey Boy", "Jennifer Kim", "Stamp Apiwat"] },
+      { "season": 4,  "year": 2015, "coaches": ["Kong Saharat", "Joey Boy", "Jennifer Kim", "Stamp Apiwat"] },
+      { "season": 5,  "year": 2016, "coaches": ["Kong Saharat", "Joey Boy", "Jennifer Kim", "Stamp Apiwat"] },
+      { "season": 6,  "year": 2017, "coaches": ["Kong Saharat", "Joey Boy", "Jennifer Kim", "Stamp Apiwat"] },
+      { "season": 7,  "year": 2018, "coaches": ["Kong Saharat", "Joey Boy", "Jennifer Kim", "Pop Pongkool"] },
+      { "season": 8,  "year": 2019, "coaches": ["Kong Saharat", "Joey Boy", "Jennifer Kim", "Pop Pongkool"] },
+      { "season": 9,  "year": 2022, "coaches": ["Kong Saharat", "Joey Boy", "Jennifer Kim", "Pop Pongkool"] },
+      { "season": 10, "year": 2024, "coaches": ["Kong Saharat", "Jennifer Kim", "Oat Pramote", "Jaii Taitosmith"] }
+    ]
+  },
+  "KR": {
+    "name": "South Korea",
+    "showName": "The Voice of Korea",
+    "flag": "🇰🇷",
+    "seasons": [
+      { "season": 1, "year": 2012, "coaches": ["Kangta", "Shin Seung-hun", "Baek Ji-young", "Gil"] },
+      { "season": 2, "year": 2013, "coaches": ["Kangta", "Shin Seung-hun", "Baek Ji-young", "Gil"] },
+      { "season": 3, "year": 2020, "coaches": ["BoA", "Sung Si-kyung", "Kim Jong-kook", "Dynamic Duo"] }
+    ]
+  },
+  "CA": {
+    "name": "Canada (Quebec)",
+    "showName": "La Voix",
+    "flag": "🇨🇦",
+    "seasons": [
+      { "season": 1,  "year": 2013, "coaches": ["Jean-Pierre Ferland", "Marie-Mai", "Ariane Moffatt", "Marc Dupré"] },
+      { "season": 2,  "year": 2014, "coaches": ["Jean-Pierre Ferland", "Marie-Mai", "Ariane Moffatt", "Marc Dupré"] },
+      { "season": 3,  "year": 2015, "coaches": ["Éric Lapointe", "Isabelle Boulay", "Pierre Lapointe", "Marc Dupré"] },
+      { "season": 4,  "year": 2016, "coaches": ["Éric Lapointe", "Isabelle Boulay", "Pierre Lapointe", "Marc Dupré"] },
+      { "season": 5,  "year": 2017, "coaches": ["Éric Lapointe", "Isabelle Boulay", "Pierre Lapointe", "Marc Dupré"] },
+      { "season": 6,  "year": 2018, "coaches": ["Éric Lapointe", "Lara Fabian", "Alex Nevsky", "Garou"] },
+      { "season": 7,  "year": 2019, "coaches": ["Éric Lapointe", "Lara Fabian", "Alex Nevsky", "Marc Dupré"] },
+      { "season": 8,  "year": 2020, "coaches": ["Pierre Lapointe", "Garou", "Coeur de Pirate", "Marc Dupré"] },
+      { "season": 9,  "year": 2023, "coaches": ["Mario Pelchat", "Marjo", "Marc Dupré", "Corneille"] },
+      { "season": 10, "year": 2024, "coaches": ["Corneille", "France D'Amour", "Mario Pelchat", "Roxane Bruneau"] }
+    ]
   }
 }
