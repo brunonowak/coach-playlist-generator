@@ -7,7 +7,8 @@ import ArtistFixer, { getMergedOverrides } from './ArtistFixer';
 import { searchArtist } from '../spotify/api';
 
 const jsonOverrides = allData.spotifyOverrides || {};
-const countryCodes = Object.keys(allData).filter(k => k !== 'spotifyOverrides');
+const coachMeta = allData.coachMeta || {};
+const countryCodes = Object.keys(allData).filter(k => k !== 'spotifyOverrides' && k !== 'coachMeta');
 
 // Global cache so we don't re-fetch across country switches
 const artistCache = new Map();
@@ -282,7 +283,10 @@ function CoachExplorer({ token, userId }) {
                     <div className="coach-photo-placeholder">🎤</div>
                   )}
                   <div className="coach-text">
-                    <span className="coach-name">{coach.name}</span>
+                    <span className="coach-name">
+                      {coachMeta[coach.name]?.displayName || coach.name}
+                      {coachMeta[coach.name]?.type === 'group' && ' 👥'}
+                    </span>
                     <span className="coach-seasons">
                       {mode === 'clash' && coach.countries.length > 1
                         ? `${coach.countries.map(c => allData[c].flag).join('')} · `

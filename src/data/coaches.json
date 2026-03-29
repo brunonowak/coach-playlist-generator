@@ -3325,9 +3325,27 @@
     ]
   },
   "spotifyOverrides": {
+    "Benji & Joel Madden": "5aYyPjAsLj7UzANzdupwnS",
+    "Bigflo & Oli": "5mmEMfYChd6MImBagU7zCs",
+    "Dan + Shay": "7z5WFjZAIYejWy0NI5lv4T",
     "Gué": "1Cs0zKBU1kc0i8ypK3B9ai",
     "Jenifer": "7p0bICJNx2HM4jS28qexvv",
-    "MalÃº": "1r4hJ1h58CWwUQe3MxPuau",
-    "Sharin Foo": "4ugVHrnevIhLgapMEGv62z"
+    "Malú": "1r4hJ1h58CWwUQe3MxPuau",
+    "Mazhar & Özkan": "5mnKLLAKxMuZnNKsNmRVaX",
+    "Nick & Simon": "3jBNLmJDEBWEoidTT7l1Jn",
+    "Sharin Foo": "4ugVHrnevIhLgapMEGv62z",
+    "Suzan & Freek": "77IW5ZK1smDQYYKDCQugXh",
+    "Tomson & Baron": "6amixKL4YtGVOijRLEhWNz",
+    "Wisin & Yandel": "1wZtkThiXbVNtj6hee6dz9"
+  },
+  "coachMeta": {
+    "Dan + Shay": { "type": "group", "displayName": "Dan + Shay" },
+    "Benji & Joel Madden": { "type": "group", "displayName": "Good Charlotte" },
+    "Nick & Simon": { "type": "group", "displayName": "Nick & Simon" },
+    "Suzan & Freek": { "type": "group", "displayName": "Suzan & Freek" },
+    "Bigflo & Oli": { "type": "group", "displayName": "Bigflo & Oli" },
+    "Wisin & Yandel": { "type": "group", "displayName": "Wisin & Yandel" },
+    "Mazhar & Özkan": { "type": "group", "displayName": "MFÖ" },
+    "Tomson & Baron": { "type": "group", "displayName": "Afromental" }
   }
 }
