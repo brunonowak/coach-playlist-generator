@@ -2,6 +2,10 @@ import { useState } from 'react';
 import { searchArtist } from '../spotify/api';
 
 const STORAGE_KEY = 'voiceExplorer_artistOverrides';
+const GH_PAT_KEY = 'voiceExplorer_githubPat';
+const REPO_OWNER = 'brunonowak';
+const REPO_NAME = 'voice-explorer';
+const FILE_PATH = 'src/data/coaches.json';
 
 // Load overrides from localStorage
 export function getLocalOverrides() {
@@ -15,35 +19,107 @@ export function getMergedOverrides(jsonOverrides) {
   return { ...jsonOverrides, ...getLocalOverrides() };
 }
 
+function getGithubPat() {
+  return localStorage.getItem(GH_PAT_KEY) || '';
+}
+
+// Fetch file from GitHub, update spotifyOverrides, commit back
+async function commitOverrideToGitHub(coachName, spotifyId) {
+  const pat = getGithubPat();
+  if (!pat) throw new Error('No GitHub PAT configured');
+
+  const headers = {
+    Authorization: `token ${pat}`,
+    Accept: 'application/vnd.github.v3+json',
+  };
+  const apiUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`;
+
+  // Get current file
+  const fileRes = await fetch(apiUrl, { headers });
+  if (!fileRes.ok) throw new Error(`GitHub GET failed: ${fileRes.status}`);
+  const fileData = await fileRes.json();
+
+  // Decode and parse
+  const content = JSON.parse(atob(fileData.content));
+
+  // Update spotifyOverrides
+  if (!content.spotifyOverrides) content.spotifyOverrides = {};
+  content.spotifyOverrides[coachName] = spotifyId;
+
+  // Sort overrides alphabetically for tidiness
+  const sorted = {};
+  Object.keys(content.spotifyOverrides).sort().forEach(k => {
+    sorted[k] = content.spotifyOverrides[k];
+  });
+  content.spotifyOverrides = sorted;
+
+  // Commit
+  const putRes = await fetch(apiUrl, {
+    method: 'PUT',
+    headers,
+    body: JSON.stringify({
+      message: `Fix Spotify match: ${coachName} → ${spotifyId}`,
+      content: btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2) + '\n'))),
+      sha: fileData.sha,
+    }),
+  });
+
+  if (!putRes.ok) {
+    const err = await putRes.json().catch(() => ({}));
+    throw new Error(err.message || `GitHub PUT failed: ${putRes.status}`);
+  }
+
+  return putRes.json();
+}
+
 function ArtistFixer({ token, coachName, onClose }) {
   const [results, setResults] = useState([]);
   const [query, setQuery] = useState(coachName);
   const [searching, setSearching] = useState(false);
+  const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(null);
+  const [error, setError] = useState(null);
+  const [pat, setPat] = useState(getGithubPat());
+  const [showPatInput, setShowPatInput] = useState(!getGithubPat());
 
   const doSearch = async (q) => {
     if (!q.trim()) return;
     setSearching(true);
     try {
-      // Always do a raw search (no overrides) so we see what Spotify returns
       const artists = await searchArtist(token, q, null);
       setResults(artists.slice(0, 8));
     } catch { setResults([]); }
     setSearching(false);
   };
 
-  const pickArtist = (artist) => {
+  const savePat = () => {
+    localStorage.setItem(GH_PAT_KEY, pat.trim());
+    setShowPatInput(false);
+  };
+
+  const pickArtist = async (artist) => {
+    setError(null);
+
+    // Always save to localStorage immediately (works without GitHub)
     const overrides = getLocalOverrides();
     overrides[coachName] = artist.id;
     localStorage.setItem(STORAGE_KEY, JSON.stringify(overrides));
-    setSaved(artist);
-  };
 
-  const clearOverride = () => {
-    const overrides = getLocalOverrides();
-    delete overrides[coachName];
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(overrides));
-    setSaved(null);
+    // Try to commit to GitHub
+    const ghPat = getGithubPat();
+    if (ghPat) {
+      setSaving(true);
+      try {
+        await commitOverrideToGitHub(coachName, artist.id);
+        setSaved({ ...artist, committed: true });
+      } catch (err) {
+        setSaved({ ...artist, committed: false });
+        setError(`GitHub commit failed: ${err.message}. Saved locally only.`);
+      }
+      setSaving(false);
+    } else {
+      setSaved({ ...artist, committed: false });
+    }
   };
 
   const currentOverride = getLocalOverrides()[coachName];
@@ -54,19 +130,48 @@ function ArtistFixer({ token, coachName, onClose }) {
         <button className="modal-close" onClick={onClose}>✕</button>
         <h2>🔧 Fix: {coachName}</h2>
 
-        {currentOverride && !saved && (
-          <div className="fixer-current">
-            ✅ Override active: <code>{currentOverride}</code>
-            <button className="fixer-clear-btn" onClick={clearOverride}>Remove override</button>
+        {/* GitHub PAT setup */}
+        {showPatInput ? (
+          <div className="fixer-pat-section">
+            <p className="fixer-hint">Enter your GitHub PAT to auto-commit fixes to the repo:</p>
+            <div className="fixer-search">
+              <input
+                type="password"
+                value={pat}
+                onChange={e => setPat(e.target.value)}
+                onKeyDown={e => e.key === 'Enter' && savePat()}
+                placeholder="ghp_xxxxxxxxxxxx"
+              />
+              <button onClick={savePat}>💾</button>
+            </div>
           </div>
+        ) : (
+          <div className="fixer-pat-connected">
+            🔗 GitHub connected
+            <button className="fixer-clear-btn" onClick={() => setShowPatInput(true)}>Change PAT</button>
+          </div>
+        )}
+
+        {saving && (
+          <div className="fixer-saving">⏳ Committing to GitHub...</div>
         )}
 
         {saved && (
           <div className="fixer-saved">
-            ✅ Saved! <strong>{saved.name}</strong> (ID: {saved.id})
-            <p className="fixer-hint">Reload the page to see the updated photo & tracks.</p>
+            {saved.committed
+              ? <>✅ Committed! <strong>{saved.name}</strong> — auto-deploying now.</>
+              : <>💾 Saved locally! <strong>{saved.name}</strong></>
+            }
+            <p className="fixer-hint">
+              {saved.committed
+                ? 'GitHub Actions will deploy in ~2 min. Reload to see updated photo.'
+                : 'Reload to see updated photo. Add a GitHub PAT to auto-commit.'
+              }
+            </p>
           </div>
         )}
+
+        {error && <div className="fixer-error">{error}</div>}
 
         <div className="fixer-search">
           <input
@@ -90,7 +195,7 @@ function ArtistFixer({ token, coachName, onClose }) {
             <div
               key={artist.id}
               className={`fixer-artist ${currentOverride === artist.id ? 'active' : ''}`}
-              onClick={() => pickArtist(artist)}
+              onClick={() => !saving && pickArtist(artist)}
             >
               {artist.images?.[2]?.url || artist.images?.[0]?.url ? (
                 <img src={artist.images[2]?.url || artist.images[0]?.url} alt="" className="fixer-photo" />
@@ -108,34 +213,8 @@ function ArtistFixer({ token, coachName, onClose }) {
             </div>
           ))}
         </div>
-
-        <div className="fixer-export-section">
-          <ExportButton />
-        </div>
       </div>
     </div>
-  );
-}
-
-function ExportButton() {
-  const [copied, setCopied] = useState(false);
-  const overrides = getLocalOverrides();
-  const count = Object.keys(overrides).length;
-
-  if (count === 0) return null;
-
-  const doExport = () => {
-    const json = JSON.stringify(overrides, null, 2);
-    navigator.clipboard.writeText(json).then(() => {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    });
-  };
-
-  return (
-    <button className="fixer-export-btn" onClick={doExport}>
-      {copied ? '✅ Copied!' : `📋 Export ${count} override${count > 1 ? 's' : ''} (JSON)`}
-    </button>
   );
 }
 

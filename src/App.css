@@ -891,3 +891,31 @@ body {
 }
 
 .fixer-export-btn:hover { border-color: var(--spotify-green); color: var(--spotify-green); }
+
+.fixer-pat-section { margin-bottom: 1rem; }
+
+.fixer-pat-connected {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--spotify-green);
+  margin-bottom: 1rem;
+  padding: 0.4rem 0;
+}
+
+.fixer-saving {
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.fixer-error {
+  padding: 0.5rem 0.75rem;
+  background: rgba(231, 76, 60, 0.1);
+  border: 1px solid rgba(231, 76, 60, 0.3);
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: #e74c3c;
+  margin-bottom: 0.75rem;
+}
