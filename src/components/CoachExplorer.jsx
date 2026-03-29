@@ -365,22 +365,20 @@ function CoachExplorer({ token, userId }) {
                     {coachMeta[coach.name]?.type === 'band_member' && (
                       <span className="coach-band-badge">🎸 {coachMeta[coach.name].bandName}</span>
                     )}
-                    <span className="coach-meta-line">
-                      {mode === 'clash' && coach.countries.length > 1
-                        ? `${coach.countries.map(c => allData[c].flag).join('')} · `
-                        : ''
-                      }
+                    <span className="coach-detail">
                       {coach.seasons.length} season{coach.seasons.length > 1 ? 's' : ''}
-                      {mode === 'single' && (
-                        <>
-                          {' · '}
-                          {coach.years[0] === coach.years[coach.years.length - 1]
-                            ? coach.years[0]
-                            : `${coach.years[0]}–${coach.years[coach.years.length - 1]}`
-                          }
-                        </>
-                      )}
+                      {mode === 'clash' && coach.countries.length > 1
+                        && ` · ${coach.countries.map(c => allData[c].flag).join('')}`
+                      }
                     </span>
+                    {mode === 'single' && (
+                      <span className="coach-detail">
+                        {coach.years[0] === coach.years[coach.years.length - 1]
+                          ? coach.years[0]
+                          : `${coach.years[0]}–${coach.years[coach.years.length - 1]}`
+                        }
+                      </span>
+                    )}
                   </div>
                   <div className="coach-card-actions">
                     <button
