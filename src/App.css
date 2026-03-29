@@ -319,6 +319,33 @@ body {
 }
 
 .who-btn:hover { opacity: 1; }
+.expand-btn { font-size: 0.7rem; }
+
+/* Winner tree under coach card */
+.coach-card.expanded { flex-wrap: wrap; }
+.winner-tree {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.winner-card {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.winner-card:hover { background: var(--card-hover); }
+.winner-card.selected { background: rgba(29, 185, 84, 0.15); outline: 1px solid var(--spotify-green); }
+.winner-badge { font-size: 1rem; flex-shrink: 0; }
+.winner-text { display: flex; flex-direction: column; min-width: 0; }
+.winner-name { font-weight: 500; font-size: 0.8rem; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.winner-season { font-size: 0.7rem; color: var(--text-muted); }
 
 /* Floating playlist button */
 .playlist-section {
