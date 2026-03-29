@@ -3332,10 +3332,12 @@
     "Daniel": "2wwWukJBsCikjlj7vlbQkM",
     "Danny O'Donoghue": "3AQRLZ9PuTAozP28Skbq8V",
     "Darey": "6hf8SsGrRAj1eAnA49ws6p",
+    "Dmytro Monatik": "6wbEgVlGqWb4I9tbMluu5Q",
     "Falz": "2s187JqHC9kipPLBLWXubl",
     "Grigory Leps": "1UbksoaNnbnunw2zwqQyim",
     "Gökhan Özoğuz": "3sv9sEJRa4sINAa33LUjdq",
     "Hülya Avşar": "5ZQ2xzMSMon0UUnulwsPiO",
+    "Ivan Klymenko": "6fNkvAT7XRYuIynD5RTSLf",
     "Jenifer": "7p0bICJNx2HM4jS28qexvv",
     "Jennifer Kim": "6x3vt0B7kEyA9XcAYdaSbk",
     "Marjo": "3IYryWetzBVax8oJPkgXMk",
@@ -3395,6 +3397,10 @@
     "Ricky Wilson": {
       "type": "band_member",
       "displayName": "Kaiser Chiefs"
+    },
+    "Ivan Klymenko": {
+      "type": "band_member",
+      "displayName": "Kalush Orchestra"
     }
   }
 }
