@@ -11,6 +11,14 @@ const jsonCoachMeta = allData.coachMeta || {};
 const countryCodes = Object.keys(allData).filter(k => !['spotifyOverrides', 'coachMeta', 'seasonStatus', 'winners'].includes(k));
 const winnersData = allData.winners || {};
 
+const countryRegions = [
+  { label: 'Americas', codes: ['US', 'CA', 'MX', 'BR', 'AR', 'CO'] },
+  { label: 'Europe', codes: ['UK', 'IE', 'FR', 'DE', 'NL', 'BE', 'ES', 'PT', 'IT', 'GR', 'PL', 'RO', 'NO', 'SE', 'DK', 'FI'] },
+  { label: 'Eastern Europe', codes: ['RU', 'UA', 'TR'] },
+  { label: 'Asia & Pacific', codes: ['AU', 'KR', 'IN', 'ID', 'PH', 'TH', 'VN'] },
+  { label: 'Africa & Middle East', codes: ['ZA', 'NG', 'ARAB'] },
+].map(r => ({ ...r, codes: r.codes.filter(c => countryCodes.includes(c)) }));
+
 // Merge JSON coachMeta with localStorage overrides
 function getMergedCoachMeta() {
   let localMeta = {};
@@ -244,26 +252,35 @@ function CoachExplorer({ token, userId }) {
 
       {/* Country selection */}
       <section className="country-section">
-        <h2>{mode === 'clash' ? 'Pick Countries to Clash' : 'Country'}</h2>
-        <div className="country-grid">
-          {countryCodes.map(code => {
-            const c = allData[code];
-            const isActive = mode === 'single'
-              ? countryCode === code
-              : clashCountries.has(code);
-            return (
-              <button
-                key={code}
-                className={`country-btn ${isActive ? 'active' : ''}`}
-                onClick={() => mode === 'single' ? setCountryCode(code) : toggleClashCountry(code)}
-                title={`${c.showName} — ${c.seasons.length} seasons`}
-              >
-                <span className="country-flag">{c.flag}</span>
-                <span className="country-code">{code}</span>
-              </button>
-            );
-          })}
-        </div>
+        <h2>{mode === 'clash' ? 'Pick Countries to Clash' : 'Choose a Country'}</h2>
+        {countryRegions.map(region => (
+          <div key={region.label} className="region-group">
+            <h3 className="region-label">{region.label}</h3>
+            <div className="country-grid">
+              {region.codes.map(code => {
+                const c = allData[code];
+                const isActive = mode === 'single'
+                  ? countryCode === code
+                  : clashCountries.has(code);
+                const hasWinnersData = !!(winnersData[code]?.length);
+                return (
+                  <button
+                    key={code}
+                    className={`country-btn ${isActive ? 'active' : ''}`}
+                    onClick={() => mode === 'single' ? setCountryCode(code) : toggleClashCountry(code)}
+                    title={`${c.showName} — ${c.seasons.length} seasons`}
+                  >
+                    <span className="country-flag">{c.flag}</span>
+                    <div className="country-label">
+                      <span className="country-name">{c.name}</span>
+                      <span className="country-detail">{c.seasons.length}S{hasWinnersData ? ' · 🏆' : ''}</span>
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        ))}
         {mode === 'single' && (
           <p className="country-subtitle">{country.showName} — {seasons.length} seasons</p>
         )}

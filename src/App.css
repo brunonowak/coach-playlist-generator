@@ -156,21 +156,31 @@ body {
 
 /* Country picker */
 .country-section { margin-bottom: 2rem; }
-.country-section h2 { font-size: 1.2rem; font-weight: 500; margin-bottom: 1rem; }
+.country-section > h2 { font-size: 1.2rem; font-weight: 500; margin-bottom: 1.25rem; }
+
+.region-group { margin-bottom: 1rem; }
+.region-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
 
 .country-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
+  gap: 0.5rem;
 }
 
 .country-btn {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 0.9rem;
+  padding: 0.45rem 0.85rem;
   background: var(--surface);
-  border: 2px solid var(--border);
+  border: 1.5px solid var(--border);
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.2s;
@@ -181,11 +191,13 @@ body {
 .country-btn:hover { border-color: var(--text-muted); background: var(--surface-hover); }
 .country-btn.active { border-color: var(--spotify-green); background: rgba(29, 185, 84, 0.1); }
 
-.country-flag { font-size: 1.4rem; }
-.country-code { font-size: 0.95rem; font-weight: 600; }
+.country-flag { font-size: 1.3rem; flex-shrink: 0; }
+.country-label { display: flex; flex-direction: column; gap: 0; }
+.country-name { font-size: 0.85rem; font-weight: 600; line-height: 1.2; }
+.country-detail { font-size: 0.7rem; color: var(--text-muted); line-height: 1.2; }
 
 .country-subtitle {
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
   font-size: 0.9rem;
   color: var(--text-muted);
 }
