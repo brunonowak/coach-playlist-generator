@@ -1,7 +1,7 @@
 function Header({ user, onLogout }) {
   return (
     <header className="header">
-      <h1>🎤 Voice Explorer</h1>
+      <h1><a href={import.meta.env.BASE_URL} style={{ color: 'inherit', textDecoration: 'none' }}>🎤 Voice Explorer</a></h1>
       <div className="header-right">
         {user && <span className="user-info">{user.display_name}</span>}
         <button className="logout-btn" onClick={onLogout}>Log out</button>
