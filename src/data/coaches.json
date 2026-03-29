@@ -3325,6 +3325,7 @@
     ]
   },
   "spotifyOverrides": {
+    "Andra": "72FGvJgYbs0NBeJqECy6cF",
     "Axel": "32x1uogH2zajP85pzZAtuE",
     "Belinda": "5LeiVcEnsZcwc133TUhJNW",
     "Benji & Joel Madden": "5aYyPjAsLj7UzANzdupwnS",
@@ -3333,6 +3334,7 @@
     "Daniel": "2wwWukJBsCikjlj7vlbQkM",
     "Danny O'Donoghue": "3AQRLZ9PuTAozP28Skbq8V",
     "Darey": "6hf8SsGrRAj1eAnA49ws6p",
+    "Denis Roabeș": "05qpk4JDcLSFNJSsPIZ8Ye",
     "Dmytro Monatik": "6wbEgVlGqWb4I9tbMluu5Q",
     "Falz": "2s187JqHC9kipPLBLWXubl",
     "Grigory Leps": "1UbksoaNnbnunw2zwqQyim",
@@ -3341,6 +3343,7 @@
     "Ivan Klymenko": "6fNkvAT7XRYuIynD5RTSLf",
     "Jenifer": "7p0bICJNx2HM4jS28qexvv",
     "Jennifer Kim": "6x3vt0B7kEyA9XcAYdaSbk",
+    "Loredana Groza": "7cluWSpYQVPmY7DHcytmNm",
     "Marjo": "3IYryWetzBVax8oJPkgXMk",
     "Mazhar & Özkan": "5mnKLLAKxMuZnNKsNmRVaX",
     "Natalia Druyts": "2ngqIbDud3EeLNAdrZCWyN",
@@ -3403,6 +3406,10 @@
     "Ivan Klymenko": {
       "type": "band_member",
       "displayName": "Kalush Orchestra"
+    },
+    "Denis Roabeș": {
+      "type": "band_member",
+      "displayName": "The Motans"
     }
   }
 }
