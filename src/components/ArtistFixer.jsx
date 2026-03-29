@@ -19,12 +19,12 @@ export function getMergedOverrides(jsonOverrides) {
   return { ...jsonOverrides, ...getLocalOverrides() };
 }
 
-function getGithubPat() {
+export function getGithubPat() {
   return localStorage.getItem(GH_PAT_KEY) || '';
 }
 
 // Fetch file from GitHub, update spotifyOverrides, commit back
-async function commitOverrideToGitHub(coachName, spotifyId) {
+export async function commitOverrideToGitHub(coachName, spotifyId) {
   const pat = getGithubPat();
   if (!pat) throw new Error('No GitHub PAT configured');
 

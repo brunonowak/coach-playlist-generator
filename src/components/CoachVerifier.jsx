@@ -1,6 +1,6 @@
 import { useState, useMemo, useRef } from 'react';
 import allData from '../data/coaches.json';
-import ArtistFixer, { getMergedOverrides } from './ArtistFixer';
+import ArtistFixer, { getMergedOverrides, getLocalOverrides, commitOverrideToGitHub, getGithubPat } from './ArtistFixer';
 import { searchArtist } from '../spotify/api';
 
 const jsonOverrides = allData.spotifyOverrides || {};
@@ -53,12 +53,28 @@ function CoachVerifier({ token, onClose }) {
 
   const coachMeta = useMemo(() => getMergedCoachMeta(), [renameCoach]);
 
-  const approveCoach = (name) => {
+  const approveCoach = async (name) => {
+    const r = results[name];
+    if (!r || !r.spotifyId) return;
+
+    // Save to localStorage immediately
+    const localOverrides = getLocalOverrides();
+    localOverrides[name] = r.spotifyId;
+    localStorage.setItem('voiceExplorer_artistOverrides', JSON.stringify(localOverrides));
+
+    // Mark as approved in verifier results
     const updated = { ...results };
-    if (updated[name]) {
-      updated[name] = { ...updated[name], approved: true };
-      setResults(updated);
-      saveResults(updated);
+    updated[name] = { ...r, approved: true, hasOverride: true };
+    setResults(updated);
+    saveResults(updated);
+
+    // Commit to GitHub if PAT available
+    if (getGithubPat()) {
+      try {
+        await commitOverrideToGitHub(name, r.spotifyId);
+      } catch (err) {
+        console.warn('GitHub commit failed for approval:', err);
+      }
     }
   };
 
