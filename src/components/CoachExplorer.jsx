@@ -8,8 +8,7 @@ import { searchArtist } from '../spotify/api';
 
 const jsonOverrides = allData.spotifyOverrides || {};
 const jsonCoachMeta = allData.coachMeta || {};
-const countryCodes = Object.keys(allData).filter(k => !['spotifyOverrides', 'coachMeta', 'seasonStatus', 'winners'].includes(k));
-const winnersData = allData.winners || {};
+const countryCodes = Object.keys(allData).filter(k => !['spotifyOverrides', 'coachMeta', 'seasonStatus'].includes(k));
 
 const countryRegions = [
   { label: 'Americas', codes: ['US', 'CA', 'MX', 'BR', 'AR', 'CO'] },
@@ -47,8 +46,6 @@ function CoachExplorer({ token, userId }) {
   const [detailCoach, setDetailCoach] = useState(null);
   const [fixCoach, setFixCoach] = useState(null);
   const [artistPhotos, setArtistPhotos] = useState({});
-  const [expandedCoaches, setExpandedCoaches] = useState(new Set());
-  const [selectedWinners, setSelectedWinners] = useState(new Set());
 
   const spotifyOverrides = useMemo(() => getMergedOverrides(jsonOverrides), [fixCoach]);
 
@@ -60,16 +57,12 @@ function CoachExplorer({ token, userId }) {
     if (mode === 'single') {
       setSeasonRange([1, seasons.length]);
       setSelectedCoaches(new Set());
-      setSelectedWinners(new Set());
-      setExpandedCoaches(new Set());
     }
   }, [countryCode, seasons.length, mode]);
 
   // Reset when switching modes
   useEffect(() => {
     setSelectedCoaches(new Set());
-    setSelectedWinners(new Set());
-    setExpandedCoaches(new Set());
     if (mode === 'single') {
       setClashCountries(new Set());
     }
@@ -131,18 +124,6 @@ function CoachExplorer({ token, userId }) {
       });
   }, [mode, filteredSeasons, clashCountries, countryCode]);
 
-  // Build map of coach → winners for current view
-  const coachWinners = useMemo(() => {
-    const map = {};
-    const codes = mode === 'single' ? [countryCode] : Array.from(clashCountries);
-    codes.forEach(code => {
-      (winnersData[code] || []).forEach(w => {
-        if (!map[w.coach]) map[w.coach] = [];
-        map[w.coach].push({ ...w, country: code });
-      });
-    });
-    return map;
-  }, [mode, countryCode, clashCountries]);
   // Fetch artist photos for visible coaches (parallel, batched, with retry)
   const fetchPhotos = useCallback(async () => {
     if (!token) return;
@@ -210,27 +191,7 @@ function CoachExplorer({ token, userId }) {
   };
 
   const selectAll = () => setSelectedCoaches(new Set(allCoaches.map(c => c.name)));
-  const clearAll = () => { setSelectedCoaches(new Set()); setSelectedWinners(new Set()); };
-
-  const toggleExpand = (coachName) => {
-    setExpandedCoaches(prev => {
-      const next = new Set(prev);
-      if (next.has(coachName)) next.delete(coachName);
-      else next.add(coachName);
-      return next;
-    });
-  };
-
-  const toggleWinner = (winnerKey) => {
-    setSelectedWinners(prev => {
-      const next = new Set(prev);
-      if (next.has(winnerKey)) next.delete(winnerKey);
-      else next.add(winnerKey);
-      return next;
-    });
-  };
-
-  const totalSelected = selectedCoaches.size + selectedWinners.size;
+  const clearAll = () => setSelectedCoaches(new Set());
 
   const playlistCountryName = mode === 'clash'
     ? Array.from(clashCountries).map(c => allData[c].name).join(' vs ')
@@ -262,7 +223,6 @@ function CoachExplorer({ token, userId }) {
                 const isActive = mode === 'single'
                   ? countryCode === code
                   : clashCountries.has(code);
-                const hasWinnersData = !!(winnersData[code]?.length);
                 return (
                   <button
                     key={code}
@@ -273,7 +233,7 @@ function CoachExplorer({ token, userId }) {
                     <span className="country-flag">{c.flag}</span>
                     <div className="country-label">
                       <span className="country-name">{c.name}</span>
-                      <span className="country-detail">{c.seasons.length}S{hasWinnersData ? ' · 🏆' : ''}</span>
+                      <span className="country-detail">{c.seasons.length} seasons</span>
                     </div>
                   </button>
                 );
@@ -339,14 +299,10 @@ function CoachExplorer({ token, userId }) {
             </div>
           </div>
           <div className="coach-grid">
-            {allCoaches.map(coach => {
-              const winners = coachWinners[coach.name] || [];
-              const hasWinners = winners.length > 0;
-              const isExpanded = expandedCoaches.has(coach.name);
-              return (
+            {allCoaches.map(coach => (
               <div
                 key={coach.name}
-                className={`coach-card ${selectedCoaches.has(coach.name) ? 'selected' : ''} ${isExpanded ? 'expanded' : ''}`}
+                className={`coach-card ${selectedCoaches.has(coach.name) ? 'selected' : ''}`}
               >
                 <div className="coach-card-top" onClick={() => toggleCoach(coach.name)}>
                   <div className="coach-avatar">
@@ -395,55 +351,16 @@ function CoachExplorer({ token, userId }) {
                     )}
                   </div>
                 </div>
-                {hasWinners && (
-                  <div
-                    className="winner-expand-bar"
-                    onClick={(e) => { e.stopPropagation(); toggleExpand(coach.name); }}
-                  >
-                    🏆 {isExpanded ? 'Hide' : 'Show'} {winners.length} winner{winners.length > 1 ? 's' : ''} {isExpanded ? '▲' : '▼'}
-                  </div>
-                )}
-                {isExpanded && (
-                  <div className="winner-tree">
-                    {winners.map(w => {
-                      const key = `${w.country}-S${w.season}-${w.name}`;
-                      return (
-                        <div
-                          key={key}
-                          className={`winner-card ${selectedWinners.has(key) ? 'selected' : ''}`}
-                          onClick={(e) => { e.stopPropagation(); toggleWinner(key); }}
-                        >
-                          <span className="winner-badge">🏆</span>
-                          <div className="winner-text">
-                            <span className="winner-name">{w.name}</span>
-                            <span className="winner-season">
-                              {w.note || `S${w.season}`} · {w.year}
-                              {mode === 'clash' && ` · ${allData[w.country]?.flag || ''}`}
-                            </span>
-                          </div>
-                          <button
-                            className="card-action-btn winner-info-btn"
-                            onClick={(e) => { e.stopPropagation(); setDetailCoach(w.name); }}
-                            title="Who's this?"
-                          >ℹ️</button>
-                        </div>
-                      );
-                    })}
-                  </div>
-                )}
               </div>
-              );
-            })}
+            ))}
           </div>
         </section>
       )}
 
-      {totalSelected > 0 && (
+      {selectedCoaches.size > 0 && (
         <section className="playlist-section">
           <button className="build-btn" onClick={() => setShowPlaylistBuilder(true)}>
-            🎵 Build Playlist ({selectedCoaches.size > 0 ? `${selectedCoaches.size} coach${selectedCoaches.size > 1 ? 'es' : ''}` : ''}
-            {selectedCoaches.size > 0 && selectedWinners.size > 0 ? ' + ' : ''}
-            {selectedWinners.size > 0 ? `${selectedWinners.size} winner${selectedWinners.size > 1 ? 's' : ''}` : ''})
+            🎵 Build Playlist ({selectedCoaches.size} coach{selectedCoaches.size > 1 ? 'es' : ''})
           </button>
         </section>
       )}
@@ -453,17 +370,6 @@ function CoachExplorer({ token, userId }) {
           token={token}
           userId={userId}
           coaches={Array.from(selectedCoaches)}
-          winners={Array.from(selectedWinners).map(key => {
-            // Parse winner key "CC-SN-Name" back to winner object
-            const codes = mode === 'single' ? [countryCode] : Array.from(clashCountries);
-            for (const code of codes) {
-              const match = (winnersData[code] || []).find(w =>
-                `${code}-S${w.season}-${w.name}` === key
-              );
-              if (match) return { ...match, country: code };
-            }
-            return null;
-          }).filter(Boolean)}
           countryName={playlistCountryName}
           onClose={() => setShowPlaylistBuilder(false)}
         />

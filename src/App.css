@@ -356,48 +356,6 @@ body {
 }
 .card-action-btn:hover { opacity: 1; }
 
-/* Winner expand bar */
-.winner-expand-bar {
-  width: 100%;
-  text-align: center;
-  padding: 0.5rem;
-  font-size: 0.85rem;
-  color: var(--spotify-green);
-  background: rgba(29, 185, 84, 0.08);
-  border-top: 1px solid var(--border);
-  cursor: pointer;
-  transition: background 0.15s;
-  font-weight: 500;
-}
-.winner-expand-bar:hover { background: rgba(29, 185, 84, 0.18); }
-
-/* Winner tree under coach card */
-.coach-card.expanded { grid-column: 1 / -1; }
-.winner-tree {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 0.5rem;
-  padding: 0.75rem 1rem;
-  border-top: 1px solid var(--border);
-  background: rgba(0,0,0,0.15);
-}
-.winner-card {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.5rem 0.65rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.15s;
-}
-.winner-card:hover { background: var(--surface-hover); }
-.winner-card.selected { background: rgba(29, 185, 84, 0.15); outline: 1px solid var(--spotify-green); }
-.winner-badge { font-size: 1.1rem; flex-shrink: 0; }
-.winner-text { display: flex; flex-direction: column; min-width: 0; flex: 1; }
-.winner-info-btn { margin-left: auto; }
-.winner-name { font-weight: 500; font-size: 0.95rem; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.winner-season { font-size: 0.8rem; color: var(--text-muted); }
-
 /* Floating playlist button */
 .playlist-section {
   position: fixed;
