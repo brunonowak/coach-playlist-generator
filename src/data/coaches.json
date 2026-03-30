@@ -3676,13 +3676,13 @@
       "type": "band_member",
       "bandName": "Blackfield"
     },
-    "Mosh Ben-Ari": {
-      "type": "band_member",
-      "bandName": "Sheva"
-    },
     "Ivri Lider": {
       "type": "band_member",
       "bandName": "The Young Professionals"
+    },
+    "Mosh Ben Ari": {
+      "type": "band_member",
+      "bandName": "Sheva"
     }
   },
   "seasonStatus": {
@@ -3897,7 +3897,7 @@
           "Shlomi Shabat",
           "Aviv Geffen",
           "Sarit Hadad",
-          "Mosh Ben-Ari"
+          "Mosh Ben Ari"
         ]
       },
       {
