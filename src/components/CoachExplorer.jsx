@@ -228,7 +228,7 @@ function CoachExplorer({ token, userId }) {
                     key={code}
                     className={`country-btn ${isActive ? 'active' : ''}`}
                     onClick={() => mode === 'single' ? setCountryCode(code) : toggleClashCountry(code)}
-                    title={`${c.showName} — ${c.seasons.length} seasons`}
+                    title={`${c.name} — ${c.seasons.length} seasons`}
                   >
                     <span className="country-flag">{c.flag}</span>
                     <div className="country-label">
@@ -242,7 +242,7 @@ function CoachExplorer({ token, userId }) {
           </div>
         ))}
         {mode === 'single' && (
-          <p className="country-subtitle">{country.showName} — {seasons.length} seasons</p>
+          <p className="country-subtitle">{country.name} — {seasons.length} seasons</p>
         )}
         {mode === 'clash' && clashCountries.size > 0 && (
           <p className="country-subtitle">

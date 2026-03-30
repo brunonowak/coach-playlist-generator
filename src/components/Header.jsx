@@ -1,7 +1,7 @@
 function Header({ user, onLogout, isDevMode, onToggleVerifier, showVerifier }) {
   return (
     <header className="header">
-      <h1><a href={import.meta.env.BASE_URL} style={{ color: 'inherit', textDecoration: 'none' }}>🎤 Voice Explorer</a></h1>
+      <h1><a href={import.meta.env.BASE_URL} style={{ color: 'inherit', textDecoration: 'none' }}>🎤 Coach Playlist Generator</a></h1>
       <div className="header-right">
         {isDevMode && (
           <button

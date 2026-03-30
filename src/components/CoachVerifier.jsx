@@ -125,7 +125,6 @@ function CoachVerifier({ token, onClose }) {
         code,
         name: c.name,
         flag: c.flag,
-        showName: c.showName,
         seasonCount: c.seasons.length,
         coachCount: coaches.size,
         lastYear,

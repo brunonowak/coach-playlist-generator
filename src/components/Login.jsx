@@ -3,9 +3,9 @@ import { redirectToSpotify } from '../spotify/auth';
 function Login({ clientId }) {
   return (
     <div className="login">
-      <h1>🎤 Voice Explorer</h1>
+      <h1>🎤 Coach Playlist Generator</h1>
       <p className="subtitle">
-        Explore the music of The Voice USA coaches across every season
+        Explore the music of singing competition coaches across 35 countries
         and create Spotify playlists from your favorites
       </p>
       <button className="login-btn" onClick={() => redirectToSpotify(clientId)}>
