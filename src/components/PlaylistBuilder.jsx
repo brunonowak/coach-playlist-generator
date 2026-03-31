@@ -75,9 +75,12 @@ async function resolveCoachArtists(token, coachName) {
 function selectTracks(tracks, artistId, { tracksPerCoach, soloOnly, mixType }) {
   let pool = [...tracks];
 
+  // Always filter out tracks where the primary artist doesn't match
+  pool = pool.filter(t => t.artists?.[0]?.id === artistId);
+
   // Filter out collabs: keep only tracks where the coach is the sole artist
   if (soloOnly) {
-    pool = pool.filter(t => t.artists.length === 1 || t.artists.every(a => a.id === artistId));
+    pool = pool.filter(t => t.artists.length === 1);
   }
 
   if (pool.length === 0) return [];

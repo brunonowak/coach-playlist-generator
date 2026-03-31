@@ -102,11 +102,13 @@ export async function getArtistExpandedTracks(token, artistId, market = 'US') {
     ? await getTracksDetails(token, albumTrackIds)
     : [];
 
-  // Deduplicate
+  // Deduplicate and validate primary artist
   const seen = new Set();
   const all = [];
   for (const track of [...topTracks, ...fullAlbumTracks]) {
     if (track && !seen.has(track.id)) {
+      // Skip tracks where the primary artist doesn't match the requested artist
+      if (track.artists?.[0]?.id !== artistId) continue;
       seen.add(track.id);
       all.push(track);
     }
