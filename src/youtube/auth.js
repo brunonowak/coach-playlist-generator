@@ -1,7 +1,8 @@
 const GOOGLE_AUTH_URL = 'https://accounts.google.com/o/oauth2/v2/auth';
 const GOOGLE_TOKEN_URL = 'https://oauth2.googleapis.com/token';
 const BASE_PATH = import.meta.env.BASE_URL.replace(/\/$/, '');
-const REDIRECT_URI = window.location.origin + BASE_PATH + '/callback';
+// Use base URL directly (not /callback) to avoid GitHub Pages 404.html hop
+const REDIRECT_URI = window.location.origin + BASE_PATH + '/';
 const SCOPES = 'https://www.googleapis.com/auth/youtube';
 
 function generateRandomString(length) {

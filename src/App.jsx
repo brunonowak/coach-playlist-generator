@@ -203,8 +203,12 @@ function App() {
         }
       } catch (err) {
         console.error('Auth error:', err);
-        logout();
-        logoutGoogle();
+        // Only clear the failing provider's token, not both
+        if (sessionStorage.getItem('oauth_provider') === 'google') {
+          logoutGoogle();
+        } else {
+          logout();
+        }
       }
       setLoading(false);
     }
