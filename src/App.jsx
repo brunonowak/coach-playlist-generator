@@ -8,8 +8,8 @@ import Header from './components/Header';
 import CoachExplorer from './components/CoachExplorer';
 import CoachVerifier from './components/CoachVerifier';
 
-const SPOTIFY_CLIENT_ID = import.meta.env.VITE_SPOTIFY_CLIENT_ID;
-const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID;
+const SPOTIFY_CLIENT_ID = import.meta.env.VITE_SPOTIFY_CLIENT_ID || '444afa8729db4132bc8323cbc80b3535';
+const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID || '903410397056-vahckgaijopf0hpt4ti9forb5b86v2dh.apps.googleusercontent.com';
 const GH_PAT_KEY = 'voiceExplorer_githubPat';
 const ADMIN_OWNER = 'brunonowak';
 
