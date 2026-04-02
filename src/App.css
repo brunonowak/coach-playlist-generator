@@ -11,6 +11,13 @@
   --yt-red-hover: #cc0000;
   --accent: var(--yt-red);
   --accent-hover: var(--yt-red-hover);
+  --accent-bg: rgba(255, 0, 0, 0.1);
+}
+
+.platform-spotify {
+  --accent: var(--accent);
+  --accent-hover: var(--accent-hover);
+  --accent-bg: var(--accent-bg);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -74,7 +81,7 @@ body {
   align-items: center;
   gap: 0.75rem;
   padding: 1rem 2rem;
-  background: var(--spotify-green);
+  background: var(--accent);
   color: #000;
   border: none;
   border-radius: 50px;
@@ -85,7 +92,7 @@ body {
 }
 
 .login-btn:hover {
-  background: var(--spotify-green-hover);
+  background: var(--accent-hover);
   transform: scale(1.05);
 }
 
@@ -188,7 +195,7 @@ body {
 .mode-btn:hover { border-color: var(--text-muted); color: var(--text); }
 
 .mode-btn.active {
-  border-color: var(--spotify-green);
+  border-color: var(--accent);
   color: var(--text);
   background: rgba(29, 185, 84, 0.08);
 }
@@ -228,7 +235,7 @@ body {
 }
 
 .country-btn:hover { border-color: var(--text-muted); background: var(--surface-hover); }
-.country-btn.active { border-color: var(--spotify-green); background: rgba(29, 185, 84, 0.1); }
+.country-btn.active { border-color: var(--accent); background: var(--accent-bg); }
 
 .country-flag { font-size: 1.3rem; flex-shrink: 0; }
 .country-label { display: flex; flex-direction: column; gap: 0; }
@@ -262,7 +269,7 @@ body {
 
 .range-controls input[type="range"] {
   width: 100%;
-  accent-color: var(--spotify-green);
+  accent-color: var(--accent);
 }
 
 /* Coaches */
@@ -312,8 +319,8 @@ body {
 .coach-card:hover { background: var(--surface-hover); border-color: var(--text-muted); }
 
 .coach-card.selected {
-  border-color: var(--spotify-green);
-  background: rgba(29, 185, 84, 0.1);
+  border-color: var(--accent);
+  background: var(--accent-bg);
 }
 
 .coach-card-top {
@@ -364,7 +371,7 @@ body {
 }
 .coach-band-badge {
   font-size: 0.8rem;
-  color: var(--spotify-green);
+  color: var(--accent);
   opacity: 0.85;
   white-space: nowrap;
   overflow: hidden;
@@ -406,7 +413,7 @@ body {
 
 .build-btn {
   padding: 1.1rem 2.5rem;
-  background: var(--spotify-green);
+  background: var(--accent);
   color: #000;
   border: none;
   border-radius: 50px;
@@ -417,7 +424,7 @@ body {
   box-shadow: 0 4px 20px rgba(29, 185, 84, 0.4);
 }
 
-.build-btn:hover { background: var(--spotify-green-hover); transform: scale(1.05); }
+.build-btn:hover { background: var(--accent-hover); transform: scale(1.05); }
 
 /* Modal */
 .modal-overlay {
@@ -479,7 +486,7 @@ body {
   font-family: inherit;
 }
 
-.playlist-form input[type="range"] { accent-color: var(--spotify-green); }
+.playlist-form input[type="range"] { accent-color: var(--accent); }
 
 .checkbox-label {
   flex-direction: row !important;
@@ -487,7 +494,7 @@ body {
   gap: 0.5rem !important;
 }
 
-.checkbox-label input { accent-color: var(--spotify-green); }
+.checkbox-label input { accent-color: var(--accent); }
 
 .order-toggle { display: flex; flex-direction: column; gap: 0.4rem; }
 .order-label { font-size: 0.85rem; color: var(--text-muted); }
@@ -504,7 +511,7 @@ body {
   transition: all 0.15s;
 }
 .order-btn:hover { border-color: var(--text-muted); color: var(--text); }
-.order-btn.active { border-color: var(--spotify-green); color: var(--text); background: rgba(29,185,84,0.1); }
+.order-btn.active { border-color: var(--accent); color: var(--text); background: var(--accent-bg); }
 
 .track-estimate { font-size: 0.85rem; color: var(--text-muted); }
 
@@ -520,7 +527,7 @@ body {
 
 .create-btn {
   padding: 0.8rem;
-  background: var(--spotify-green);
+  background: var(--accent);
   color: #000;
   border: none;
   border-radius: 8px;
@@ -531,7 +538,7 @@ body {
   margin-top: 0.5rem;
 }
 
-.create-btn:hover { background: var(--spotify-green-hover); }
+.create-btn:hover { background: var(--accent-hover); }
 
 /* Progress */
 .playlist-progress {
@@ -546,7 +553,7 @@ body {
   width: 40px;
   height: 40px;
   border: 3px solid var(--border);
-  border-top-color: var(--spotify-green);
+  border-top-color: var(--accent);
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
@@ -569,7 +576,7 @@ body {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.7rem 1.5rem;
-  background: var(--spotify-green);
+  background: var(--accent);
   color: #000;
   text-decoration: none;
   border-radius: 50px;
@@ -577,7 +584,7 @@ body {
   transition: all 0.2s;
 }
 
-.spotify-link:hover { background: var(--spotify-green-hover); }
+.spotify-link:hover { background: var(--accent-hover); }
 
 .yt-link {
   display: inline-block;
@@ -671,8 +678,8 @@ body {
 .mix-option:hover { border-color: var(--text-muted); }
 
 .mix-option.active {
-  border-color: var(--spotify-green);
-  background: rgba(29, 185, 84, 0.1);
+  border-color: var(--accent);
+  background: var(--accent-bg);
 }
 
 .mix-emoji { font-size: 1.3rem; }
@@ -703,8 +710,8 @@ body {
 }
 
 .toggle-btn.active {
-  background: rgba(29, 185, 84, 0.15);
-  color: var(--spotify-green);
+  background: var(--accent-bg);
+  color: var(--accent);
   font-weight: 600;
 }
 
@@ -776,7 +783,7 @@ body {
   min-width: 18px;
   height: 18px;
   border-radius: 3px;
-  background: var(--spotify-green);
+  background: var(--accent);
   opacity: 0.75;
   transition: opacity 0.15s;
 }
@@ -786,8 +793,8 @@ body {
 }
 
 .timeline-toggle.active {
-  color: var(--spotify-green) !important;
-  border-color: var(--spotify-green) !important;
+  color: var(--accent) !important;
+  border-color: var(--accent) !important;
 }
 
 /* Coach Detail Modal */
@@ -826,7 +833,7 @@ body {
 
 .detail-spotify-link {
   font-size: 0.85rem;
-  color: var(--spotify-green);
+  color: var(--accent);
   text-decoration: none;
   font-weight: 500;
 }
@@ -885,8 +892,8 @@ body {
 .fixer-modal { max-width: 520px; }
 
 .fixer-current {
-  background: rgba(29, 185, 84, 0.1);
-  border: 1px solid var(--spotify-green);
+  background: var(--accent-bg);
+  border: 1px solid var(--accent);
   border-radius: 8px;
   padding: 0.6rem 0.8rem;
   font-size: 0.85rem;
@@ -919,7 +926,7 @@ body {
 .fixer-clear-btn:hover { color: #e74c3c; border-color: #e74c3c; }
 
 .fixer-saved {
-  background: rgba(29, 185, 84, 0.15);
+  background: var(--accent-bg);
   border-radius: 8px;
   padding: 0.8rem;
   margin-bottom: 1rem;
@@ -977,7 +984,7 @@ body {
 }
 
 .fixer-artist:hover { background: var(--surface-hover); }
-.fixer-artist.active { background: rgba(29, 185, 84, 0.15); outline: 2px solid var(--spotify-green); }
+.fixer-artist.active { background: var(--accent-bg); outline: 2px solid var(--accent); }
 
 .fixer-photo {
   width: 44px;
@@ -1032,7 +1039,7 @@ body {
   transition: all 0.2s;
 }
 
-.fixer-export-btn:hover { border-color: var(--spotify-green); color: var(--spotify-green); }
+.fixer-export-btn:hover { border-color: var(--accent); color: var(--accent); }
 
 .fixer-pat-section { margin-bottom: 1rem; }
 
@@ -1041,7 +1048,7 @@ body {
   align-items: center;
   gap: 0.75rem;
   font-size: 0.85rem;
-  color: var(--spotify-green);
+  color: var(--accent);
   margin-bottom: 1rem;
   padding: 0.4rem 0;
 }
@@ -1088,7 +1095,7 @@ body {
 }
 .admin-pat-btn {
   padding: 0.6rem 1.2rem;
-  background: var(--spotify-green);
+  background: var(--accent);
   color: #000;
   border: none;
   border-radius: 8px;
@@ -1100,9 +1107,9 @@ body {
 .admin-back { color: var(--text-muted); font-size: 0.85rem; }
 .admin-badge {
   font-size: 0.8rem;
-  color: var(--spotify-green);
+  color: var(--accent);
   padding: 0.2rem 0.6rem;
-  border: 1px solid var(--spotify-green);
+  border: 1px solid var(--accent);
   border-radius: 6px;
 }
 
@@ -1155,7 +1162,7 @@ body {
 
 .verify-run-btn {
   padding: 0.5rem 1.2rem;
-  background: var(--spotify-green);
+  background: var(--accent);
   color: #000;
   border: none;
   border-radius: 8px;
@@ -1166,7 +1173,7 @@ body {
   transition: all 0.2s;
 }
 
-.verify-run-btn:hover { background: var(--spotify-green-hover); }
+.verify-run-btn:hover { background: var(--accent-hover); }
 
 .verify-clear-btn, .verify-stop-btn {
   padding: 0.5rem 1rem;
@@ -1346,7 +1353,7 @@ tr.vr-missing td { background: rgba(231, 76, 60, 0.04); }
 
 .vr-display-name {
   font-size: 0.7rem;
-  color: var(--spotify-green);
+  color: var(--accent);
   font-weight: 400;
 }
 
@@ -1401,7 +1408,7 @@ tr.vr-missing td { background: rgba(231, 76, 60, 0.04); }
 
 .blend-label {
   font-size: 0.75rem;
-  color: var(--spotify-green);
+  color: var(--accent);
   font-weight: 500;
 }
 
@@ -1413,7 +1420,7 @@ tr.vr-missing td { background: rgba(231, 76, 60, 0.04); }
 
 .blend-control input[type="range"] {
   flex: 1;
-  accent-color: var(--spotify-green);
+  accent-color: var(--accent);
 }
 
 .blend-end {

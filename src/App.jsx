@@ -261,7 +261,7 @@ function App() {
   }
 
   return (
-    <div className="app">
+    <div className={`app platform-${platform || 'youtube'}`}>
       <Header user={user} onLogout={handleLogout} isAdmin={isAdmin} platform={platform} />
       {isAdmin ? (
         <AdminGate>

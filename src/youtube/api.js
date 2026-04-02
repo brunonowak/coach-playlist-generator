@@ -79,37 +79,42 @@ export async function searchArtist(token, name, overrides = null) {
   }));
 }
 
-// Search for music videos by an artist (by channel ID)
-// Returns videos sorted by view count (most popular first)
-export async function getArtistTopVideos(token, channelId, maxResults = 10) {
+// Search for top videos from an artist's channel
+// mode: 'video' searches for music videos, 'music' gets any music content
+export async function getArtistTopVideos(token, channelId, maxResults = 10, mode = 'music') {
   const params = new URLSearchParams({
     part: 'snippet',
     channelId,
     type: 'video',
-    videoCategoryId: '10', // Music category
     order: 'viewCount',
     maxResults: String(maxResults),
   });
+  // Music mode: filter to music category (gets audio/topic content)
+  // Video mode: don't filter category (gets actual music videos)
+  if (mode === 'music') {
+    params.set('videoCategoryId', '10');
+  }
   const data = await fetchYouTube(token, `/search?${params}`);
   const videoIds = (data.items || []).map(item => item.id.videoId).filter(Boolean);
 
   if (videoIds.length === 0) return [];
 
-  // Fetch full video details (view count, duration, etc.)
   return getVideoDetails(token, videoIds);
 }
 
 // Search for music videos by artist name (text search)
-// Useful for finding songs when we don't have a channel ID
-export async function searchArtistVideos(token, artistName, maxResults = 10) {
+export async function searchArtistVideos(token, artistName, maxResults = 10, mode = 'music') {
+  const suffix = mode === 'video' ? 'official music video' : 'official audio';
   const params = new URLSearchParams({
     part: 'snippet',
-    q: `${artistName} official music video`,
+    q: `${artistName} ${suffix}`,
     type: 'video',
-    videoCategoryId: '10',
     order: 'viewCount',
     maxResults: String(maxResults),
   });
+  if (mode === 'music') {
+    params.set('videoCategoryId', '10');
+  }
   const data = await fetchYouTube(token, `/search?${params}`);
   const videoIds = (data.items || []).map(item => item.id.videoId).filter(Boolean);
 
@@ -147,15 +152,10 @@ export async function getVideoDetails(token, videoIds) {
 }
 
 // Get expanded video pool for an artist (top videos + deeper search)
-// Equivalent to Spotify's getArtistExpandedTracks
-export async function getArtistExpandedVideos(token, channelId, artistName) {
-  // Get top videos from their channel (by view count)
-  const topVideos = await getArtistTopVideos(token, channelId, 15);
+export async function getArtistExpandedVideos(token, channelId, artistName, mode = 'music') {
+  const topVideos = await getArtistTopVideos(token, channelId, 15, mode);
+  const searchVideos = await searchArtistVideos(token, artistName, 15, mode);
 
-  // Also search by name for videos that might be on VEVO or other channels
-  const searchVideos = await searchArtistVideos(token, artistName, 15);
-
-  // Deduplicate by video ID, preferring channel videos
   const seen = new Set();
   const all = [];
   for (const video of [...topVideos, ...searchVideos]) {

@@ -261,7 +261,6 @@ function PlaylistBuilder({ token, userId, coaches, countryName, onClose, platfor
         // ── YouTube flow ──
         for (const coachName of coaches) {
           const resolved = coachArtists?.[coachName];
-          const searchSuffix = ytMode === 'music' ? ' official audio' : ' official music video';
 
           if (resolved?.type === 'band_member' && resolved.band) {
             const blend = resolved.blend;
@@ -272,8 +271,8 @@ function PlaylistBuilder({ token, userId, coaches, countryName, onClose, platfor
             if (bandCount > 0 && resolved.band.id) {
               setProgress(`Loading ${resolved.bandName} videos...`);
               bandVideos = needsExpanded
-                ? await getArtistExpandedVideos(token, resolved.band.id, resolved.bandName + searchSuffix)
-                : await getArtistTopVideos(token, resolved.band.id, bandCount + 5);
+                ? await getArtistExpandedVideos(token, resolved.band.id, resolved.bandName, ytMode)
+                : await getArtistTopVideos(token, resolved.band.id, bandCount + 5, ytMode);
               bandVideos = selectVideos(bandVideos, resolved.band.id, { tracksPerCoach: bandCount, mixType });
             }
 
@@ -281,8 +280,8 @@ function PlaylistBuilder({ token, userId, coaches, countryName, onClose, platfor
             if (soloCount > 0 && resolved.solo?.id) {
               setProgress(`Loading ${coachName} solo videos...`);
               soloVideos = needsExpanded
-                ? await getArtistExpandedVideos(token, resolved.solo.id, coachName + searchSuffix)
-                : await getArtistTopVideos(token, resolved.solo.id, soloCount + 5);
+                ? await getArtistExpandedVideos(token, resolved.solo.id, coachName, ytMode)
+                : await getArtistTopVideos(token, resolved.solo.id, soloCount + 5, ytMode);
               soloVideos = selectVideos(soloVideos, resolved.solo.id, { tracksPerCoach: soloCount, mixType });
             }
 
@@ -310,8 +309,8 @@ function PlaylistBuilder({ token, userId, coaches, countryName, onClose, platfor
               : `Getting top videos for ${coachName}...`);
 
             const videos = needsExpanded
-              ? await getArtistExpandedVideos(token, channel.id, coachName + searchSuffix)
-              : await getArtistTopVideos(token, channel.id, effectivePerCoach + 5);
+              ? await getArtistExpandedVideos(token, channel.id, coachName, ytMode)
+              : await getArtistTopVideos(token, channel.id, effectivePerCoach + 5, ytMode);
 
             const selected = selectVideos(videos, channel.id, { tracksPerCoach: effectivePerCoach, mixType });
 
