@@ -17,7 +17,11 @@ function Login({ googleClientId, spotifyClientId }) {
       </button>
       <p className="login-hint">Creates playlists in YouTube & YouTube Music</p>
       {spotifyClientId && (
-        <a href="#admin" className="login-admin-link">Admin access →</a>
+        <a href="#" className="login-admin-link" onClick={(e) => {
+          e.preventDefault();
+          sessionStorage.setItem('oauth_provider', 'spotify');
+          redirectToSpotify(spotifyClientId);
+        }}>Admin access (Spotify) →</a>
       )}
     </div>
   );
