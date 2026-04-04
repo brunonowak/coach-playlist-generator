@@ -515,7 +515,14 @@ body {
 
 .track-estimate { font-size: 0.85rem; color: var(--text-muted); }
 
-.coach-list { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.coach-list { display: flex; flex-direction: column; gap: 0.4rem; }
+
+.coach-mix-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
 
 .coach-tag {
   padding: 0.25rem 0.6rem;
@@ -523,6 +530,31 @@ body {
   border-radius: 20px;
   font-size: 0.8rem;
   color: var(--text-muted);
+}
+
+.coach-mix-btns {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.coach-mix-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: transparent;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coach-mix-btn:hover { border-color: var(--accent); }
+.coach-mix-btn.active {
+  border-color: var(--accent);
+  background: var(--accent-bg);
 }
 
 .create-btn {

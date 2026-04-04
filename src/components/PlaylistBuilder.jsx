@@ -221,8 +221,8 @@ const MIX_OPTIONS = [
 ];
 
 const MIX_OPTIONS_YOUTUBE = [
-  { value: 'top-hits',   emoji: '🔥', label: 'Top Hits',          desc: 'Most viewed overall' },
   { value: 'fresh-hits', emoji: '✨', label: 'Fresh Hits',        desc: 'Newest songs, most views' },
+  { value: 'top-hits',   emoji: '🔥', label: 'Top Hits',          desc: 'Most viewed overall' },
   { value: 'oldies',     emoji: '🏆', label: 'Oldies but Goldies', desc: 'Classic songs, most views' },
 ];
 
@@ -243,7 +243,8 @@ function PlaylistBuilder({ token, userId, coaches, countryName, onClose, platfor
   const [totalTracks, setTotalTracks] = useState(30);
   const [isPublic, setIsPublic] = useState(false);
   const [soloOnly, setSoloOnly] = useState(true);
-  const [mixType, setMixType] = useState(platform === 'youtube' ? 'top-hits' : 'balanced');
+  const [mixType, setMixType] = useState(platform === 'youtube' ? 'fresh-hits' : 'balanced');
+  const [coachMixTypes, setCoachMixTypes] = useState({});
   const [trackOrder, setTrackOrder] = useState('grouped');
   const [ytMode, setYtMode] = useState('music'); // 'music' or 'video' — YouTube only
   const [status, setStatus] = useState('idle');
@@ -255,12 +256,17 @@ function PlaylistBuilder({ token, userId, coaches, countryName, onClose, platfor
 
   const isYouTube = platform === 'youtube';
 
+  // Get effective mix type for a specific coach (per-coach override or global)
+  const getCoachMix = (name) => coachMixTypes[name] || mixType;
+
   const effectivePerCoach = trackMode === 'total'
     ? Math.max(1, Math.ceil(totalTracks / coaches.length))
     : tracksPerCoach;
   const effectiveTotal = trackMode === 'total' ? totalTracks : null;
 
-  const needsExpanded = mixType !== 'top-hits';
+  // Need expanded search if any coach uses a non-top-hits mix
+  const needsExpanded = mixType !== 'top-hits'
+    || Object.values(coachMixTypes).some(m => m && m !== 'top-hits');
 
   // Check if any coach is a band_member type
   const hasBandMembers = coaches.some(c => coachMeta[c]?.type === 'band_member');
@@ -318,7 +324,7 @@ function PlaylistBuilder({ token, userId, coaches, countryName, onClose, platfor
                 : ytMode === 'video'
                   ? await searchArtistVideos(token, resolved.bandName, bandCount + 5, ytMode)
                   : await getArtistTopVideos(token, resolved.band.id, bandCount + 5, ytMode);
-              bandVideos = selectVideos(bandVideos, resolved.band.id, { tracksPerCoach: bandCount, mixType, artistName: resolved.bandName });
+              bandVideos = selectVideos(bandVideos, resolved.band.id, { tracksPerCoach: bandCount, mixType: getCoachMix(coachName), artistName: resolved.bandName });
             }
 
             let soloVideos = [];
@@ -329,7 +335,7 @@ function PlaylistBuilder({ token, userId, coaches, countryName, onClose, platfor
                 : ytMode === 'video'
                   ? await searchArtistVideos(token, coachName, soloCount + 5, ytMode)
                   : await getArtistTopVideos(token, resolved.solo.id, soloCount + 5, ytMode);
-              soloVideos = selectVideos(soloVideos, resolved.solo.id, { tracksPerCoach: soloCount, mixType, artistName: coachName });
+              soloVideos = selectVideos(soloVideos, resolved.solo.id, { tracksPerCoach: soloCount, mixType: getCoachMix(coachName), artistName: coachName });
             }
 
             const combined = [...bandVideos, ...soloVideos];
@@ -351,17 +357,18 @@ function PlaylistBuilder({ token, userId, coaches, countryName, onClose, platfor
             if (!channels.length) { skipped.push(coachName); continue; }
 
             const channel = channels[0];
-            setProgress(needsExpanded
+            const coachMix = getCoachMix(coachName);
+            setProgress(coachMix !== 'top-hits'
               ? `Loading discography for ${coachName}...`
               : `Getting top videos for ${coachName}...`);
 
-            const videos = needsExpanded
+            const videos = coachMix !== 'top-hits'
               ? await getArtistExpandedVideos(token, channel.id, coachName, ytMode)
               : ytMode === 'video'
                 ? await searchArtistVideos(token, coachName, effectivePerCoach + 5, ytMode)
                 : await getArtistTopVideos(token, channel.id, effectivePerCoach + 5, ytMode);
 
-            const selected = selectVideos(videos, channel.id, { tracksPerCoach: effectivePerCoach, mixType, artistName: coachName });
+            const selected = selectVideos(videos, channel.id, { tracksPerCoach: effectivePerCoach, mixType: coachMix, artistName: coachName });
 
             trackBuckets.push({
               artist: channel.name || coachName,
@@ -588,13 +595,13 @@ function PlaylistBuilder({ token, userId, coaches, countryName, onClose, platfor
             )}
 
             <div className="form-group">
-              <span className="form-label">Mix Type</span>
+              <span className="form-label">Mix Type {isYouTube && <span className="note"> · sets all coaches</span>}</span>
               <div className="mix-options">
                 {(isYouTube ? MIX_OPTIONS_YOUTUBE : MIX_OPTIONS).map(opt => (
                   <button
                     key={opt.value}
                     className={`mix-option ${mixType === opt.value ? 'active' : ''}`}
-                    onClick={() => setMixType(opt.value)}
+                    onClick={() => { setMixType(opt.value); setCoachMixTypes({}); }}
                   >
                     <span className="mix-emoji">{opt.emoji}</span>
                     <span className="mix-label">{opt.label}</span>
@@ -647,7 +654,23 @@ function PlaylistBuilder({ token, userId, coaches, countryName, onClose, platfor
             </p>
 
             <div className="coach-list">
-              {coaches.map(c => <span key={c} className="coach-tag">{c}</span>)}
+              {coaches.map(c => (
+                <div key={c} className="coach-mix-row">
+                  <span className="coach-tag">{c}</span>
+                  {isYouTube && (
+                    <div className="coach-mix-btns">
+                      {MIX_OPTIONS_YOUTUBE.map(opt => (
+                        <button
+                          key={opt.value}
+                          className={`coach-mix-btn ${getCoachMix(c) === opt.value ? 'active' : ''}`}
+                          onClick={() => setCoachMixTypes(prev => ({ ...prev, [c]: opt.value }))}
+                          title={opt.desc}
+                        >{opt.emoji}</button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
 
             {/* Band blend controls */}
