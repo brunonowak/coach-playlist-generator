@@ -1,5 +1,6 @@
 const BASE_URL = 'https://www.googleapis.com/youtube/v3';
-const CACHE_TTL = 12 * 60 * 60 * 1000; // 12 hours
+const CACHE_TTL_SEARCH = 30 * 24 * 60 * 60 * 1000; // 30 days — artist channels rarely change
+const CACHE_TTL_VIDEOS = 7 * 24 * 60 * 60 * 1000;  // 7 days — video results may shift
 const CACHE_PREFIX = 'yt_cache_';
 
 function cacheGet(key) {
@@ -12,9 +13,9 @@ function cacheGet(key) {
   } catch { return null; }
 }
 
-function cacheSet(key, data) {
+function cacheSet(key, data, ttl = CACHE_TTL_VIDEOS) {
   try {
-    localStorage.setItem(CACHE_PREFIX + key, JSON.stringify({ data, expires: Date.now() + CACHE_TTL }));
+    localStorage.setItem(CACHE_PREFIX + key, JSON.stringify({ data, expires: Date.now() + ttl }));
   } catch { /* storage full — ignore */ }
 }
 
@@ -78,7 +79,7 @@ export async function searchArtist(token, name, overrides = null) {
           subscribers: parseInt(channel.statistics?.subscriberCount || '0'),
           platform: 'youtube',
         }];
-        cacheSet(cacheKey, result);
+        cacheSet(cacheKey, result, CACHE_TTL_SEARCH);
         return result;
       }
     } catch (error) {
@@ -108,7 +109,7 @@ export async function searchArtist(token, name, overrides = null) {
     subscribers: null,
     platform: 'youtube',
   }));
-  cacheSet(cacheKey, result);
+  cacheSet(cacheKey, result, CACHE_TTL_SEARCH);
   return result;
 }
 
