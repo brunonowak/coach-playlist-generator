@@ -143,9 +143,26 @@ function selectVideos(videos, channelId, { tracksPerCoach, mixType, artistName }
   const nameLC = (artistName || '').toLowerCase();
   pool = pool.map(v => {
     let score = 0;
+    const titleLC = (v.title || '').toLowerCase();
+
+    // Channel match is the strongest signal
     if (channelId && v.channelId === channelId) score += 10;
     if (nameLC && v.channelTitle?.toLowerCase().includes(nameLC)) score += 5;
-    if (nameLC && v.title?.toLowerCase().includes(nameLC)) score += 3;
+
+    // Title analysis: distinguish primary artist from featured
+    if (nameLC && titleLC.includes(nameLC)) {
+      // Check if artist appears AFTER "ft." / "feat." / "part " / "featuring"
+      const ftPattern = /(?:ft\.?|feat\.?|featuring|part\s)/i;
+      const ftMatch = titleLC.match(ftPattern);
+      if (ftMatch && titleLC.indexOf(nameLC) > ftMatch.index) {
+        // Artist is featured, not primary — low relevance
+        score += 1;
+      } else {
+        // Artist appears before any "ft." marker — likely primary
+        score += 5;
+      }
+    }
+
     return { ...v, _relevance: score };
   });
 
