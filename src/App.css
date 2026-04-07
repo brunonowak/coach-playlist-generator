@@ -263,6 +263,12 @@ body {
   background: var(--accent-bg);
 }
 
+.world-tour-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
 .world-tour-reroll-all {
   padding: 0.6rem 1.2rem;
   background: var(--surface);
@@ -278,6 +284,13 @@ body {
 .world-tour-reroll-all:hover {
   border-color: var(--accent);
   background: var(--accent-bg);
+}
+
+.world-tour-build {
+  display: block;
+  margin: 1.5rem auto 0;
+  width: 100%;
+  max-width: 400px;
 }
 
 /* Country picker */

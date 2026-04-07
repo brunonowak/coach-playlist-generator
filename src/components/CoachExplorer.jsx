@@ -371,10 +371,12 @@ function CoachExplorer({ token, userId, platform }) {
               );
             })}
           </div>
-          <button className="world-tour-reroll-all" onClick={rollWorldTour}>
-            🎲 Re-roll All
-          </button>
-          <button className="build-btn" onClick={() => setShowPlaylistBuilder(true)}>
+          <div className="world-tour-actions">
+            <button className="world-tour-reroll-all" onClick={rollWorldTour}>
+              🎲 Re-roll All
+            </button>
+          </div>
+          <button className="build-btn world-tour-build" onClick={() => setShowPlaylistBuilder(true)}>
             🎵 Build Playlist ({Object.keys(worldTourPicks).length} coaches)
           </button>
         </section>
