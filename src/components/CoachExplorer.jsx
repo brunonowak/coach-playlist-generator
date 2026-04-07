@@ -479,7 +479,7 @@ function CoachExplorer({ token, userId, platform }) {
         </section>
       )}
 
-      {selectedCoaches.size > 0 && (
+      {selectedCoaches.size > 0 && mode !== 'world-tour' && (
         <section className="playlist-section">
           <button className="build-btn" onClick={() => setShowPlaylistBuilder(true)}>
             🎵 Build Playlist ({selectedCoaches.size} coach{selectedCoaches.size > 1 ? 'es' : ''})
