@@ -109,7 +109,10 @@ export async function searchArtist(token, name, overrides = null) {
     subscribers: null,
     platform: 'youtube',
   }));
-  cacheSet(cacheKey, result, CACHE_TTL_SEARCH);
+  // Only cache non-empty results — empty results should be retried next time
+  if (result.length > 0) {
+    cacheSet(cacheKey, result, CACHE_TTL_SEARCH);
+  }
   return result;
 }
 
@@ -196,6 +199,7 @@ export async function getVideoDetails(token, videoIds) {
 
 // Get expanded video pool for an artist (top videos + deeper search)
 // Skips secondary search if primary returns enough results (saves 100 units)
+// Falls back to unfiltered search if category-filtered results are empty
 export async function getArtistExpandedVideos(token, channelId, artistName, mode = 'music') {
   let topVideos, searchVideos;
 
@@ -219,6 +223,19 @@ export async function getArtistExpandedVideos(token, channelId, artistName, mode
       all.push(video);
     }
   }
+
+  // Last resort: if music mode returned nothing, retry without videoCategoryId filter
+  if (all.length === 0 && mode === 'music') {
+    console.warn(`No music-category videos for "${artistName}", retrying without category filter`);
+    const fallback = await getArtistTopVideos(token, channelId, 15, 'video');
+    for (const video of fallback) {
+      if (video && !seen.has(video.id)) {
+        seen.add(video.id);
+        all.push(video);
+      }
+    }
+  }
+
   return all;
 }
 

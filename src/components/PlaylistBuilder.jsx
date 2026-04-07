@@ -389,10 +389,21 @@ function PlaylistBuilder({ token, userId, coaches, countryName, onClose, platfor
                 videos = await getArtistTopVideos(token, channel.id, effectivePerCoach + 5, ytMode);
               }
             } else {
+              // Music mode: channel search with category filter
               videos = await getArtistTopVideos(token, channel.id, effectivePerCoach + 5, ytMode);
+              // Fallback: try name search if channel search returns empty
+              if (videos.length === 0) {
+                videos = await searchArtistVideos(token, coachName, effectivePerCoach + 5, ytMode);
+              }
+              // Last resort: drop the music category filter entirely
+              if (videos.length === 0) {
+                videos = await getArtistTopVideos(token, channel.id, effectivePerCoach + 5, 'video');
+              }
             }
 
             const selected = selectVideos(videos, channel.id, { tracksPerCoach: effectivePerCoach, mixType: coachMix, artistName: coachName });
+
+            if (selected.length === 0) { skipped.push(coachName); continue; }
 
             trackBuckets.push({
               artist: channel.name || coachName,
