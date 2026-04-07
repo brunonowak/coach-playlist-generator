@@ -59,9 +59,11 @@ function CoachExplorer({ token, userId, platform }) {
     }
   }, [countryCode, seasons.length, mode]);
 
-  // Reset when switching modes
+  // Reset when switching modes (but not world-tour — rollWorldTour sets its own coaches)
   useEffect(() => {
-    setSelectedCoaches(new Set());
+    if (mode !== 'world-tour') {
+      setSelectedCoaches(new Set());
+    }
     if (mode === 'single') {
       setCollabCountries(new Set());
     }
