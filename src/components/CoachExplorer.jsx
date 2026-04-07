@@ -35,7 +35,7 @@ const coachMeta = getMergedCoachMeta();
 const artistCache = new Map();
 
 function CoachExplorer({ token, userId, platform }) {
-  const [mode, setMode] = useState('single'); // 'single' or 'collab'
+  const [mode, setMode] = useState('single'); // 'single', 'collab', or 'world-tour'
   const [countryCode, setCountryCode] = useState('US');
   const [collabCountries, setCollabCountries] = useState(new Set());
   const [selectedCoaches, setSelectedCoaches] = useState(new Set());
@@ -44,6 +44,7 @@ function CoachExplorer({ token, userId, platform }) {
   const [showTimeline, setShowTimeline] = useState(false);
   const [detailCoach, setDetailCoach] = useState(null);
   const [artistPhotos, setArtistPhotos] = useState({});
+  const [worldTourPicks, setWorldTourPicks] = useState(null);
 
   const spotifyOverrides = useMemo(() => getMergedOverrides(jsonOverrides), []);
 
@@ -176,6 +177,38 @@ function CoachExplorer({ token, userId, platform }) {
 
   useEffect(() => { fetchPhotos(); }, [fetchPhotos]);
 
+  // Fetch photos for World Tour picks
+  useEffect(() => {
+    if (mode !== 'world-tour' || !worldTourPicks || !token) return;
+    const names = Object.values(worldTourPicks);
+    const uncached = names.filter(n => !artistCache.has(n));
+    if (uncached.length === 0) {
+      // Apply cached photos
+      const photos = {};
+      names.forEach(n => { if (artistCache.has(n) && artistCache.get(n)) photos[n] = artistCache.get(n); });
+      setArtistPhotos(prev => ({ ...prev, ...photos }));
+      return;
+    }
+    (async () => {
+      const ytOverrides = allData.youtubeOverrides || {};
+      for (const name of uncached) {
+        try {
+          if (platform === 'youtube') {
+            const channels = await ytSearchArtist(token, name, ytOverrides);
+            artistCache.set(name, channels?.[0]?.image || null);
+          } else {
+            const artists = await spotifySearchArtist(token, name, spotifyOverrides);
+            const withImg = artists.find(a => a.images?.length > 0);
+            artistCache.set(name, withImg?.images?.[1]?.url || withImg?.images?.[0]?.url || null);
+          }
+        } catch { artistCache.set(name, null); }
+      }
+      const photos = {};
+      names.forEach(n => { if (artistCache.has(n) && artistCache.get(n)) photos[n] = artistCache.get(n); });
+      setArtistPhotos(prev => ({ ...prev, ...photos }));
+    })();
+  }, [worldTourPicks, mode, token, platform, spotifyOverrides]);
+
   const toggleCoach = (name) => {
     setSelectedCoaches(prev => {
       const next = new Set(prev);
@@ -198,9 +231,50 @@ function CoachExplorer({ token, userId, platform }) {
   const selectAll = () => setSelectedCoaches(new Set(allCoaches.map(c => c.name)));
   const clearAll = () => setSelectedCoaches(new Set());
 
-  const playlistCountryName = mode === 'collab'
-    ? Array.from(collabCountries).map(c => allData[c].name).join(' vs ')
-    : country.name;
+  // World Tour: get all coaches for a region
+  function getRegionCoaches(region) {
+    const coaches = new Set();
+    region.codes.forEach(code => {
+      const c = allData[code];
+      if (c) c.seasons.forEach(s => s.coaches.forEach(name => coaches.add(name)));
+    });
+    return Array.from(coaches);
+  }
+
+  // World Tour: pick one random coach per region
+  function rollWorldTour() {
+    const picks = {};
+    countryRegions.forEach(region => {
+      const coaches = getRegionCoaches(region);
+      if (coaches.length > 0) {
+        picks[region.label] = coaches[Math.floor(Math.random() * coaches.length)];
+      }
+    });
+    setWorldTourPicks(picks);
+    setSelectedCoaches(new Set(Object.values(picks)));
+  }
+
+  // World Tour: re-roll a single region
+  function rerollRegion(regionLabel) {
+    const region = countryRegions.find(r => r.label === regionLabel);
+    if (!region) return;
+    const coaches = getRegionCoaches(region);
+    const current = worldTourPicks[regionLabel];
+    // Pick a different coach if possible
+    const others = coaches.filter(c => c !== current);
+    const pick = others.length > 0
+      ? others[Math.floor(Math.random() * others.length)]
+      : current;
+    const newPicks = { ...worldTourPicks, [regionLabel]: pick };
+    setWorldTourPicks(newPicks);
+    setSelectedCoaches(new Set(Object.values(newPicks)));
+  }
+
+  const playlistCountryName = mode === 'world-tour'
+    ? 'World Tour'
+    : mode === 'collab'
+      ? Array.from(collabCountries).map(c => allData[c].name).join(' vs ')
+      : country.name;
 
   return (
     <main className="explorer">
@@ -214,9 +288,14 @@ function CoachExplorer({ token, userId, platform }) {
           className={`mode-btn ${mode === 'collab' ? 'active' : ''}`}
           onClick={() => setMode('collab')}
         >🤝 Country Collab</button>
+        <button
+          className={`mode-btn ${mode === 'world-tour' ? 'active' : ''}`}
+          onClick={() => { setMode('world-tour'); rollWorldTour(); }}
+        >✈️ World Tour</button>
       </div>
 
-      {/* Country selection */}
+      {/* Country selection — hide in world-tour mode */}
+      {mode !== 'world-tour' && (
       <section className="country-section">
         <h2>{mode === 'collab' ? 'Pick Countries to Collab' : 'Choose a Country'}</h2>
         {countryRegions.map(region => (
@@ -259,6 +338,44 @@ function CoachExplorer({ token, userId, platform }) {
           <p className="country-subtitle">Select 2 or more countries to collab their coaches</p>
         )}
       </section>
+      )}
+
+      {/* World Tour picks */}
+      {mode === 'world-tour' && worldTourPicks && (
+        <section className="world-tour-section">
+          <h2>✈️ Your World Tour Lineup</h2>
+          <p className="country-subtitle">One coach from each region — re-roll any you don't vibe with</p>
+          <div className="world-tour-picks">
+            {countryRegions.map(region => {
+              const coachName = worldTourPicks[region.label];
+              if (!coachName) return null;
+              return (
+                <div key={region.label} className="world-tour-pick">
+                  <div className="world-tour-region">{region.label}</div>
+                  <div className="world-tour-coach">
+                    <div className="coach-avatar">
+                      {artistPhotos[coachName] ? (
+                        <img src={artistPhotos[coachName]} alt="" className="coach-photo" />
+                      ) : (
+                        <div className="coach-photo-placeholder">🎤</div>
+                      )}
+                    </div>
+                    <span className="world-tour-name">{coachName}</span>
+                    <button
+                      className="world-tour-reroll"
+                      onClick={() => rerollRegion(region.label)}
+                      title="Pick a different coach"
+                    >🎲</button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          <button className="world-tour-reroll-all" onClick={rollWorldTour}>
+            🎲 Re-roll All
+          </button>
+        </section>
+      )}
 
       {/* Season filter (single mode only) */}
       {mode === 'single' && (
