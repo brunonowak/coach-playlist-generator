@@ -374,6 +374,9 @@ function CoachExplorer({ token, userId, platform }) {
           <button className="world-tour-reroll-all" onClick={rollWorldTour}>
             🎲 Re-roll All
           </button>
+          <button className="build-btn" onClick={() => setShowPlaylistBuilder(true)}>
+            🎵 Build Playlist ({Object.keys(worldTourPicks).length} coaches)
+          </button>
         </section>
       )}
 
